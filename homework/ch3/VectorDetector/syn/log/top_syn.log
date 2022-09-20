@@ -1,0 +1,251 @@
+Initializing gui preferences from file  /home/gift/.synopsys_dv_prefs.tcl
+#--------------------------Specify Libraries--------------------------
+set DESIGN_PATH /opt/PDKs/smic_180/SM00LB501-FE-00000-r0p0-00rel0/aci/sc-m/synopsys 
+/opt/PDKs/smic_180/SM00LB501-FE-00000-r0p0-00rel0/aci/sc-m/synopsys
+set search_path "$search_path $DESIGN_PATH"
+. /usr/Synopsys/dc2016/syn/L-2016.03-SP1/libraries/syn /usr/Synopsys/dc2016/syn/L-2016.03-SP1/minpower/syn /usr/Synopsys/dc2016/syn/L-2016.03-SP1/dw/syn_ver /usr/Synopsys/dc2016/syn/L-2016.03-SP1/dw/sim_ver /opt/PDKs/smic_180/SM00LB501-FE-00000-r0p0-00rel0/aci/sc-m/synopsys
+set target_library "ss_1v62_125c.db"
+ss_1v62_125c.db
+set link_library "* $target_library"
+* ss_1v62_125c.db
+echo "\n\nSettings:"
+
+
+Settings:
+echo "search_path: $search_path"
+search_path: . /usr/Synopsys/dc2016/syn/L-2016.03-SP1/libraries/syn /usr/Synopsys/dc2016/syn/L-2016.03-SP1/minpower/syn /usr/Synopsys/dc2016/syn/L-2016.03-SP1/dw/syn_ver /usr/Synopsys/dc2016/syn/L-2016.03-SP1/dw/sim_ver /opt/PDKs/smic_180/SM00LB501-FE-00000-r0p0-00rel0/aci/sc-m/synopsys
+echo "link_library: $link_library"
+link_library: * ss_1v62_125c.db
+echo "target_library: $target_library"
+target_library: ss_1v62_125c.db
+echo "\n\nI'm Ready!"
+
+
+I'm Ready!
+#set search_path "$TAR_PATH $MEM_LINK_PATH"
+#--------------------------Prepare Filelist---------------------------
+set FILE_LIST ""
+set f [open "../syn/filelist_syn.f" r]
+file10
+while {![eof $f]} {
+    gets $f line
+    append FILE_LIST "$line "
+}
+echo $FILE_LIST
+/home/gift/workplace/CourseDigitalIC/homework/ch3/VectorDetector/src/VectorDetector_m1.v /home/gift/workplace/CourseDigitalIC/homework/ch3/VectorDetector/src/VectorDetector_m2.v /home/gift/workplace/CourseDigitalIC/homework/ch3/VectorDetector/src/top.v  
+close $f
+#--------------------------Read Designs------------------------------
+set TOP_DESIGN top
+top
+analyze -format verilog $FILE_LIST  -define M1
+Running PRESTO HDLC
+Compiling source file /home/gift/workplace/CourseDigitalIC/homework/ch3/VectorDetector/src/VectorDetector_m1.v
+Compiling source file /home/gift/workplace/CourseDigitalIC/homework/ch3/VectorDetector/src/VectorDetector_m2.v
+Compiling source file /home/gift/workplace/CourseDigitalIC/homework/ch3/VectorDetector/src/top.v
+Warning:  /home/gift/workplace/CourseDigitalIC/homework/ch3/VectorDetector/src/top.v:19: Redeclaration of port 'pos_out'. (VER-331)
+Presto compilation completed successfully.
+Loading db file '/opt/PDKs/smic_180/SM00LB501-FE-00000-r0p0-00rel0/aci/sc-m/synopsys/ss_1v62_125c.db'
+1
+elaborate $TOP_DESIGN
+Loading db file '/usr/Synopsys/dc2016/syn/L-2016.03-SP1/libraries/syn/gtech.db'
+Loading db file '/usr/Synopsys/dc2016/syn/L-2016.03-SP1/libraries/syn/standard.sldb'
+  Loading link library 'ss_1v62_125c'
+  Loading link library 'gtech'
+Running PRESTO HDLC
+Warning:  /home/gift/workplace/CourseDigitalIC/homework/ch3/VectorDetector/src/top.v:26: Net pos_out_r connected to instance VectorDetector_m1_u0 is declared as reg data type but is not driven by an always block. (VER-1004)
+
+Inferred memory devices in process
+        in routine top line 41 in file
+                '/home/gift/workplace/CourseDigitalIC/homework/ch3/VectorDetector/src/top.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     pos_out_reg     | Flip-flop |   6   |  Y  | N  | N  | N  | N  | N  | N  |
+|    data_in_r_reg    | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Elaborated 1 design.
+Current design is now 'top'.
+Information: Building the design 'VectorDetector_m1'. (HDL-193)
+Presto compilation completed successfully.
+1
+#------------------------Set Current Design&&Link Designs--------------------------
+#current_design $TOP_DESIGN(auto)
+#link(auto)
+#-------------------------------SDC----------------------------------
+source ../syn/script/Sdc.tcl
+1
+#--------------------Map and Optimize the Design---------------------
+compile_ultra -no_autoungroup -incremental -no_boundary_optimization
+Warning: The value of variable 'compile_preserve_subdesign_interfaces' has been changed to true because '-no_boundary_optimization' is used. (OPT-133)
+Information: Starting from 2013.12 release, constant propagation is enabled even when boundary optimization is disabled. (OPT-1318)
+Information: Performing power optimization. (PWR-850)
+Alib files are up-to-date.
+Loading db file '/usr/Synopsys/dc2016/syn/L-2016.03-SP1/libraries/syn/dw_foundation.sldb'
+Warning: DesignWare synthetic library dw_foundation.sldb is added to the synthetic_library in the current command. (UISN-40)
+Information: Evaluating DesignWare library utilization. (UISN-27)
+
+============================================================================
+| DesignWare Building Block Library  |         Version         | Available |
+============================================================================
+| Basic DW Building Blocks           | L-2016.03-DWBB_201603.1 |     *     |
+| Licensed DW Building Blocks        | L-2016.03-DWBB_201603.1 |     *     |
+============================================================================
+
+
+Loaded alib file './alib-52/ss_1v62_125c.db.alib'
+Information: State dependent leakage is now switched from on to off.
+
+  Beginning Pass 1 Mapping  (Incremental)
+  ------------------------
+  Processing 'VectorDetector_m1'
+  Processing 'top'
+
+  Updating timing information
+Information: Updating design information... (UID-85)
+Information: The library cell 'HOLDX1M' in the library 'ss_1v62_125c' is not characterized for internal power. (PWR-536)
+Information: The target library(s) contains cell(s), other than black boxes, that are not characterized for internal power. (PWR-24)
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:00:01    3347.7      5.44      33.0       0.0                           150319.1562
+    0:00:01    3347.7      5.44      33.0       0.0                           150319.1562
+
+  Beginning Mapping Optimizations  (Ultra High effort)  (Incremental)
+  -------------------------------
+
+  Beginning Incremental Implementation Selection
+  ----------------------------------------------
+    0:00:01    3347.7      5.44      33.0       0.0                           150319.1562
+    0:00:01    3347.7      5.44      33.0       0.0                           150319.1562
+    0:00:01    3347.7      5.44      33.0       0.0                           150319.1562
+    0:00:01    3365.2      5.23      31.8       0.0                           151083.5000
+  Global Optimization (Phase 1)
+  Global Optimization (Phase 2)
+  Global Optimization (Phase 3)
+  Global Optimization (Phase 4)
+
+
+
+  Beginning Delay Optimization Phase
+  ----------------------------------
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:00:01    3938.2      3.45      22.3       0.0                           199150.6250
+    0:00:01    3938.2      3.45      22.3       0.0                           199150.6250
+    0:00:01    3927.2      3.45      22.3       0.0                           197821.0312
+    0:00:01    3927.2      3.45      22.3       0.0                           197821.0312
+    0:00:01    3933.8      3.45      22.3       0.0                           198206.1719
+    0:00:01    3933.8      3.45      22.3       0.0                           198206.1719
+    0:00:02    4421.1      2.66      17.7       0.0                           235101.0625
+
+  Beginning Delay Optimization
+  ----------------------------
+    0:00:02    4421.1      2.66      17.7       0.0                           235101.0625
+    0:00:02    4399.2      2.65      17.6       0.0                           233760.4688
+    0:00:02    4399.2      2.65      17.6       0.0                           233760.4688
+    0:00:02    4399.2      2.65      17.6       0.0                           233760.4688
+    0:00:02    4399.2      2.65      17.6       0.0                           233760.4688
+    0:00:02    4399.2      2.65      17.6       0.0                           233760.4688
+    0:00:02    4399.2      2.65      17.6       0.0                           233760.4688
+    0:00:02    4311.4      2.65      17.6       0.0                           224792.1094
+    0:00:02    4311.4      2.65      17.6       0.0                           224792.1094
+    0:00:02    4311.4      2.65      17.6       0.0                           224792.1094
+    0:00:02    4311.4      2.65      17.6       0.0                           224792.1094
+    0:00:02    4311.4      2.65      17.6       0.0                           224792.1094
+    0:00:02    4311.4      2.65      17.6       0.0                           224792.1094
+    0:00:02    4311.4      2.65      17.6       0.0                           224792.1094
+    0:00:03    4311.4      2.65      17.6       0.0                           224792.1094
+    0:00:03    4311.4      2.65      17.6       0.0                           224792.1094
+    0:00:03    4651.6      1.69      11.8       0.0                           247872.2656
+
+
+  Beginning Leakage Power Optimization  (max_leakage_power 0)
+  ------------------------------------
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:00:03    4651.6      1.69      11.8       0.0                           247872.2656
+    0:00:03    4741.6      1.45      10.4       0.0 pos_out_reg[0]/RN         253581.3281
+    0:00:04    4897.5      1.27       9.3       0.0                           255501.4688
+    0:00:04    4886.5      1.27       9.3       0.0                           254943.1406
+    0:00:04    4882.1      1.27       9.3       0.0                           254202.0312
+    0:00:04    4882.1      1.27       9.3       0.0                           254202.0312
+    0:00:04    4882.1      1.27       9.3       0.0                           254202.0312
+    0:00:04    4882.1      1.27       9.3       0.0                           254202.0312
+    0:00:05    5351.9      1.13       8.5       0.0                           295345.2188
+    0:00:05    5351.9      1.13       8.5       0.0                           295345.2188
+    0:00:05    5474.8      1.12       8.5       0.0                           305623.5625
+    0:00:05    5474.8      1.12       8.5       0.0                           305623.5625
+    0:00:05    5474.8      1.12       8.5       0.0                           305623.5625
+    0:00:05    5474.8      1.12       8.5       0.0                           305623.5625
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:00:05    5474.8      1.12       8.5       0.0                           305623.5625
+    0:00:05    5459.5      1.12       8.5       0.0                           303522.6562
+    0:00:05    5314.6      1.12       8.5       0.0                           293515.2188
+    0:00:06    5049.0      1.13       8.5       0.0                           268277.0938
+    0:00:06    5046.8      1.11       8.4       0.0                           267805.0625
+    0:00:06    5046.8      1.11       8.4       0.0                           267805.0625
+    0:00:06    5042.4      1.11       8.4       0.0                           267593.5000
+    0:00:06    4939.2      1.11       8.4       0.0                           259229.2812
+Loading db file '/opt/PDKs/smic_180/SM00LB501-FE-00000-r0p0-00rel0/aci/sc-m/synopsys/ss_1v62_125c.db'
+
+
+Note: Symbol # after min delay cost means estimated hold TNS across all active scenarios 
+
+
+  Optimization Complete
+  ---------------------
+Information: State dependent leakage is now switched from off to on.
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+1
+#----------------------Save Design Database--------------------------
+change_names -rules verilog -hierarchy
+1
+set_fix_multiple_port_nets -all -buffer_constants
+1
+#---------------Check the Synthesized Design for Consistency---------
+check_design -summary > ../syn/report/check_design.rpt
+check_timing > ../syn/report/check_timing.rpt
+#---------------------Report Timing and Area-------------------------
+report_qor                  > ../syn/report/$TOP_DESIGN.qor_rpt
+report_timing -max_paths 1000 > ../syn/report/$TOP_DESIGN.timing_rpt
+report_timing -path full    > ../syn/report/$TOP_DESIGN.full_timing_rpt
+report_timing -delay max    > ../syn/report/$TOP_DESIGN.setup_timing_rpt
+report_timing -delay min    > ../syn/report/$TOP_DESIGN.hold_timing_rpt
+report_reference            > ../syn/report/$TOP_DESIGN.ref_rpt
+report_area                 > ../syn/report/$TOP_DESIGN.area_rpt
+report_constraints          > ../syn/report/$TOP_DESIGN.const_rpt
+report_constraint -all_violators > ../syn/report/$TOP_DESIGN.violators_rpt
+report_power > ../syn/report/$TOP_DESIGN.power_rpt
+check_timing > ../syn/log/last_check_timing.log
+#---------------------Generate Files -------------------------
+write -f verilog -hierarchy -output ../syn/mapped/$TOP_DESIGN.v
+Writing verilog file '/home/gift/workplace/CourseDigitalIC/homework/ch3/VectorDetector/syn/mapped/top.v'.
+1
+write_sdc ../syn/mapped/$TOP_DESIGN.sdc
+1
+write_sdf -context verilog ../syn/mapped/$TOP_DESIGN.sdf
+Information: Annotated 'cell' delays are assumed to include load delay. (UID-282)
+Information: Writing timing information to file '/home/gift/workplace/CourseDigitalIC/homework/ch3/VectorDetector/syn/mapped/top.sdf'. (WT-3)
+1
+1
+dc_shell> quit
+
+Memory usage for main task 167 Mbytes.
+Memory usage for this session 167 Mbytes.
+CPU usage for this session 7 seconds ( 0.00 hours ).
+
+Thank you...
+
