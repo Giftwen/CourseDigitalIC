@@ -33,7 +33,7 @@ verdi: $(VSRC)
 	verdi -f ./filelist_sim.f -ssf $(OBJ_DIR)/testprj.vcd.fsdb &
 
 syn:
-	cd work && dc_shell -f ../syn/script/SynFlow.tcl -gui -output_log_file ../syn/log/top_syn.log
+	@cd work && dc_shell -f ../syn/script/SynFlow.tcl -output_log_file ../syn/log/top_syn.log
 
 clean:
 	rm -rf  verdiLog novas.* vcd2fsdbLog $(BUILD_DIR)

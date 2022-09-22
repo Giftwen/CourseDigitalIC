@@ -23,7 +23,7 @@ close $f
 
 #--------------------------Read Designs------------------------------
 set TOP_DESIGN top
-analyze -format verilog $FILE_LIST
+analyze -format verilog $FILE_LIST 
 elaborate $TOP_DESIGN
 
 #------------------------Set Current Design&&Link Designs--------------------------

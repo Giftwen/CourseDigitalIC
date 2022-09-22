@@ -3,7 +3,7 @@
 Report : reference
 Design : top
 Version: L-2016.03-SP1
-Date   : Tue Sep 20 22:54:30 2022
+Date   : Wed Sep 21 09:12:13 2022
 ****************************************
 
 Attributes:
@@ -19,23 +19,25 @@ Attributes:
 
 Reference          Library       Unit Area   Count    Total Area   Attributes
 -----------------------------------------------------------------------------
-CLKINVX4M          ss_1v62_125c
-                                  8.780800       1      8.780800  
-DFFTRX1M           ss_1v62_125c
-                                 48.294399       2     96.588799  n
-DFFTRX2M           ss_1v62_125c
-                                 50.489601       1     50.489601  n
-DFFTRX4M           ss_1v62_125c
-                                 65.856003      35   2304.960098  n
-INVX2M             ss_1v62_125c
+CLKINVX1M          ss_1v62_125c
                                   6.585600       1      6.585600  
+CLKINVX2M          ss_1v62_125c
+                                  6.585600       1      6.585600  
+CLKINVX4M          ss_1v62_125c
+                                  8.780800       2     17.561600  
+DFFTRX1M           ss_1v62_125c
+                                 48.294399      12    579.532791  n
+DFFTRX2M           ss_1v62_125c
+                                 50.489601       5    252.448006  n
+DFFTRX4M           ss_1v62_125c
+                                 65.856003      21   1382.976059  n
+INVX2M             ss_1v62_125c
+                                  6.585600       4     26.342400  
 INVX4M             ss_1v62_125c
-                                  8.780800       7     61.465599  
-INVX5M             ss_1v62_125c
-                                 10.976000       1     10.976000  
+                                  8.780800       8     70.246399  
 INVXLM             ss_1v62_125c
                                   6.585600       1      6.585600  
-VectorDetector_m1              2392.767967       1   2392.767967  h
+VectorDetector_m1              1797.868774       1   1797.868774  h
 -----------------------------------------------------------------------------
-Total 9 references                                   4939.200064
+Total 10 references                                  4146.732828
 1

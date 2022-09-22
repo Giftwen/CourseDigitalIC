@@ -1,9 +1,9 @@
 
 #==================================Env Vars===================================
-set RST_NAME				reset
+set RST_NAME				rst
 set CLK_NAME				clk
 
-set CLK_PERIOD_I			10
+set CLK_PERIOD_I			5
 set CLK_PERIOD            	[expr $CLK_PERIOD_I*0.95]
 set CLK_SKEW              	[expr $CLK_PERIOD*0.05]
 set CLK_SOURCE_LATENCY   	[expr $CLK_PERIOD*0.1]    

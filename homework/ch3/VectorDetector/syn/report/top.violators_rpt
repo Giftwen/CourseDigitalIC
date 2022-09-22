@@ -4,27 +4,47 @@ Report : constraint
         -all_violators
 Design : top
 Version: L-2016.03-SP1
-Date   : Tue Sep 20 22:54:30 2022
+Date   : Wed Sep 21 09:12:13 2022
 ****************************************
 
 
-   max_delay/setup ('clk' group)
+   min_delay/hold ('clk' group)
 
                              Required        Actual
    Endpoint                 Path Delay     Path Delay        Slack
    -----------------------------------------------------------------
-   pos_out_reg_0_/RN            0.96           2.07 r        -1.11  (VIOLATED)
-   pos_out_reg_3_/RN            0.75           1.86 f        -1.11  (VIOLATED)
-   pos_out_reg_1_/RN            0.96           2.07 r        -1.11  (VIOLATED)
-   pos_out_reg_2_/RN            0.96           2.06 r        -1.11  (VIOLATED)
-   pos_out_reg_4_/RN            0.96           2.06 r        -1.10  (VIOLATED)
-   pos_out_reg_5_/RN            0.95           1.97 r        -1.02  (VIOLATED)
-   pos_out[0]                   0.75           1.06 r        -0.31  (VIOLATED)
-   pos_out[1]                   0.75           1.06 r        -0.31  (VIOLATED)
-   pos_out[2]                   0.75           1.06 r        -0.31  (VIOLATED)
-   pos_out[3]                   0.75           1.06 r        -0.31  (VIOLATED)
-   pos_out[4]                   0.75           1.06 r        -0.31  (VIOLATED)
-   pos_out[5]                   0.75           1.06 r        -0.31  (VIOLATED)
+   data_in_r_reg_7_/RN          0.24           0.22 f        -0.02  (VIOLATED)
+   data_in_r_reg_14_/RN         0.24           0.22 f        -0.02  (VIOLATED)
+   data_in_r_reg_15_/RN         0.24           0.22 f        -0.02  (VIOLATED)
+   data_in_r_reg_16_/RN         0.24           0.22 f        -0.02  (VIOLATED)
+   data_in_r_reg_18_/RN         0.24           0.22 f        -0.02  (VIOLATED)
+   data_in_r_reg_0_/RN          0.24           0.22 f        -0.02  (VIOLATED)
+   data_in_r_reg_1_/RN          0.24           0.22 f        -0.02  (VIOLATED)
+   data_in_r_reg_2_/RN          0.24           0.22 f        -0.02  (VIOLATED)
+   data_in_r_reg_3_/RN          0.24           0.22 f        -0.02  (VIOLATED)
+   data_in_r_reg_4_/RN          0.24           0.22 f        -0.02  (VIOLATED)
+   data_in_r_reg_6_/RN          0.24           0.22 f        -0.02  (VIOLATED)
+   data_in_r_reg_8_/RN          0.24           0.22 f        -0.02  (VIOLATED)
+   data_in_r_reg_9_/RN          0.24           0.22 f        -0.02  (VIOLATED)
+   data_in_r_reg_10_/RN         0.24           0.22 f        -0.02  (VIOLATED)
+   data_in_r_reg_11_/RN         0.24           0.22 f        -0.02  (VIOLATED)
+   data_in_r_reg_12_/RN         0.24           0.22 f        -0.02  (VIOLATED)
+   data_in_r_reg_20_/RN         0.24           0.22 f        -0.02  (VIOLATED)
+   data_in_r_reg_5_/RN          0.22           0.22 r         0.00  (VIOLATED: increase significant digits)
+   data_in_r_reg_13_/RN         0.22           0.22 r         0.00  (VIOLATED: increase significant digits)
+   data_in_r_reg_17_/RN         0.22           0.22 r         0.00  (VIOLATED: increase significant digits)
+   data_in_r_reg_19_/RN         0.22           0.22 r         0.00  (VIOLATED: increase significant digits)
+   data_in_r_reg_21_/RN         0.22           0.22 r         0.00  (VIOLATED: increase significant digits)
+   data_in_r_reg_22_/RN         0.22           0.22 r         0.00  (VIOLATED: increase significant digits)
+   data_in_r_reg_23_/RN         0.22           0.22 r         0.00  (VIOLATED: increase significant digits)
+   data_in_r_reg_24_/RN         0.22           0.22 r         0.00  (VIOLATED: increase significant digits)
+   data_in_r_reg_25_/RN         0.22           0.22 r         0.00  (VIOLATED: increase significant digits)
+   data_in_r_reg_26_/RN         0.22           0.22 r         0.00  (VIOLATED: increase significant digits)
+   data_in_r_reg_27_/RN         0.22           0.22 r         0.00  (VIOLATED: increase significant digits)
+   data_in_r_reg_28_/RN         0.22           0.22 r         0.00  (VIOLATED: increase significant digits)
+   data_in_r_reg_29_/RN         0.22           0.22 r         0.00  (VIOLATED: increase significant digits)
+   data_in_r_reg_30_/RN         0.22           0.22 r         0.00  (VIOLATED: increase significant digits)
+   data_in_r_reg_31_/RN         0.22           0.22 r         0.00  (VIOLATED: increase significant digits)
 
 
    max_area
@@ -32,7 +52,7 @@ Date   : Tue Sep 20 22:54:30 2022
                              Required        Actual
    Design                      Area           Area           Slack
    -----------------------------------------------------------------
-   top                          0.00        4939.20       -4939.20  (VIOLATED)
+   top                          0.00        4146.73       -4146.73  (VIOLATED)
 
 
    max_leakage_power
@@ -40,7 +60,7 @@ Date   : Tue Sep 20 22:54:30 2022
                              Required        Actual
    Design                   Leakage Power  Leakage Power     Slack
    -----------------------------------------------------------------
-   top                          0.00       258539.38      -258539.38
+   top                          0.00       203456.81      -203456.81
                                                                     (VIOLATED)
 
 

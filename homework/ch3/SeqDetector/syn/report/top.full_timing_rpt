@@ -1,0 +1,46 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : top
+Version: L-2016.03-SP1
+Date   : Wed Sep 21 18:28:02 2022
+****************************************
+
+Operating Conditions: ss_1v62_125c   Library: ss_1v62_125c
+Wire Load Model Mode: top
+
+  Startpoint: check_sequence_1_1/state_reg_1_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: result (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.38       0.38
+  check_sequence_1_1/state_reg_1_/CK (DFFRHQX4M)          0.00       0.38 r
+  check_sequence_1_1/state_reg_1_/Q (DFFRHQX4M)           0.30       0.68 r
+  check_sequence_1_1/U13/Y (CLKINVX1M)                    0.15       0.82 f
+  check_sequence_1_1/U12/Y (NOR3X4M)                      0.27       1.10 r
+  check_sequence_1_1/result (check_sequence_1)            0.00       1.10 r
+  C7/Y (OR2X12M)                                          0.32       1.42 r
+  result (out)                                            0.00       1.42 r
+  data arrival time                                                  1.42
+
+  clock clk (rise edge)                                   1.90       1.90
+  clock network delay (ideal)                             0.38       2.28
+  clock uncertainty                                      -0.09       2.18
+  output external delay                                  -0.76       1.42
+  data required time                                                 1.42
+  --------------------------------------------------------------------------
+  data required time                                                 1.42
+  data arrival time                                                 -1.42
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.01
+
+
+1
