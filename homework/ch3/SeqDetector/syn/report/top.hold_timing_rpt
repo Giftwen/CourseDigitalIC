@@ -6,14 +6,14 @@ Report : timing
         -max_paths 1
 Design : top
 Version: L-2016.03-SP1
-Date   : Wed Sep 21 18:28:02 2022
+Date   : Tue Oct  4 14:22:24 2022
 ****************************************
 
 Operating Conditions: ss_1v62_125c   Library: ss_1v62_125c
 Wire Load Model Mode: top
 
   Startpoint: din (input port clocked by clk)
-  Endpoint: check_sequence_1_1/state_reg_1_
+  Endpoint: check_sequence_2_1/state_reg_0_
             (rising edge-triggered flip-flop clocked by clk)
   Path Group: clk
   Path Type: min
@@ -21,25 +21,26 @@ Wire Load Model Mode: top
   Point                                                   Incr       Path
   --------------------------------------------------------------------------
   clock clk (rise edge)                                   0.00       0.00
-  clock network delay (ideal)                             0.19       0.19
-  input external delay                                    0.00       0.19 r
-  din (in)                                                0.00       0.19 r
-  check_sequence_1_1/din (check_sequence_1)               0.00       0.19 r
-  check_sequence_1_1/U5/Y (OAI32X1M)                      0.15       0.34 f
-  check_sequence_1_1/state_reg_1_/D (DFFRHQX4M)           0.00       0.34 f
-  data arrival time                                                  0.34
+  clock network delay (ideal)                             0.14       0.14
+  input external delay                                    0.00       0.14 f
+  din (in)                                                0.00       0.14 f
+  check_sequence_2_1/din (check_sequence_2)               0.00       0.14 f
+  check_sequence_2_1/U10/Y (CLKINVX2M)                    0.05       0.19 r
+  check_sequence_2_1/U9/Y (AOI21X1M)                      0.08       0.28 f
+  check_sequence_2_1/state_reg_0_/D (DFFRHQX8M)           0.00       0.28 f
+  data arrival time                                                  0.28
 
   clock clk (rise edge)                                   0.00       0.00
-  clock network delay (ideal)                             0.19       0.19
-  clock uncertainty                                       0.09       0.28
-  check_sequence_1_1/state_reg_1_/CK (DFFRHQX4M)          0.00       0.28 r
-  library hold time                                      -0.04       0.25
-  data required time                                                 0.25
+  clock network delay (ideal)                             0.14       0.14
+  clock uncertainty                                       0.07       0.21
+  check_sequence_2_1/state_reg_0_/CK (DFFRHQX8M)          0.00       0.21 r
+  library hold time                                      -0.01       0.20
+  data required time                                                 0.20
   --------------------------------------------------------------------------
-  data required time                                                 0.25
-  data arrival time                                                 -0.34
+  data required time                                                 0.20
+  data arrival time                                                 -0.28
   --------------------------------------------------------------------------
-  slack (MET)                                                        0.09
+  slack (MET)                                                        0.08
 
 
 1

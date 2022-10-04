@@ -1,30 +1,33 @@
+Warning: Design 'top' has '1' unresolved references. For more detailed information, use the "link" command. (UID-341)
  
 ****************************************
 Report : area
 Design : top
 Version: L-2016.03-SP1
-Date   : Wed Sep 21 09:12:13 2022
+Date   : Tue Oct  4 15:25:34 2022
 ****************************************
 
 Library(s) Used:
 
     ss_1v62_125c (File: /opt/PDKs/smic_180/SM00LB501-FE-00000-r0p0-00rel0/aci/sc-m/synopsys/ss_1v62_125c.db)
 
-Number of ports:                           78
-Number of nets:                           273
-Number of cells:                          202
-Number of combinational cells:            163
-Number of sequential cells:                38
+Number of ports:                           40
+Number of nets:                           117
+Number of cells:                           78
+Number of combinational cells:             39
+Number of sequential cells:                39
 Number of macros/black boxes:               0
-Number of buf/inv:                         64
-Number of references:                      10
+Number of buf/inv:                          1
+Number of references:                       5
 
-Combinational area:               1931.775972
-Buf/Inv area:                      496.115192
-Noncombinational area:            2214.956856
+Combinational area:                423.673594
+Buf/Inv area:                        6.585600
+Noncombinational area:            1514.687988
 Macro/Black Box area:                0.000000
 Net Interconnect area:      undefined  (No wire load specified)
 
-Total cell area:                  4146.732828
+Total cell area:                  1938.361582
 Total area:                 undefined
+
+Information: This design contains black box (unknown) components. (RPT-8)
 1

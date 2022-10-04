@@ -1,7 +1,7 @@
 /*
  * @Author: WenJiaBao-2022E8020282071
  * @Date: 2022-09-21 13:04:27
- * @LastEditTime: 2022-09-21 13:15:28
+ * @LastEditTime: 2022-10-04 12:34:11
  * @Description: Homework of AdvDigitalIC : ch3 BCD convoter source code
  * 
  * Copyright (c) 2022 by WenJiaBao wenjiabao0919@163.com, All Rights Reserved. 

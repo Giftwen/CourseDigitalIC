@@ -3,7 +3,7 @@
 set RST_NAME				rst_n
 set CLK_NAME				clk
 
-set CLK_PERIOD_I			2
+set CLK_PERIOD_I			1.5
 set CLK_PERIOD            	[expr $CLK_PERIOD_I*0.95]
 set CLK_SKEW              	[expr $CLK_PERIOD*0.05]
 set CLK_SOURCE_LATENCY   	[expr $CLK_PERIOD*0.1]    

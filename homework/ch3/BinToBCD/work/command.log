@@ -1,6 +1,6 @@
 #@ # 
 #@ # Running dc_shell Version L-2016.03-SP1 for linux64 -- Apr 18, 2016
-#@ # Date:   Wed Sep 21 13:17:42 2022
+#@ # Date:   Tue Oct  4 14:03:59 2022
 #@ # Run by: gift@gift-virtual-machine
 #@ 
 
@@ -5462,7 +5462,7 @@ source -echo -verbose /home/gift/workplace/CourseDigitalIC/homework/ch3/BinToBCD
 #@ 
 #@ #--------------------------Read Designs------------------------------
 #@ set TOP_DESIGN top
-#@ analyze -format verilog $FILE_LIST -define M1
+#@ analyze -format verilog $FILE_LIST -vcs "+define+M1"
 #@ elaborate $TOP_DESIGN
 #@ 
 #@ #------------------------Set Current Design&&Link Designs--------------------------
@@ -5557,4 +5557,5 @@ source -echo -verbose /home/gift/workplace/CourseDigitalIC/homework/ch3/BinToBCD
 #@ 
 #@ # -- End source /home/gift/workplace/CourseDigitalIC/homework/ch3/BinToBCD/work/../syn/script/SynFlow.tcl
 
+QUIT
 quit

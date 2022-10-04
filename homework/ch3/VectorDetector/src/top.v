@@ -1,7 +1,7 @@
 /*
  * @Author: WenJiaBao-2022E8020282071
  * @Date: 2022-09-20 14:43:54
- * @LastEditTime: 2022-09-21 09:13:41
+ * @LastEditTime: 2022-10-04 14:58:35
  * @Description: Homework of AdvDigitalIC : ch3 VectorDetector source code 
  * 
  * Copyright (c) 2022 by WenJiaBao wenjiabao0919@163.com, All Rights Reserved. 
@@ -13,13 +13,13 @@ module top(
     input               clk,
     input               rst,
     //Interface with Output
-    output  [5:0]       pos_out
+    output  reg[5:0]       pos_out
 );
 
-reg [5:0]   pos_out  ; 
+//reg [5:0]   pos_out  ; 
 
 reg [31:0]  data_in_r ;
-reg [5:0]   pos_out_r ;    
+wire [5:0]   pos_out_r ;    
 
 `ifdef M1
 //Timing:454Mhz slack (MET)=0.01
@@ -37,6 +37,16 @@ VectorDetector_m2 VectorDetector_m2_u0(
     .data_in    (data_in_r),
     .pos_out    (pos_out_r)
 );
+
+`elsif M3
+//Timing:370Mhz slack (MET)=0.00
+//Area:3527.92
+//Power:166192
+
+VectorDetector_m3 VectorDetector_m3_u0(
+    .data_in    (data_in_r),
+    .pos_out    (pos_out_r)
+);
 `else
 //Timing:1.25Ghz slack (MET)=0.00
 //Area:2596.92
@@ -44,10 +54,11 @@ VectorDetector_m2 VectorDetector_m2_u0(
 VectorDetector_m2 VectorDetector_m2_u0(
     .data_in    (data_in_r),
     .pos_out    (pos_out_r)
-
+);
 `endif 
 
-always @(posedge clk ) begin
+always  @(posedge clk ) 
+begin
     if (rst) begin
         pos_out     <=      6'b0;
         data_in_r   <=      6'b0;

@@ -1,50 +1,12 @@
+Warning: Design 'top' has '1' unresolved references. For more detailed information, use the "link" command. (UID-341)
  
 ****************************************
 Report : constraint
         -all_violators
 Design : top
 Version: L-2016.03-SP1
-Date   : Wed Sep 21 09:12:13 2022
+Date   : Tue Oct  4 15:25:34 2022
 ****************************************
-
-
-   min_delay/hold ('clk' group)
-
-                             Required        Actual
-   Endpoint                 Path Delay     Path Delay        Slack
-   -----------------------------------------------------------------
-   data_in_r_reg_7_/RN          0.24           0.22 f        -0.02  (VIOLATED)
-   data_in_r_reg_14_/RN         0.24           0.22 f        -0.02  (VIOLATED)
-   data_in_r_reg_15_/RN         0.24           0.22 f        -0.02  (VIOLATED)
-   data_in_r_reg_16_/RN         0.24           0.22 f        -0.02  (VIOLATED)
-   data_in_r_reg_18_/RN         0.24           0.22 f        -0.02  (VIOLATED)
-   data_in_r_reg_0_/RN          0.24           0.22 f        -0.02  (VIOLATED)
-   data_in_r_reg_1_/RN          0.24           0.22 f        -0.02  (VIOLATED)
-   data_in_r_reg_2_/RN          0.24           0.22 f        -0.02  (VIOLATED)
-   data_in_r_reg_3_/RN          0.24           0.22 f        -0.02  (VIOLATED)
-   data_in_r_reg_4_/RN          0.24           0.22 f        -0.02  (VIOLATED)
-   data_in_r_reg_6_/RN          0.24           0.22 f        -0.02  (VIOLATED)
-   data_in_r_reg_8_/RN          0.24           0.22 f        -0.02  (VIOLATED)
-   data_in_r_reg_9_/RN          0.24           0.22 f        -0.02  (VIOLATED)
-   data_in_r_reg_10_/RN         0.24           0.22 f        -0.02  (VIOLATED)
-   data_in_r_reg_11_/RN         0.24           0.22 f        -0.02  (VIOLATED)
-   data_in_r_reg_12_/RN         0.24           0.22 f        -0.02  (VIOLATED)
-   data_in_r_reg_20_/RN         0.24           0.22 f        -0.02  (VIOLATED)
-   data_in_r_reg_5_/RN          0.22           0.22 r         0.00  (VIOLATED: increase significant digits)
-   data_in_r_reg_13_/RN         0.22           0.22 r         0.00  (VIOLATED: increase significant digits)
-   data_in_r_reg_17_/RN         0.22           0.22 r         0.00  (VIOLATED: increase significant digits)
-   data_in_r_reg_19_/RN         0.22           0.22 r         0.00  (VIOLATED: increase significant digits)
-   data_in_r_reg_21_/RN         0.22           0.22 r         0.00  (VIOLATED: increase significant digits)
-   data_in_r_reg_22_/RN         0.22           0.22 r         0.00  (VIOLATED: increase significant digits)
-   data_in_r_reg_23_/RN         0.22           0.22 r         0.00  (VIOLATED: increase significant digits)
-   data_in_r_reg_24_/RN         0.22           0.22 r         0.00  (VIOLATED: increase significant digits)
-   data_in_r_reg_25_/RN         0.22           0.22 r         0.00  (VIOLATED: increase significant digits)
-   data_in_r_reg_26_/RN         0.22           0.22 r         0.00  (VIOLATED: increase significant digits)
-   data_in_r_reg_27_/RN         0.22           0.22 r         0.00  (VIOLATED: increase significant digits)
-   data_in_r_reg_28_/RN         0.22           0.22 r         0.00  (VIOLATED: increase significant digits)
-   data_in_r_reg_29_/RN         0.22           0.22 r         0.00  (VIOLATED: increase significant digits)
-   data_in_r_reg_30_/RN         0.22           0.22 r         0.00  (VIOLATED: increase significant digits)
-   data_in_r_reg_31_/RN         0.22           0.22 r         0.00  (VIOLATED: increase significant digits)
 
 
    max_area
@@ -52,7 +14,7 @@ Date   : Wed Sep 21 09:12:13 2022
                              Required        Actual
    Design                      Area           Area           Slack
    -----------------------------------------------------------------
-   top                          0.00        4146.73       -4146.73  (VIOLATED)
+   top                          0.00        1938.36       -1938.36  (VIOLATED)
 
 
    max_leakage_power
@@ -60,8 +22,7 @@ Date   : Wed Sep 21 09:12:13 2022
                              Required        Actual
    Design                   Leakage Power  Leakage Power     Slack
    -----------------------------------------------------------------
-   top                          0.00       203456.81      -203456.81
-                                                                    (VIOLATED)
+   top                          0.00       87320.44       -87320.44 (VIOLATED)
 
 
 1

@@ -1,0 +1,16 @@
+*design* DebussyLib (btIdent Verdi_O-2018.09-SP2)
+Command arguments:
+    +define+verilog
+    -f ./sim/filelist_sim.f
+        /home/gift/workplace/CourseDigitalIC/homework/ch3/VectorDetector/src/VectorDetector_m1.v
+        /home/gift/workplace/CourseDigitalIC/homework/ch3/VectorDetector/src/VectorDetector_m2.v
+        /home/gift/workplace/CourseDigitalIC/homework/ch3/VectorDetector/src/VectorDetector_m3.v
+        /home/gift/workplace/CourseDigitalIC/homework/ch3/VectorDetector/src/top.v
+        /home/gift/workplace/CourseDigitalIC/homework/ch3/VectorDetector/sim/tb_VectorDector.v
+
+Highest level modules:
+VectorDetector_m1
+VectorDetector_m3
+tb_VectorDetector
+
+Total	0 error(s),   0 warning(s)

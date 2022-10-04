@@ -1,0 +1,13 @@
+*design* DebussyLib (btIdent Verdi_O-2018.09-SP2)
+Command arguments:
+    +define+verilog
+    -f ./sim/filelist_sim.f
+        /home/gift/workplace/CourseDigitalIC/homework/ch3/SeqDetector/src/check_sequence_1.v
+        /home/gift/workplace/CourseDigitalIC/homework/ch3/SeqDetector/src/check_sequence_2.v
+        /home/gift/workplace/CourseDigitalIC/homework/ch3/SeqDetector/src/top.v
+        /home/gift/workplace/CourseDigitalIC/homework/ch3/SeqDetector/sim/tb_top.v
+
+Highest level modules:
+tb_top
+
+Total	0 error(s),   0 warning(s)

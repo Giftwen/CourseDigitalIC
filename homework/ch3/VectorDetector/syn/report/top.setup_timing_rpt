@@ -1,3 +1,4 @@
+Warning: Design 'top' has '1' unresolved references. For more detailed information, use the "link" command. (UID-341)
  
 ****************************************
 Report : timing
@@ -6,57 +7,37 @@ Report : timing
         -max_paths 1
 Design : top
 Version: L-2016.03-SP1
-Date   : Wed Sep 21 09:12:13 2022
+Date   : Tue Oct  4 15:25:34 2022
 ****************************************
 
 Operating Conditions: ss_1v62_125c   Library: ss_1v62_125c
 Wire Load Model Mode: top
 
-  Startpoint: data_in_r_reg_30_
+  Startpoint: pos_out_reg_0_
               (rising edge-triggered flip-flop clocked by clk)
-  Endpoint: pos_out_reg_5_
-            (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: pos_out[0] (output port clocked by clk)
   Path Group: clk
   Path Type: max
 
-  Point                                                   Incr       Path
-  --------------------------------------------------------------------------
-  clock clk (rise edge)                                   0.00       0.00
-  clock network delay (ideal)                             0.44       0.44
-  data_in_r_reg_30_/CK (DFFTRX4M)                         0.00       0.44 r
-  data_in_r_reg_30_/QN (DFFTRX4M)                         0.33       0.77 r
-  U16/Y (INVX4M)                                          0.05       0.82 f
-  VectorDetector_m1_u0/data_in[30] (VectorDetector_m1)
-                                                          0.00       0.82 f
-  VectorDetector_m1_u0/U58/Y (NOR2X4M)                    0.15       0.96 r
-  VectorDetector_m1_u0/U73/Y (NAND2X6M)                   0.10       1.07 f
-  VectorDetector_m1_u0/U53/Y (NOR2X6M)                    0.12       1.19 r
-  VectorDetector_m1_u0/U50/Y (NAND2X6M)                   0.10       1.29 f
-  VectorDetector_m1_u0/U7/Y (INVX10M)                     0.08       1.37 r
-  VectorDetector_m1_u0/U70/Y (NAND2X12M)                  0.08       1.45 f
-  VectorDetector_m1_u0/U74/Y (INVX16M)                    0.07       1.52 r
-  VectorDetector_m1_u0/U69/Y (NAND2X12M)                  0.07       1.59 f
-  VectorDetector_m1_u0/U130/Y (NOR2X12M)                  0.15       1.75 r
-  VectorDetector_m1_u0/U75/Y (NAND2X12M)                  0.10       1.84 f
-  VectorDetector_m1_u0/U72/Y (INVX4M)                     0.08       1.92 r
-  VectorDetector_m1_u0/U100/Y (INVXLM)                    0.06       1.98 f
-  VectorDetector_m1_u0/U119/Y (NOR2XLM)                   0.13       2.12 r
-  VectorDetector_m1_u0/U63/Y (NOR2BXLM)                   0.22       2.33 r
-  VectorDetector_m1_u0/pos_out[5] (VectorDetector_m1)     0.00       2.33 r
-  pos_out_reg_5_/RN (DFFTRX4M)                            0.00       2.33 r
-  data arrival time                                                  2.33
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.32       0.32
+  pos_out_reg_0_/CK (DFFQX4M)              0.00       0.32 r
+  pos_out_reg_0_/Q (DFFQX4M)               0.79       1.11 r
+  pos_out[0] (out)                         0.00       1.11 r
+  data arrival time                                   1.11
 
-  clock clk (rise edge)                                   2.20       2.20
-  clock network delay (ideal)                             0.44       2.64
-  clock uncertainty                                      -0.11       2.53
-  pos_out_reg_5_/CK (DFFTRX4M)                            0.00       2.53 r
-  library setup time                                     -0.20       2.33
-  data required time                                                 2.33
-  --------------------------------------------------------------------------
-  data required time                                                 2.33
-  data arrival time                                                 -2.33
-  --------------------------------------------------------------------------
-  slack (MET)                                                        0.00
+  clock clk (rise edge)                    1.62       1.62
+  clock network delay (ideal)              0.32       1.94
+  clock uncertainty                       -0.08       1.86
+  output external delay                   -0.65       1.21
+  data required time                                  1.21
+  -----------------------------------------------------------
+  data required time                                  1.21
+  data arrival time                                  -1.11
+  -----------------------------------------------------------
+  slack (MET)                                         0.10
 
 
 1

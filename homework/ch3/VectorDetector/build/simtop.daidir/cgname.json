@@ -1,0 +1,26 @@
+{
+    "VectorDetector_m1": [
+        "VectorDetector_m1",
+        "CVcb0",
+        "module",
+        1
+    ],
+    "VectorDetector_m2": [
+        "VectorDetector_m2",
+        "PvYvC",
+        "module",
+        2
+    ],
+    "tb_VectorDetector": [
+        "tb_VectorDetector",
+        "K9Jmh",
+        "module",
+        3
+    ],
+    "...MASTER...": [
+        "SIM",
+        "amcQw",
+        "module",
+        4
+    ]
+}

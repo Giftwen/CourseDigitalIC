@@ -6,13 +6,13 @@ Report : timing
         -max_paths 1
 Design : top
 Version: L-2016.03-SP1
-Date   : Wed Sep 21 18:28:02 2022
+Date   : Tue Oct  4 14:22:24 2022
 ****************************************
 
 Operating Conditions: ss_1v62_125c   Library: ss_1v62_125c
 Wire Load Model Mode: top
 
-  Startpoint: check_sequence_1_1/state_reg_1_
+  Startpoint: check_sequence_2_1/state_reg_0_
               (rising edge-triggered flip-flop clocked by clk)
   Endpoint: result (output port clocked by clk)
   Path Group: clk
@@ -21,26 +21,28 @@ Wire Load Model Mode: top
   Point                                                   Incr       Path
   --------------------------------------------------------------------------
   clock clk (rise edge)                                   0.00       0.00
-  clock network delay (ideal)                             0.38       0.38
-  check_sequence_1_1/state_reg_1_/CK (DFFRHQX4M)          0.00       0.38 r
-  check_sequence_1_1/state_reg_1_/Q (DFFRHQX4M)           0.30       0.68 r
-  check_sequence_1_1/U13/Y (CLKINVX1M)                    0.15       0.82 f
-  check_sequence_1_1/U12/Y (NOR3X4M)                      0.27       1.10 r
-  check_sequence_1_1/result (check_sequence_1)            0.00       1.10 r
-  C7/Y (OR2X12M)                                          0.32       1.42 r
-  result (out)                                            0.00       1.42 r
-  data arrival time                                                  1.42
+  clock network delay (ideal)                             0.28       0.28
+  check_sequence_2_1/state_reg_0_/CK (DFFRHQX8M)          0.00       0.28 r
+  check_sequence_2_1/state_reg_0_/Q (DFFRHQX8M)           0.27       0.56 f
+  check_sequence_2_1/U5/Y (INVX8M)                        0.07       0.62 r
+  check_sequence_2_1/U3/Y (NAND3X6M)                      0.12       0.74 f
+  check_sequence_2_1/U4/Y (INVX6M)                        0.10       0.84 r
+  check_sequence_2_1/result (check_sequence_2)            0.00       0.84 r
+  U2/Y (NOR2X12M)                                         0.07       0.91 f
+  U1/Y (INVX14M)                                          0.16       1.07 r
+  result (out)                                            0.00       1.07 r
+  data arrival time                                                  1.07
 
-  clock clk (rise edge)                                   1.90       1.90
-  clock network delay (ideal)                             0.38       2.28
-  clock uncertainty                                      -0.09       2.18
-  output external delay                                  -0.76       1.42
-  data required time                                                 1.42
+  clock clk (rise edge)                                   1.42       1.42
+  clock network delay (ideal)                             0.28       1.71
+  clock uncertainty                                      -0.07       1.64
+  output external delay                                  -0.57       1.07
+  data required time                                                 1.07
   --------------------------------------------------------------------------
-  data required time                                                 1.42
-  data arrival time                                                 -1.42
+  data required time                                                 1.07
+  data arrival time                                                 -1.07
   --------------------------------------------------------------------------
-  slack (MET)                                                        0.01
+  slack (MET)                                                        0.00
 
 
 1

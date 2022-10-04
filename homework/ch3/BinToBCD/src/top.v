@@ -1,7 +1,7 @@
 /*
  * @Author: WenJiaBao-2022E8020282071
  * @Date: 2022-09-21 08:50:19
- * @LastEditTime: 2022-09-21 16:53:17
+ * @LastEditTime: 2022-10-04 12:35:25
  * @Description: Homework of AdvDigitalIC : ch3 BCD convoter source code
  * 
  * Copyright (c) 2022 by WenJiaBao wenjiabao0919@163.com, All Rights Reserved. 
@@ -15,11 +15,11 @@ module top(
     input               rst,
     //Interface with Output
     output              flag,
-    output  [9:0]       bcd_out
+    output  reg[9:0]       bcd_out
 );
 
-reg     [9:0]   bcd_out;
-reg     [9:0]   bcd_out_r;
+
+wire     [9:0]   bcd_out_r;
 reg     [7:0]   bin_in_r;
 
 
@@ -45,6 +45,13 @@ BinToBCD_m2 BinToBCD_m2_u0(
     .bcd_out    (bcd_out_r)
 );
 `else
+//Timing:200Mhz slack (MET)=0.01 
+//Area:4045
+//Power:0.5495 mW
+BinToBCD_m1 BinToBCD_m1_u0(
+    .bin_in     (bin_in_r),
+    .bcd_out    (bcd_out_r)
+);
 
 
 `endif 

@@ -1,7 +1,7 @@
 /*
  * @Author: WenJiaBao-2022E8020282071
  * @Date: 2022-09-20 14:52:40
- * @LastEditTime: 2022-09-20 15:57:35
+ * @LastEditTime: 2022-10-03 23:13:44
  * @Description: Homework of AdvDigitalIC : ch3 VectorDetector source code
  * 
  * Copyright (c) 2022 by WenJiaBao wenjiabao0919@163.com, All Rights Reserved. 

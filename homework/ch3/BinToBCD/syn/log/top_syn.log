@@ -37,12 +37,11 @@ close $f
 #--------------------------Read Designs------------------------------
 set TOP_DESIGN top
 top
-analyze -format verilog $FILE_LIST -define M1
+analyze -format verilog $FILE_LIST -vcs "+define+M1"
 Running PRESTO HDLC
 Compiling source file /home/gift/workplace/CourseDigitalIC/homework/ch3/BinToBCD/src/BinToBCD_m1.v
 Compiling source file /home/gift/workplace/CourseDigitalIC/homework/ch3/BinToBCD/src/BinToBCD_m2.v
 Compiling source file /home/gift/workplace/CourseDigitalIC/homework/ch3/BinToBCD/src/top.v
-Warning:  /home/gift/workplace/CourseDigitalIC/homework/ch3/BinToBCD/src/top.v:21: Redeclaration of port 'bcd_out'. (VER-331)
 Presto compilation completed successfully.
 Loading db file '/opt/PDKs/smic_180/SM00LB501-FE-00000-r0p0-00rel0/aci/sc-m/synopsys/ss_1v62_125c.db'
 1
@@ -52,10 +51,9 @@ Loading db file '/usr/Synopsys/dc2016/syn/L-2016.03-SP1/libraries/syn/standard.s
   Loading link library 'ss_1v62_125c'
   Loading link library 'gtech'
 Running PRESTO HDLC
-Warning:  /home/gift/workplace/CourseDigitalIC/homework/ch3/BinToBCD/src/top.v:30: Net bcd_out_r connected to instance BinToBCD_m1_u0 is declared as reg data type but is not driven by an always block. (VER-1004)
 
 Inferred memory devices in process
-        in routine top line 53 in file
+        in routine top line 59 in file
                 '/home/gift/workplace/CourseDigitalIC/homework/ch3/BinToBCD/src/top.v'.
 ===============================================================================
 |    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
@@ -145,8 +143,8 @@ Information: The target library(s) contains cell(s), other than black boxes, tha
    ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
     TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
   --------- --------- --------- --------- --------- ------------------------- ---------
-    0:00:02    3830.6      2.82      21.1       0.0                           231364.6719
-    0:00:02    3830.6      2.82      21.1       0.0                           231364.6719
+    0:00:01    3830.6      2.82      21.1       0.0                           231364.6719
+    0:00:01    3830.6      2.82      21.1       0.0                           231364.6719
 
   Beginning Mapping Optimizations  (Ultra High effort)  (Incremental)
   -------------------------------
@@ -214,10 +212,10 @@ Information: Added key list 'DesignWare' to design 'BinToBCD_m1'. (DDB-72)
   Mapping 'BinToBCD_m1_DW01_add_82'
   Mapping 'BinToBCD_m1_DW01_add_83'
   Mapping 'BinToBCD_m1_DW01_add_84'
-    0:00:05    9259.4      1.26       9.5       0.0                           665725.6250
-    0:00:05    9259.4      1.26       9.5       0.0                           665725.6250
-    0:00:05    9259.4      1.26       9.5       0.0                           665725.6250
-    0:00:05    9090.3      1.11       7.9       0.0                           646586.1250
+    0:00:04    9259.4      1.26       9.5       0.0                           665725.6250
+    0:00:04    9259.4      1.26       9.5       0.0                           665725.6250
+    0:00:04    9259.4      1.26       9.5       0.0                           665725.6250
+    0:00:04    9090.3      1.11       7.9       0.0                           646586.1250
   Global Optimization (Phase 1)
   Global Optimization (Phase 2)
   Global Optimization (Phase 3)
@@ -234,13 +232,13 @@ Information: Added key list 'DesignWare' to design 'BinToBCD_m1'. (DDB-72)
    ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
     TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
   --------- --------- --------- --------- --------- ------------------------- ---------
-    0:00:05    6611.9      0.00       0.0       0.0                           401790.3438
-    0:00:05    6611.9      0.00       0.0       0.0                           401790.3438
-    0:00:05    5898.5      0.00       0.0       0.0                           335953.6875
-    0:00:05    5898.5      0.00       0.0       0.0                           335953.6875
-    0:00:05    5898.5      0.00       0.0       0.0                           335953.6875
-    0:00:05    5898.5      0.00       0.0       0.0                           335953.6875
-    0:00:05    5898.5      0.00       0.0       0.0                           335953.6875
+    0:00:04    6611.9      0.00       0.0       0.0                           401790.3438
+    0:00:04    6611.9      0.00       0.0       0.0                           401790.3438
+    0:00:04    5898.5      0.00       0.0       0.0                           335953.6875
+    0:00:04    5898.5      0.00       0.0       0.0                           335953.6875
+    0:00:04    5898.5      0.00       0.0       0.0                           335953.6875
+    0:00:04    5898.5      0.00       0.0       0.0                           335953.6875
+    0:00:04    5898.5      0.00       0.0       0.0                           335953.6875
 
   Beginning Delay Optimization
   ----------------------------
@@ -353,6 +351,8 @@ Information: Annotated 'cell' delays are assumed to include load delay. (UID-282
 Information: Writing timing information to file '/home/gift/workplace/CourseDigitalIC/homework/ch3/BinToBCD/syn/mapped/top.sdf'. (WT-3)
 1
 1
+dc_shell> QUIT
+Error: unknown command 'QUIT' (CMD-005)
 dc_shell> quit
 
 Memory usage for main task 178 Mbytes.

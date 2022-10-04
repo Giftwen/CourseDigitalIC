@@ -1,6 +1,6 @@
 #@ # 
 #@ # Running dc_shell Version L-2016.03-SP1 for linux64 -- Apr 18, 2016
-#@ # Date:   Wed Sep 21 09:12:07 2022
+#@ # Date:   Tue Oct  4 15:25:31 2022
 #@ # Run by: gift@gift-virtual-machine
 #@ 
 
@@ -5462,7 +5462,7 @@ source -echo -verbose /home/gift/workplace/CourseDigitalIC/homework/ch3/VectorDe
 #@ 
 #@ #--------------------------Read Designs------------------------------
 #@ set TOP_DESIGN top
-#@ analyze -format verilog $FILE_LIST  -define M1
+#@ analyze -format verilog $FILE_LIST -vcs "+define+M2"
 #@ elaborate $TOP_DESIGN
 #@ 
 #@ #------------------------Set Current Design&&Link Designs--------------------------
@@ -5478,8 +5478,8 @@ source -echo -verbose /home/gift/workplace/CourseDigitalIC/homework/ch3/VectorDe
 #@ set RST_NAME				rst
 #@ set CLK_NAME				clk
 #@ 
-#@ set CLK_PERIOD_I			2.2
-#@ set CLK_PERIOD            	[expr $CLK_PERIOD_I*1]
+#@ set CLK_PERIOD_I			1.7
+#@ set CLK_PERIOD            	[expr $CLK_PERIOD_I*0.95]
 #@ set CLK_SKEW              	[expr $CLK_PERIOD*0.05]
 #@ set CLK_SOURCE_LATENCY   	[expr $CLK_PERIOD*0.1]    
 #@ set CLK_NETWORK_LATENCY   	[expr $CLK_PERIOD*0.1]  

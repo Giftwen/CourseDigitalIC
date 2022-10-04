@@ -3,7 +3,7 @@
 Report : constraint
 Design : top
 Version: L-2016.03-SP1
-Date   : Wed Sep 21 18:28:02 2022
+Date   : Tue Oct  4 14:22:24 2022
 ****************************************
 
 
@@ -32,7 +32,7 @@ Date   : Wed Sep 21 18:28:02 2022
     min_delay/hold                                   0.00
     Constraint                                     Slack
     ----------------------------------------------------
-    max_leakage_power                           -27374.11 (VIOLATED)
+    max_leakage_power                           -37984.72 (VIOLATED)
 
 
     Constraint                                       Cost
@@ -44,8 +44,8 @@ Date   : Wed Sep 21 18:28:02 2022
     sequential_clock_pulse_width                     0.00 (MET)
     critical_range                                   0.00 (MET)
     min_period                                       0.00 (MET)
-    max_leakage_power                            27374.11 (VIOLATED)
-    max_area                                       698.07 (VIOLATED)
+    max_leakage_power                            37984.72 (VIOLATED)
+    max_area                                       873.69 (VIOLATED)
 
 
 1

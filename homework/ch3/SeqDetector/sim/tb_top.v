@@ -1,7 +1,7 @@
 /*
  * @Author: WenJiaBao-2022E8020282071
  * @Date: 2022-09-21 17:47:20
- * @LastEditTime: 2022-09-21 18:20:05
+ * @LastEditTime: 2022-10-04 09:40:46
  * @Description: Homework of AdvDigitalIC : SeqDector
  * 
  * Copyright (c) 2022 by WenJiaBao wenjiabao0919@163.com, All Rights Reserved. 
@@ -20,6 +20,14 @@ top top1(
     .din(din),
     .result(result)
 );
+
+
+initial 
+begin
+	$fsdbDumpfile("./build/simtop.fsdb"); 
+	$fsdbDumpvars("+all");   
+
+end
 
 initial begin
     rst_n = 0;

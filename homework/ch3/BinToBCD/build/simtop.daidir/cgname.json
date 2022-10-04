@@ -1,0 +1,20 @@
+{
+    "BinToBCD_m1": [
+        "BinToBCD_m1",
+        "uPfLt",
+        "module",
+        1
+    ],
+    "tb_BinToBCD": [
+        "tb_BinToBCD",
+        "bnMwW",
+        "module",
+        2
+    ],
+    "...MASTER...": [
+        "SIM",
+        "amcQw",
+        "module",
+        3
+    ]
+}

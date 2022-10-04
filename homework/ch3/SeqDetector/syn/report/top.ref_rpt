@@ -3,7 +3,7 @@
 Report : reference
 Design : top
 Version: L-2016.03-SP1
-Date   : Wed Sep 21 18:28:02 2022
+Date   : Tue Oct  4 14:22:24 2022
 ****************************************
 
 Attributes:
@@ -19,10 +19,12 @@ Attributes:
 
 Reference          Library       Unit Area   Count    Total Area   Attributes
 -----------------------------------------------------------------------------
-OR2X12M            ss_1v62_125c
-                                 37.318401       1     37.318401  
-check_sequence_1                351.232004       1    351.232004  h, n
-check_sequence_2                309.523201       1    309.523201  h, n
+INVX14M            ss_1v62_125c
+                                 21.952000       1     21.952000  
+NOR2X12M           ss_1v62_125c
+                                 35.123199       1     35.123199  
+check_sequence_1                408.307203       1    408.307203  h, n
+check_sequence_2                408.307201       1    408.307201  h, n
 -----------------------------------------------------------------------------
-Total 3 references                                    698.073606
+Total 4 references                                    873.689604
 1

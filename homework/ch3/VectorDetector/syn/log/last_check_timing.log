@@ -1,3 +1,4 @@
+Warning: Design 'top' has '1' unresolved references. For more detailed information, use the "link" command. (UID-341)
 
 Information: Checking generated_clocks...
 
@@ -6,6 +7,17 @@ Information: Checking loops...
 Information: Checking no_input_delay...
 
 Information: Checking unconstrained_endpoints...
+
+Warning: The following end-points are not constrained for maximum delay.
+
+End point
+---------------
+pos_out_reg_0_/D
+pos_out_reg_1_/D
+pos_out_reg_2_/D
+pos_out_reg_3_/D
+pos_out_reg_4_/D
+pos_out_reg_5_/D
 
 Information: Checking pulse_clock_cell_type...
 

@@ -1,9 +1,10 @@
+Warning: Design 'top' has '1' unresolved references. For more detailed information, use the "link" command. (UID-341)
  
 ****************************************
 Report : constraint
 Design : top
 Version: L-2016.03-SP1
-Date   : Wed Sep 21 09:12:13 2022
+Date   : Tue Oct  4 15:25:34 2022
 ****************************************
 
 
@@ -32,8 +33,7 @@ Date   : Wed Sep 21 09:12:13 2022
     min_delay/hold                                   0.00
     Constraint                                     Slack
     ----------------------------------------------------
-    max_leakage_power                           -203456.81
-                                                          (VIOLATED)
+    max_leakage_power                           -87320.44 (VIOLATED)
 
 
     Constraint                                       Cost
@@ -45,9 +45,8 @@ Date   : Wed Sep 21 09:12:13 2022
     sequential_clock_pulse_width                     0.00 (MET)
     critical_range                                   0.00 (MET)
     min_period                                       0.00 (MET)
-    max_leakage_power                            203456.81
-                                                          (VIOLATED)
-    max_area                                      4146.73 (VIOLATED)
+    max_leakage_power                            87320.44 (VIOLATED)
+    max_area                                      1938.36 (VIOLATED)
 
 
 1
