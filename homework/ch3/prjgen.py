@@ -1,3 +1,12 @@
+'''
+Author: WenJiaBao-2022E8020282071
+Date: 2022-10-04 16:48:45
+LastEditTime: 2022-10-04 16:50:06
+Description: Automate digital project generation scripts
+
+Copyright (c) 2022 by WenJiaBao wenjiabao0919@163.com, All Rights Reserved. 
+'''
+
 import argparse
 import os
 

@@ -1,3 +1,12 @@
+/*
+ * @Author: WenJiaBao-2022E8020282071
+ * @Date: 2022-10-04 16:07:00
+ * @LastEditTime: 2022-10-04 16:51:18
+ * @Description: 
+ * 
+ * Copyright (c) 2022 by WenJiaBao wenjiabao0919@163.com, All Rights Reserved. 
+ */
+
 module tb_VectorDetector();
 
 reg clk = 0;
