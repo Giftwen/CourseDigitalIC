@@ -1,0 +1,69 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1000
+Design : top
+Version: L-2016.03-SP1
+Date   : Fri Sep 30 16:32:18 2022
+****************************************
+
+Operating Conditions: ss_1v62_125c   Library: ss_1v62_125c
+Wire Load Model Mode: top
+
+  Startpoint: out1_reg_1_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: out1[1] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              1.90       1.90
+  out1_reg_1_/CK (DFFRQX1M)                0.00       1.90 r
+  out1_reg_1_/Q (DFFRQX1M)                 1.74       3.64 r
+  out1[1] (out)                            0.00       3.64 r
+  data arrival time                                   3.64
+
+  clock clk (rise edge)                    9.50       9.50
+  clock network delay (ideal)              1.90      11.40
+  clock uncertainty                       -0.47      10.92
+  output external delay                   -3.80       7.12
+  data required time                                  7.12
+  -----------------------------------------------------------
+  data required time                                  7.12
+  data arrival time                                  -3.64
+  -----------------------------------------------------------
+  slack (MET)                                         3.49
+
+
+  Startpoint: out1_reg_0_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: out1[0] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              1.90       1.90
+  out1_reg_0_/CK (DFFRQX1M)                0.00       1.90 r
+  out1_reg_0_/Q (DFFRQX1M)                 1.74       3.64 r
+  out1[0] (out)                            0.00       3.64 r
+  data arrival time                                   3.64
+
+  clock clk (rise edge)                    9.50       9.50
+  clock network delay (ideal)              1.90      11.40
+  clock uncertainty                       -0.47      10.92
+  output external delay                   -3.80       7.12
+  data required time                                  7.12
+  -----------------------------------------------------------
+  data required time                                  7.12
+  data arrival time                                  -3.64
+  -----------------------------------------------------------
+  slack (MET)                                         3.49
+
+
+1

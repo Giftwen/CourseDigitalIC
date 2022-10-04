@@ -1,0 +1,34 @@
+Information: Updating design information... (UID-85)
+
+Information: Checking generated_clocks...
+
+Information: Checking loops...
+Warning: timing loops detected. (TIM-209)
+    #              loop breakpoint
+
+                 cell_arc                            lib cell
+--------------------------------------------------------------------------------
+add_x_1_U3/A             -> add_x_1_U3/Y             ss_1v62_125c/INVX2M     #
+
+                 cell_arc                            lib cell
+--------------------------------------------------------------------------------
+add_x_1_U2/A             -> add_x_1_U2/S             ss_1v62_125c/ADDHX1M    #
+U3/B                     -> U3/Y                     ss_1v62_125c/OR2X1M      
+add_x_1_U2/A             -> add_x_1_U2/A             ss_1v62_125c/ADDHX1M     
+
+                 cell_arc                            lib cell
+--------------------------------------------------------------------------------
+add_x_1_U2/A             -> add_x_1_U2/S             ss_1v62_125c/ADDHX1M    #
+U3/B                     -> U3/Y                     ss_1v62_125c/OR2X1M      
+add_x_1_U2/A             -> add_x_1_U2/A             ss_1v62_125c/ADDHX1M     
+
+Information: Checking no_input_delay...
+
+Information: Checking unconstrained_endpoints...
+
+Information: Checking pulse_clock_cell_type...
+
+Information: Checking no_driving_cell...
+
+Information: Checking partial_input_delay...
+1

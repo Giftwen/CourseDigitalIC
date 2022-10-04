@@ -1,0 +1,33 @@
+ 
+****************************************
+Report : reference
+Design : top
+Version: L-2016.03-SP1
+Date   : Tue Oct  4 14:04:05 2022
+****************************************
+
+Attributes:
+    b - black box (unknown)
+   bo - allows boundary optimization
+    d - dont_touch
+   mo - map_only
+    h - hierarchical
+    n - noncombinational
+    r - removable
+    s - synthetic operator
+    u - contains unmapped logic
+
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+BinToBCD_m1                    3114.988754       1   3114.988754  h
+DFFTRX1M           ss_1v62_125c
+                                 48.294399      14    676.121590  n
+DFFTRX2M           ss_1v62_125c
+                                 50.489601       1     50.489601  n
+DFFTRX4M           ss_1v62_125c
+                                 65.856003       3    197.568008  n
+INVXLM             ss_1v62_125c
+                                  6.585600       1      6.585600  
+-----------------------------------------------------------------------------
+Total 5 references                                   4045.753553
+1

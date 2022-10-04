@@ -1,0 +1,27 @@
+ 
+****************************************
+Report : constraint
+        -all_violators
+Design : top
+Version: L-2016.03-SP1
+Date   : Tue Oct  4 14:22:24 2022
+****************************************
+
+
+   max_area
+
+                             Required        Actual
+   Design                      Area           Area           Slack
+   -----------------------------------------------------------------
+   top                          0.00         873.69        -873.69  (VIOLATED)
+
+
+   max_leakage_power
+
+                             Required        Actual
+   Design                   Leakage Power  Leakage Power     Slack
+   -----------------------------------------------------------------
+   top                          0.00       37984.72       -37984.72 (VIOLATED)
+
+
+1

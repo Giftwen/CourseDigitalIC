@@ -1,0 +1,34 @@
+Warning: Design 'top' has '1' unresolved references. For more detailed information, use the "link" command. (UID-341)
+ 
+****************************************
+Report : reference
+Design : top
+Version: L-2016.03-SP1
+Date   : Tue Oct  4 15:25:34 2022
+****************************************
+
+Attributes:
+    b - black box (unknown)
+   bo - allows boundary optimization
+    d - dont_touch
+   mo - map_only
+    h - hierarchical
+    n - noncombinational
+    r - removable
+    s - synthetic operator
+    u - contains unmapped logic
+
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+AND2X1M            ss_1v62_125c
+                                 10.976000      38    417.087994  
+DFFQX1M            ss_1v62_125c
+                                 39.513599      32   1264.435181  n
+DFFQX4M            ss_1v62_125c
+                                 41.708801       6    250.252808  n
+INVXLM             ss_1v62_125c
+                                  6.585600       1      6.585600  
+VectorDetector_m2                 0.000000       1      0.000000  b
+-----------------------------------------------------------------------------
+Total 5 references                                   1938.361582
+1

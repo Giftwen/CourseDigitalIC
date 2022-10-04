@@ -1,0 +1,80 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : top
+Version: L-2016.03-SP1
+Date   : Tue Oct  4 14:04:05 2022
+****************************************
+
+Operating Conditions: ss_1v62_125c   Library: ss_1v62_125c
+Wire Load Model Mode: top
+
+  Startpoint: bin_in_r_reg_5_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: bcd_out_reg_6_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.95       0.95
+  bin_in_r_reg_5_/CK (DFFTRX4M)                           0.00       0.95 r
+  bin_in_r_reg_5_/Q (DFFTRX4M)                            0.57       1.52 r
+  BinToBCD_m1_u0/bin_in[5] (BinToBCD_m1)                  0.00       1.52 r
+  BinToBCD_m1_u0/div_2_u_div_u_add_PartRem_1_3/A[2] (BinToBCD_m1_DW01_add_39)
+                                                          0.00       1.52 r
+  BinToBCD_m1_u0/div_2_u_div_u_add_PartRem_1_3/U46/Y (INVXLM)
+                                                          0.17       1.69 f
+  BinToBCD_m1_u0/div_2_u_div_u_add_PartRem_1_3/U43/Y (NOR2X2M)
+                                                          0.13       1.82 r
+  BinToBCD_m1_u0/div_2_u_div_u_add_PartRem_1_3/U39/Y (AND3X2M)
+                                                          0.20       2.02 r
+  BinToBCD_m1_u0/div_2_u_div_u_add_PartRem_1_3/CO (BinToBCD_m1_DW01_add_39)
+                                                          0.00       2.02 r
+  BinToBCD_m1_u0/U29/Y (INVXLM)                           0.10       2.11 f
+  BinToBCD_m1_u0/U12/Y (AOI22X1M)                         0.38       2.50 r
+  BinToBCD_m1_u0/U26/Y (NOR2X1M)                          0.23       2.73 f
+  BinToBCD_m1_u0/U61/Y (AOI22X1M)                         0.16       2.89 r
+  BinToBCD_m1_u0/U10/Y (AND2X2M)                          0.21       3.10 r
+  BinToBCD_m1_u0/U23/Y (INVX4M)                           0.09       3.19 f
+  BinToBCD_m1_u0/div_2_u_div_u_add_PartRem_0_4/A[4] (BinToBCD_m1_DW01_add_52)
+                                                          0.00       3.19 f
+  BinToBCD_m1_u0/div_2_u_div_u_add_PartRem_0_4/U23/Y (NOR2X2M)
+                                                          0.21       3.40 r
+  BinToBCD_m1_u0/div_2_u_div_u_add_PartRem_0_4/U3/Y (OAI21X6M)
+                                                          0.11       3.51 f
+  BinToBCD_m1_u0/div_2_u_div_u_add_PartRem_0_4/CO (BinToBCD_m1_DW01_add_52)
+                                                          0.00       3.51 f
+  BinToBCD_m1_u0/U5/Y (INVX4M)                            0.10       3.61 r
+  BinToBCD_m1_u0/U99/Y (CLKNAND2X2M)                      0.12       3.73 f
+  BinToBCD_m1_u0/U34/Y (AND2X2M)                          0.28       4.01 f
+  BinToBCD_m1_u0/rem_3_u_div_u_mx_PartRem_0_1_1/Y (MX2X1M)
+                                                          0.30       4.32 f
+  BinToBCD_m1_u0/U15/Y (CLKINVX2M)                        0.09       4.41 r
+  BinToBCD_m1_u0/U101/Y (CLKNAND2X2M)                     0.11       4.52 f
+  BinToBCD_m1_u0/U13/Y (AO21X2M)                          0.37       4.89 f
+  BinToBCD_m1_u0/rem_3_u_div_u_mx_PartRem_0_0_2/Y (MX2XLM)
+                                                          0.25       5.15 f
+  BinToBCD_m1_u0/bcd_out[6] (BinToBCD_m1)                 0.00       5.15 f
+  bcd_out_reg_6_/RN (DFFTRX1M)                            0.00       5.15 f
+  data arrival time                                                  5.15
+
+  clock clk (rise edge)                                   4.75       4.75
+  clock network delay (ideal)                             0.95       5.70
+  clock uncertainty                                      -0.24       5.46
+  bcd_out_reg_6_/CK (DFFTRX1M)                            0.00       5.46 r
+  library setup time                                     -0.29       5.17
+  data required time                                                 5.17
+  --------------------------------------------------------------------------
+  data required time                                                 5.17
+  data arrival time                                                 -5.15
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.02
+
+
+1

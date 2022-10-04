@@ -1,0 +1,94 @@
+Information: Updating design information... (UID-85)
+Information: Timing loop detected. (OPT-150)
+	add_x_1_U3/A add_x_1_U3/Y 
+Information: Timing loop detected. (OPT-150)
+	add_x_1_U2/S U3/B U3/Y add_x_1_U2/A 
+Warning: Disabling timing arc between pins 'A' and 'Y' on cell 'add_x_1_U3'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'A' and 'S' on cell 'add_x_1_U2'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'A' and 'S' on cell 'add_x_1_U2'
+         to break a timing loop. (OPT-314)
+ 
+****************************************
+Report : qor
+Design : top
+Version: L-2016.03-SP1
+Date   : Fri Sep 30 16:32:18 2022
+****************************************
+
+
+  Timing Path Group 'clk'
+  -----------------------------------
+  Levels of Logic:               0.00
+  Critical Path Length:          1.74
+  Critical Path Slack:           3.49
+  Critical Path Clk Period:      9.50
+  Total Negative Slack:          0.00
+  No. of Violating Paths:        0.00
+  Worst Hold Violation:          0.00
+  Total Hold Violation:          0.00
+  No. of Hold Violations:        0.00
+  -----------------------------------
+
+
+  Cell Count
+  -----------------------------------
+  Hierarchical Cell Count:          0
+  Hierarchical Port Count:          0
+  Leaf Cell Count:                  5
+  Buf/Inv Cell Count:               1
+  Buf Cell Count:                   0
+  Inv Cell Count:                   1
+  CT Buf/Inv Cell Count:            0
+  Combinational Cell Count:         3
+  Sequential Cell Count:            2
+  Macro Count:                      0
+  -----------------------------------
+
+
+  Area
+  -----------------------------------
+  Combinational Area:       46.099199
+  Noncombinational Area:    92.198402
+  Buf/Inv Area:              6.585600
+  Total Buffer Area:             0.00
+  Total Inverter Area:           6.59
+  Macro/Black Box Area:      0.000000
+  Net Area:                  0.000000
+  -----------------------------------
+  Cell Area:               138.297602
+  Design Area:             138.297602
+
+
+  Design Rules
+  -----------------------------------
+  Total Number of Nets:             7
+  Nets With Violations:             0
+  Max Trans Violations:             0
+  Max Cap Violations:               0
+  -----------------------------------
+
+
+  Hostname: gift-virtual-machine
+
+  Compile CPU Statistics
+  -----------------------------------------
+  Resource Sharing:                    0.00
+  Logic Optimization:                  0.03
+  Mapping Optimization:                0.27
+  -----------------------------------------
+  Overall Compile Time:                1.93
+  Overall Compile Wall Clock Time:     2.21
+
+  --------------------------------------------------------------------
+
+  Design  WNS: 0.00  TNS: 0.00  Number of Violating Paths: 0
+
+
+  Design (Hold)  WNS: 0.00  TNS: 0.00  Number of Violating Paths: 0
+
+  --------------------------------------------------------------------
+
+
+1
