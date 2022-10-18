@@ -22,8 +22,15 @@ $(shell mkdir -p $(LOG_PATH))
 
 VCS:=vcs +v2k -full64 \
 	+define+M4 \
-	+define+M3 \
- 	-debug_acc+all -debug_region+cell+encrypt 	-LDFLAGS -Wl,--no-as-needed  	-timescale=${TIMESCALE} 	   	-o $(SIMTOP)                   	-l ${LOG_PATH}/report.log      	-P $(VERDI_HOME)/share/PLI/VCS/LINUXAMD64/novas.tab 	$(VERDI_HOME)/share/PLI/VCS/LINUXAMD64/pli.a         
+	+define+M2 \
+ 	-debug_acc+all \
+	-debug_region+cell+encrypt \
+	-LDFLAGS -Wl,--no-as-needed  \
+	-timescale=${TIMESCALE} 	 \
+	-o $(SIMTOP)               \
+	-l ${LOG_PATH}/report.log   \
+	-P $(VERDI_HOME)/share/PLI/VCS/LINUXAMD64/novas.tab 	$(VERDI_HOME)/share/PLI/VCS/LINUXAMD64/pli.a         
+
 compile:$(VSRC)
 	${VCS} $^
 	./${SIMTOP} -l ${LOG_PATH}/run.log          

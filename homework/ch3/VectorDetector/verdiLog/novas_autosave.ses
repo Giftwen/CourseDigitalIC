@@ -20,7 +20,7 @@ powerDumped = 0
 [hb]
 postSimFile = /home/gift/workplace/CourseDigitalIC/homework/ch3/VectorDetector/build/simtop.fsdb
 syncTime = 0
-viewport = 141 280 900 700 0 0 228 898
+viewport = 248 280 899 700 0 0 228 898
 activeNode = "VectorDetector_m1"
 activeScope = "VectorDetector_m1"
 activeFile = "/home/gift/workplace/CourseDigitalIC/homework/ch3/VectorDetector/src/VectorDetector_m1.v"
@@ -45,6 +45,7 @@ traceIncTopPort = False
 leadingZero = False
 signalPane = False
 Scope1 = "VectorDetector_m1"
+multipleSelection = 1 9 2 0 0
 sdfCheckUndef = FALSE
 simFlow = FALSE
 [hb.design]
@@ -59,7 +60,7 @@ WaveformFile = /home/gift/workplace/CourseDigitalIC/homework/ch3/VectorDetector/
 UserActionNum = 0
 nMemWindowNum = 0
 [wave.0]
-viewPort = 0 27 900 254 100 65
+viewPort = 0 27 899 254 100 65
 primaryWindow = TRUE
 SessionFile = /home/gift/workplace/CourseDigitalIC/homework/ch3/VectorDetector/verdiLog/novas_autosave.ses.wave.0
 displayGrid = FALSE

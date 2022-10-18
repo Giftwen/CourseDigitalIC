@@ -7,7 +7,7 @@ UUM=FALSE
 KDB=FALSE
 USE_NOVAS_HOME=FALSE
 COSIM=FALSE
-TOP=VectorDetector_m1 VectorDetector_m2 tb_VectorDetector 
+TOP=VectorDetector_m1 VectorDetector_m3 tb_VectorDetector 
 OPTION=-ssz -ssv -ssy 
 ELAB_OPTION=-ssz -ssv -ssy 
 

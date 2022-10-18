@@ -2,7 +2,7 @@ Magic 271485
 Revision Verdi_O-2018.09-SP2
 
 ; Window Layout <x> <y> <width> <height> <signalwidth> <valuewidth>
-viewPort 0 27 900 254 100 65
+viewPort 0 27 899 254 100 65
 
 ; File list:
 ; openDirFile [-d delimiter] [-s time_offset] [-rf auto_bus_rule_file] path_name file_name
@@ -16,7 +16,7 @@ signalSpacing 5
 
 ; windowTimeUnit is used for zoom, cursor & marker
 ; waveform viewport range
-zoom 0.000000 37269.000000
+zoom 74799.353436 112016.947919
 cursor 0.000000
 marker 0.000000
 
@@ -25,7 +25,7 @@ marker 0.000000
 ; visible top row signal index
 top 0
 ; marker line index
-markerPos 0
+markerPos 4
 
 ; event list
 ; addEvent event_name event_expression
@@ -46,6 +46,12 @@ curSTATUS ByChange
 
 
 addGroup "G1"
+activeDirFile "" "/home/gift/workplace/CourseDigitalIC/homework/ch3/VectorDetector/build/simtop.fsdb"
+addSignal -h 15 /tb_VectorDetector/clk
+addSignal -h 15 -holdScope din[31:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope out[5:0]
+addSignal -h 15 -holdScope rst
+addGroup "G2"
 
 ; getSignalForm Scope Hierarchy Status
 ; active file of getSignalForm
@@ -58,6 +64,8 @@ getSignalForm close
 
 SCOPE_LIST_BEGIN
 "/VectorDetector_m1"
+"/VectorDetector_m3"
+"/tb_VectorDetector"
 SCOPE_LIST_END
 
 GETSIGNALFORM_SCOPE_HIERARCHY_END

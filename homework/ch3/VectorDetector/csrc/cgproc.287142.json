@@ -1,0 +1,198 @@
+{
+    "Modules": {
+        "...MASTER...": {
+            "nQuads": 0,
+            "start_perf": [
+                4.2285289764404297,
+                0.057672000000000001,
+                0.026616999999999998,
+                212372,
+                225968,
+                1665278558.7774479,
+                3048626117020946
+            ],
+            "end_perf": [
+                4.2310631275177002,
+                0.060204000000000001,
+                0.026616999999999998,
+                214664,
+                225968,
+                3048626123850463,
+                0,
+                0
+            ],
+            "child_modules": {
+                "VectorDetector_m1": 1,
+                "tb_VectorDetector": 1,
+                "VectorDetector_m3": 1
+            },
+            "nMops": 0,
+            "nRouts": 5
+        },
+        "VectorDetector_m1": {
+            "nQuads": 788,
+            "start_perf": [
+                4.2311360836029053,
+                0.060277999999999998,
+                0.026616999999999998,
+                214664,
+                225968,
+                1665278558.780055,
+                3048626124021124
+            ],
+            "end_perf": [
+                4.2494931221008301,
+                0.074507000000000004,
+                0.030679000000000001,
+                220748,
+                225968,
+                3048626173660384,
+                8589934593,
+                0
+            ],
+            "child_modules": {},
+            "Compiled": "Yes",
+            "Compiled Times": 1,
+            "nMops": 5140,
+            "nRouts": 45
+        },
+        "tb_VectorDetector": {
+            "nQuads": 858,
+            "start_perf": [
+                4.2576160430908203,
+                0.082589999999999997,
+                0.030726,
+                220748,
+                225968,
+                1665278558.806535,
+                3048626195191436
+            ],
+            "end_perf": [
+                4.2723350524902344,
+                0.097308000000000006,
+                0.030726,
+                220748,
+                225968,
+                3048626234842745,
+                25769803777,
+                0
+            ],
+            "child_modules": {},
+            "Compiled": "Yes",
+            "Compiled Times": 1,
+            "nMops": 3152,
+            "nRouts": 102
+        },
+        "VectorDetector_m3": {
+            "nQuads": 256,
+            "start_perf": [
+                4.2496471405029297,
+                0.074620000000000006,
+                0.030726,
+                220748,
+                225968,
+                1665278558.7985661,
+                3048626173828480
+            ],
+            "end_perf": [
+                4.2575581073760986,
+                0.082530999999999993,
+                0.030726,
+                220748,
+                225968,
+                3048626195129692,
+                17179869185,
+                0
+            ],
+            "child_modules": {},
+            "Compiled": "Yes",
+            "Compiled Times": 1,
+            "nMops": 921,
+            "nRouts": 32
+        }
+    },
+    "ObjArchives": [
+        {
+            "archive": "archive.0/_287142_archive_1.a",
+            "objects": [
+                [
+                    "CVcb0_d.o",
+                    42652
+                ],
+                [
+                    "IchZA_d.o",
+                    15274
+                ],
+                [
+                    "K9Jmh_d.o",
+                    40574
+                ],
+                [
+                    "amcQwB.o",
+                    127340
+                ]
+            ],
+            "size": 225840
+        }
+    ],
+    "CompUnits": {
+        "IchZA_d": {
+            "mod": "VectorDetector_m3",
+            "out": "IchZA_d.o",
+            "checksum": 0,
+            "text": 5815,
+            "bytes": 15274,
+            "mode": 4,
+            "archive": "archive.0/_287142_archive_1.a"
+        },
+        "amcQw_d": {
+            "mod": "...MASTER...",
+            "out": "objs/amcQw_d.o",
+            "checksum": 0,
+            "text": 450,
+            "bytes": 7974,
+            "mode": 4
+        },
+        "CVcb0_d": {
+            "mod": "VectorDetector_m1",
+            "out": "CVcb0_d.o",
+            "checksum": 0,
+            "text": 33541,
+            "bytes": 42652,
+            "mode": 4,
+            "archive": "archive.0/_287142_archive_1.a"
+        },
+        "K9Jmh_d": {
+            "mod": "tb_VectorDetector",
+            "out": "K9Jmh_d.o",
+            "checksum": 0,
+            "text": 23150,
+            "bytes": 40574,
+            "mode": 4,
+            "archive": "archive.0/_287142_archive_1.a"
+        }
+    },
+    "reusePaths": {},
+    "stat": {
+        "ru_self_end": {
+            "ru_utime_sec": 0.098382999999999998,
+            "ru_stime_sec": 0.03422,
+            "ru_nivcsw": 7,
+            "ru_maxrss_kb": 114488,
+            "ru_nvcsw": 42,
+            "ru_minflt": 10409,
+            "ru_majflt": 0
+        },
+        "peak_mem_kb": 225968,
+        "ru_childs_end": {
+            "ru_utime_sec": 0.022422000000000001,
+            "ru_stime_sec": 0.021259,
+            "ru_nivcsw": 2,
+            "ru_maxrss_kb": 103508,
+            "ru_nvcsw": 26,
+            "ru_minflt": 4280,
+            "ru_majflt": 0
+        },
+        "cpu_cycles_end": 3048626247012968
+    }
+}

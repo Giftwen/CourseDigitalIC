@@ -1,10 +1,9 @@
-Warning: Design 'top' has '1' unresolved references. For more detailed information, use the "link" command. (UID-341)
  
 ****************************************
 Report : reference
 Design : top
 Version: L-2016.03-SP1
-Date   : Tue Oct  4 15:25:34 2022
+Date   : Sun Oct  9 09:11:47 2022
 ****************************************
 
 Attributes:
@@ -20,15 +19,25 @@ Attributes:
 
 Reference          Library       Unit Area   Count    Total Area   Attributes
 -----------------------------------------------------------------------------
-AND2X1M            ss_1v62_125c
-                                 10.976000      38    417.087994  
-DFFQX1M            ss_1v62_125c
-                                 39.513599      32   1264.435181  n
-DFFQX4M            ss_1v62_125c
-                                 41.708801       6    250.252808  n
+DFFTRX1M           ss_1v62_125c
+                                 48.294399       4    193.177597  n
+DFFTRX2M           ss_1v62_125c
+                                 50.489601       4    201.958405  n
+DFFTRX4M           ss_1v62_125c
+                                 65.856003      30   1975.680084  n
+INVX2M             ss_1v62_125c
+                                  6.585600       2     13.171200  
+INVX4M             ss_1v62_125c
+                                  8.780800       5     43.903999  
+INVX5M             ss_1v62_125c
+                                 10.976000       3     32.927999  
+INVX6M             ss_1v62_125c
+                                 10.976000       5     54.879999  
+INVX8M             ss_1v62_125c
+                                 13.171200       3     39.513599  
 INVXLM             ss_1v62_125c
                                   6.585600       1      6.585600  
-VectorDetector_m2                 0.000000       1      0.000000  b
+VectorDetector_m2              1582.739176       1   1582.739176  h
 -----------------------------------------------------------------------------
-Total 5 references                                   1938.361582
+Total 10 references                                  4144.537659
 1

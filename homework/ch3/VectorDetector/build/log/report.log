@@ -3,7 +3,7 @@ Warning-[LINX_KRNL] Unsupported Linux kernel
   Linux kernel '5.11.0-49-generic' is not supported.
   Supported versions are 2.4* or 2.6*.
 
-Command: vcs +v2k -full64 +define+M4 +define+M3 -debug_acc+all -debug_region+cell+encrypt \
+Command: vcs +v2k -full64 +define+M4 +define+M2 -debug_acc+all -debug_region+cell+encrypt \
 -LDFLAGS -Wl,--no-as-needed -timescale=1ns/1ps -o ./build/simtop -l ./build/log/report.log \
 -P /usr/Synopsys/verdi/verdi/Verdi_O-2018.09-SP2/share/PLI/VCS/LINUXAMD64/novas.tab \
 /usr/Synopsys/verdi/verdi/Verdi_O-2018.09-SP2/share/PLI/VCS/LINUXAMD64/pli.a /home/gift/workplace/CourseDigitalIC/homework/ch3/VectorDetector/src/VectorDetector_m1.v \
@@ -12,7 +12,7 @@ Command: vcs +v2k -full64 +define+M4 +define+M3 -debug_acc+all -debug_region+cel
 /home/gift/workplace/CourseDigitalIC/homework/ch3/VectorDetector/src/top.v /home/gift/workplace/CourseDigitalIC/homework/ch3/VectorDetector/sim/tb_VectorDector.v \
 
                          Chronologic VCS (TM)
-       Version O-2018.09-SP2_Full64 -- Tue Oct  4 15:05:31 2022
+       Version O-2018.09-SP2_Full64 -- Sun Oct  9 09:22:34 2022
                Copyright (c) 1991-2018 by Synopsys Inc.
                          ALL RIGHTS RESERVED
 
@@ -34,13 +34,13 @@ Parsing design file '/home/gift/workplace/CourseDigitalIC/homework/ch3/VectorDet
 Parsing design file '/home/gift/workplace/CourseDigitalIC/homework/ch3/VectorDetector/sim/tb_VectorDector.v'
 Top Level Modules:
        VectorDetector_m1
-       VectorDetector_m2
+       VectorDetector_m3
        tb_VectorDetector
 TimeScale is 1 ns / 1 ps
 Starting vcs inline pass...
 3 modules and 0 UDP read.
 recompiling module VectorDetector_m1
-recompiling module VectorDetector_m2
+recompiling module VectorDetector_m3
 recompiling module tb_VectorDetector
 All of 3 modules done
 make[1]: Entering directory '/home/gift/workplace/CourseDigitalIC/homework/ch3/VectorDetector/csrc' \
@@ -50,7 +50,7 @@ if [ -x .././build/simtop ]; then chmod -x .././build/simtop; fi
 g++  -o .././build/simtop -no-pie  -Wl,--no-as-needed    -Wl,-rpath-link=./ -Wl,-rpath='$ORIGIN'/simtop.daidir/ \
 -Wl,-rpath=./simtop.daidir/ -Wl,-rpath='$ORIGIN'/simtop.daidir//scsim.db.dir  -L/usr/lib/x86_64-linux-gnu \
 -L/lib/x86_64-linux-gnu -Wl,--no-as-needed -Wl,--no-as-needed -rdynamic  -Wl,-rpath=/usr/Synopsys/vcs2018/vcs/O-2018.09-SP2/linux64/lib \
--L/usr/Synopsys/vcs2018/vcs/O-2018.09-SP2/linux64/lib   objs/amcQw_d.o  _229436_archive_1.so \
+-L/usr/Synopsys/vcs2018/vcs/O-2018.09-SP2/linux64/lib   objs/amcQw_d.o  _287142_archive_1.so \
 SIM_l.o       rmapats_mop.o rmapats.o rmar.o rmar_nd.o  rmar_llvm_0_1.o rmar_llvm_0_0.o \
 -lzerosoft_rt_stubs -lvirsim -lerrorinf -lsnpsmalloc -lvfs /usr/Synopsys/verdi/verdi/Verdi_O-2018.09-SP2/share/PLI/VCS/LINUXAMD64/pli.a \
 -lvcsnew -lsimprofile -luclinative /usr/Synopsys/vcs2018/vcs/O-2018.09-SP2/linux64/lib/vcs_tls.o \
@@ -60,4 +60,4 @@ SIM_l.o       rmapats_mop.o rmapats.o rmar.o rmar_nd.o  rmar_llvm_0_1.o rmar_llv
 .././build/simtop up to date
 make[1]: Leaving directory '/home/gift/workplace/CourseDigitalIC/homework/ch3/VectorDetector/csrc' \
 
-CPU time: .217 seconds to compile + .199 seconds to elab + .156 seconds to link
+CPU time: .214 seconds to compile + .168 seconds to elab + .155 seconds to link

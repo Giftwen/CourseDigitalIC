@@ -1,18 +1,1 @@
-Warning: Design 'top' has '1' unresolved references. For more detailed information, use the "link" command. (UID-341)
- 
-****************************************
-check_design summary:
-Version:     L-2016.03-SP1
-Date:        Tue Oct  4 15:25:34 2022
-****************************************
-
-                   Name                                            Total
---------------------------------------------------------------------------------
-Tristate                                                           32
-    A tristate bus has a non tri-state driver (LINT-34)            32
---------------------------------------------------------------------------------
-
-Information: Use the 'check_design' command for 
-	 more information about warnings. (LINT-98)
-
 1

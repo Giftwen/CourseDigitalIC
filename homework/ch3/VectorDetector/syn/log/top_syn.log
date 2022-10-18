@@ -54,7 +54,7 @@ Loading db file '/usr/Synopsys/dc2016/syn/L-2016.03-SP1/libraries/syn/standard.s
 Running PRESTO HDLC
 
 Inferred memory devices in process
-        in routine top line 60 in file
+        in routine top line 58 in file
                 '/home/gift/workplace/CourseDigitalIC/homework/ch3/VectorDetector/src/top.v'.
 ===============================================================================
 |    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
@@ -66,43 +66,18 @@ Presto compilation completed successfully.
 Elaborated 1 design.
 Current design is now 'top'.
 Information: Building the design 'VectorDetector_m2'. (HDL-193)
-Error:  /home/gift/workplace/CourseDigitalIC/homework/ch3/VectorDetector/src/VectorDetector_m2.v:77: Net 'pos_out1_1_2_1[1]', or a directly connected net, is driven by more than one source, and at least one source is a constant net. (ELAB-368)
-Warning:  /home/gift/workplace/CourseDigitalIC/homework/ch3/VectorDetector/src/VectorDetector_m2.v:77: Net pos_out1_1_2_1[0] or a directly connected net may be driven by more than one process or block. (ELAB-405)
-Error:  /home/gift/workplace/CourseDigitalIC/homework/ch3/VectorDetector/src/VectorDetector_m2.v:85: Net 'pos_out2_1_2_1[1]', or a directly connected net, is driven by more than one source, and at least one source is a constant net. (ELAB-368)
-Warning:  /home/gift/workplace/CourseDigitalIC/homework/ch3/VectorDetector/src/VectorDetector_m2.v:85: Net pos_out2_1_2_1[0] or a directly connected net may be driven by more than one process or block. (ELAB-405)
-*** Presto compilation terminated with 2 errors. ***
-Warning: Design 'top' has '1' unresolved references. For more detailed information, use the "link" command. (UID-341)
+Presto compilation completed successfully.
 1
 #------------------------Set Current Design&&Link Designs--------------------------
 #current_design $TOP_DESIGN(auto)
 #link(auto)
 #-------------------------------SDC----------------------------------
 source ../syn/script/Sdc.tcl
-Warning: Design 'top' has '1' unresolved references. For more detailed information, use the "link" command. (UID-341)
-Warning: Design 'top' has '1' unresolved references. For more detailed information, use the "link" command. (UID-341)
-Warning: Design 'top' has '1' unresolved references. For more detailed information, use the "link" command. (UID-341)
-Warning: Design 'top' has '1' unresolved references. For more detailed information, use the "link" command. (UID-341)
-Warning: Design 'top' has '1' unresolved references. For more detailed information, use the "link" command. (UID-341)
-Warning: Design 'top' has '1' unresolved references. For more detailed information, use the "link" command. (UID-341)
-Warning: Design 'top' has '1' unresolved references. For more detailed information, use the "link" command. (UID-341)
-Warning: Design 'top' has '1' unresolved references. For more detailed information, use the "link" command. (UID-341)
-Warning: Design 'top' has '1' unresolved references. For more detailed information, use the "link" command. (UID-341)
-Warning: Design 'top' has '1' unresolved references. For more detailed information, use the "link" command. (UID-341)
-Warning: Design 'top' has '1' unresolved references. For more detailed information, use the "link" command. (UID-341)
-Warning: Design 'top' has '1' unresolved references. For more detailed information, use the "link" command. (UID-341)
-Warning: Design 'top' has '1' unresolved references. For more detailed information, use the "link" command. (UID-341)
-Warning: Design 'top' has '1' unresolved references. For more detailed information, use the "link" command. (UID-341)
-Warning: Design 'top' has '1' unresolved references. For more detailed information, use the "link" command. (UID-341)
-Warning: Design 'top' has '1' unresolved references. For more detailed information, use the "link" command. (UID-341)
-Warning: Design 'top' has '1' unresolved references. For more detailed information, use the "link" command. (UID-341)
-Warning: Design 'top' has '1' unresolved references. For more detailed information, use the "link" command. (UID-341)
-Warning: Design 'top' has '1' unresolved references. For more detailed information, use the "link" command. (UID-341)
 1
 #--------------------Map and Optimize the Design---------------------
 compile_ultra -no_autoungroup -incremental -no_boundary_optimization
 Warning: The value of variable 'compile_preserve_subdesign_interfaces' has been changed to true because '-no_boundary_optimization' is used. (OPT-133)
 Information: Starting from 2013.12 release, constant propagation is enabled even when boundary optimization is disabled. (OPT-1318)
-Warning: Design 'top' has '1' unresolved references. For more detailed information, use the "link" command. (UID-341)
 Information: Performing power optimization. (PWR-850)
 Alib files are up-to-date.
 Loading db file '/usr/Synopsys/dc2016/syn/L-2016.03-SP1/libraries/syn/dw_foundation.sldb'
@@ -117,24 +92,13 @@ Information: Evaluating DesignWare library utilization. (UISN-27)
 ============================================================================
 
 
-Information: There are 32 potential problems in your design. Please run 'check_design' for more information. (LINT-99)
-
-
 Loaded alib file './alib-52/ss_1v62_125c.db.alib'
 Information: State dependent leakage is now switched from on to off.
 
   Beginning Pass 1 Mapping  (Incremental)
   ------------------------
+  Processing 'VectorDetector_m2'
   Processing 'top'
-Warning: The design named top has 32 out of 46 cells marked size-only, which may limit optimization. (OPT-301)
-Information: Building the design 'VectorDetector_m2'. (HDL-193)
-Error:  /home/gift/workplace/CourseDigitalIC/homework/ch3/VectorDetector/src/VectorDetector_m2.v:77: Net 'pos_out1_1_2_1[1]', or a directly connected net, is driven by more than one source, and at least one source is a constant net. (ELAB-368)
-Warning:  /home/gift/workplace/CourseDigitalIC/homework/ch3/VectorDetector/src/VectorDetector_m2.v:77: Net pos_out1_1_2_1[0] or a directly connected net may be driven by more than one process or block. (ELAB-405)
-Error:  /home/gift/workplace/CourseDigitalIC/homework/ch3/VectorDetector/src/VectorDetector_m2.v:85: Net 'pos_out2_1_2_1[1]', or a directly connected net, is driven by more than one source, and at least one source is a constant net. (ELAB-368)
-Warning:  /home/gift/workplace/CourseDigitalIC/homework/ch3/VectorDetector/src/VectorDetector_m2.v:85: Net pos_out2_1_2_1[0] or a directly connected net may be driven by more than one process or block. (ELAB-405)
-*** Presto compilation terminated with 2 errors. ***
-Warning: Unable to resolve reference 'VectorDetector_m2' in 'top'. (LINK-5)
-Warning: Design 'top' has '1' unresolved references. For more detailed information, use the "link" command. (UID-341)
 
   Updating timing information
 Information: Updating design information... (UID-85)
@@ -145,18 +109,18 @@ Information: The target library(s) contains cell(s), other than black boxes, tha
    ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
     TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
   --------- --------- --------- --------- --------- ------------------------- ---------
-    0:00:01    3854.8      0.00       0.0       0.0                           232853.0625
-    0:00:01    3854.8      0.00       0.0       0.0                           232853.0625
+    0:00:02    3093.0      2.87      18.1       0.0                           142105.0781
+    0:00:02    3093.0      2.87      18.1       0.0                           142105.0781
 
   Beginning Mapping Optimizations  (Ultra High effort)  (Incremental)
   -------------------------------
 
   Beginning Incremental Implementation Selection
   ----------------------------------------------
-    0:00:01    3854.8      0.00       0.0       0.0                           232853.0625
-    0:00:01    3854.8      0.00       0.0       0.0                           232853.0625
-    0:00:01    3854.8      0.00       0.0       0.0                           232853.0625
-    0:00:01    3854.8      0.00       0.0       0.0                           232853.0625
+    0:00:02    3093.0      2.87      18.1       0.0                           142105.0781
+    0:00:02    3093.0      2.87      18.1       0.0                           142105.0781
+    0:00:02    3093.0      2.87      18.1       0.0                           142105.0781
+    0:00:02    3104.0      2.69      17.0       0.0                           141406.5781
   Global Optimization (Phase 1)
   Global Optimization (Phase 2)
   Global Optimization (Phase 3)
@@ -171,32 +135,33 @@ Information: The target library(s) contains cell(s), other than black boxes, tha
    ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
     TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
   --------- --------- --------- --------- --------- ------------------------- ---------
-    0:00:01    3854.8      0.00       0.0       0.0                           232853.0625
-    0:00:01    3854.8      0.00       0.0       0.0                           232853.0625
-    0:00:01    3846.0      0.00       0.0       0.0                           231616.8438
-    0:00:01    3846.0      0.00       0.0       0.0                           231616.8438
-    0:00:01    3846.0      0.00       0.0       0.0                           231616.8438
-    0:00:01    3846.0      0.00       0.0       0.0                           231616.8438
-    0:00:01    3846.0      0.00       0.0       0.0                           231616.8438
+    0:00:02    3378.4      1.70      13.3       0.0                           148656.0469
+    0:00:02    3378.4      1.70      13.3       0.0                           148656.0469
+    0:00:02    3367.4      1.70      13.3       0.0                           147166.6562
+    0:00:03    3367.4      1.70      13.3       0.0                           147166.6562
+    0:00:03    3367.4      1.70      13.3       0.0                           147166.6562
+    0:00:03    3367.4      1.70      13.3       0.0                           147166.6562
+    0:00:03    3428.9      1.64      13.0       0.0                           152535.1406
 
   Beginning Delay Optimization
   ----------------------------
-    0:00:01    3846.0      0.00       0.0       0.0                           231616.8438
-    0:00:01    3846.0      0.00       0.0       0.0                           231616.8438
-    0:00:01    3846.0      0.00       0.0       0.0                           231616.8438
-    0:00:01    3846.0      0.00       0.0       0.0                           231616.8438
-    0:00:01    3846.0      0.00       0.0       0.0                           231616.8438
-    0:00:01    2230.3      0.00       0.0       0.0                           96693.0703
-    0:00:01    2230.3      0.00       0.0       0.0                           96693.0703
-    0:00:01    2230.3      0.00       0.0       0.0                           96693.0703
-    0:00:01    2230.3      0.00       0.0       0.0                           96693.0703
-    0:00:01    2230.3      0.00       0.0       0.0                           96693.0703
-    0:00:01    2230.3      0.00       0.0       0.0                           96693.0703
-    0:00:01    2230.3      0.00       0.0       0.0                           96693.0703
-    0:00:01    2230.3      0.00       0.0       0.0                           96693.0703
-    0:00:01    2230.3      0.00       0.0       0.0                           96693.0703
-    0:00:01    2230.3      0.00       0.0       0.0                           96693.0703
-    0:00:01    2230.3      0.00       0.0       0.0                           96693.0703
+    0:00:03    3428.9      1.64      13.0       0.0                           152535.1406
+    0:00:03    3428.9      1.64      13.0       0.0                           152535.1406
+    0:00:03    3428.9      1.64      13.0       0.0                           152535.1406
+    0:00:03    3428.9      1.64      13.0       0.0                           152535.1406
+    0:00:03    3428.9      1.64      13.0       0.0                           152535.1406
+    0:00:03    3428.9      1.64      13.0       0.0                           152535.1406
+    0:00:03    3428.9      1.64      13.0       0.0                           152535.1406
+    0:00:03    3407.0      1.64      13.0       0.0                           150817.0625
+    0:00:03    3407.0      1.64      13.0       0.0                           150817.0625
+    0:00:03    3407.0      1.64      13.0       0.0                           150817.0625
+    0:00:03    3407.0      1.64      13.0       0.0                           150817.0625
+    0:00:03    3407.0      1.64      13.0       0.0                           150817.0625
+    0:00:03    3407.0      1.64      13.0       0.0                           150817.0625
+    0:00:04    3407.0      1.64      13.0       0.0                           150817.0625
+    0:00:04    3407.0      1.64      13.0       0.0                           150817.0625
+    0:00:04    3407.0      1.64      13.0       0.0                           150817.0625
+    0:00:04    3786.7      1.40      10.1       0.0                           169449.1406
 
 
   Beginning Leakage Power Optimization  (max_leakage_power 0)
@@ -206,27 +171,32 @@ Information: The target library(s) contains cell(s), other than black boxes, tha
    ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
     TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
   --------- --------- --------- --------- --------- ------------------------- ---------
-    0:00:01    2230.3      0.00       0.0       0.0                           96693.0703
-    0:00:01    2230.3      0.00       0.0       0.0                           96693.0703
-    0:00:02    2230.3      0.00       0.0       0.0                           96693.0703
-    0:00:02    2230.3      0.00       0.0       0.0                           96693.0703
-    0:00:02    2230.3      0.00       0.0       0.0                           96693.0703
-    0:00:02    2230.3      0.00       0.0       0.0                           96693.0703
-    0:00:02    2230.3      0.00       0.0       0.0                           96693.0703
-    0:00:02    2230.3      0.00       0.0       0.0                           96693.0703
-    0:00:02    2230.3      0.00       0.0       0.0                           96693.0703
-    0:00:02    2230.3      0.00       0.0       0.0                           96693.0703
-    0:00:02    2230.3      0.00       0.0       0.0                           96693.0703
-    0:00:02    2230.3      0.00       0.0       0.0                           96693.0703
+    0:00:04    3786.7      1.40      10.1       0.0                           169449.1406
+    0:00:04    4179.7      1.12       9.3       0.0 pos_out_reg[2]/RN         203673.8906
+    0:00:05    4247.7      1.11       9.2       0.0                           209353.9688
+    0:00:05    4146.7      1.11       9.2       0.0                           197803.1250
+    0:00:05    4146.7      1.11       9.2       0.0                           197803.1250
+    0:00:05    4146.7      1.11       9.2       0.0                           197803.1250
+    0:00:05    4146.7      1.11       9.2       0.0                           197803.1250
+    0:00:05    4645.0      1.04       8.8       0.0                           239741.6719
+    0:00:05    4645.0      1.04       8.8       0.0                           239741.6719
+    0:00:05    5040.2      0.98       8.6       0.0                           269526.1875
+    0:00:06    5040.2      0.98       8.6       0.0                           269526.1875
+    0:00:06    5040.2      0.98       8.6       0.0                           269526.1875
+    0:00:06    5040.2      0.98       8.6       0.0                           269526.1875
 
                                   TOTAL                                                
    ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
     TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
   --------- --------- --------- --------- --------- ------------------------- ---------
-    0:00:02    2230.3      0.00       0.0       0.0                           96693.0703
-    0:00:02    2230.3      0.00       0.0       0.0                           96693.0703
-    0:00:02    1938.4      0.00       0.0       0.0                           74593.4062
-    0:00:02    1938.4      0.00       0.0       0.0                           74593.4062
+    0:00:06    5040.2      0.98       8.6       0.0                           269526.1875
+    0:00:06    5033.6      0.98       8.6       0.0                           268556.2812
+    0:00:06    4721.9      0.98       8.4       0.0                           246854.4844
+    0:00:06    4326.7      0.98       8.4       0.0                           214621.7812
+    0:00:06    4285.0      0.98       8.4       0.0                           212397.4375
+    0:00:06    4276.2      0.98       8.3       0.0                           212126.7812
+    0:00:06    4276.2      0.98       8.3       0.0                           212126.7812
+    0:00:06    4144.5      0.98       8.3       0.0                           200917.2344
 Loading db file '/opt/PDKs/smic_180/SM00LB501-FE-00000-r0p0-00rel0/aci/sc-m/synopsys/ss_1v62_125c.db'
 
 
@@ -237,17 +207,9 @@ Note: Symbol # after min delay cost means estimated hold TNS across all active s
   ---------------------
 Information: State dependent leakage is now switched from off to on.
 Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
-Warning: Design has unannotated black box outputs. (PWR-428)
 1
 #----------------------Save Design Database--------------------------
 change_names -rules verilog -hierarchy
-Information: Building the design 'VectorDetector_m2'. (HDL-193)
-Error:  /home/gift/workplace/CourseDigitalIC/homework/ch3/VectorDetector/src/VectorDetector_m2.v:77: Net 'pos_out1_1_2_1[1]', or a directly connected net, is driven by more than one source, and at least one source is a constant net. (ELAB-368)
-Warning:  /home/gift/workplace/CourseDigitalIC/homework/ch3/VectorDetector/src/VectorDetector_m2.v:77: Net pos_out1_1_2_1[0] or a directly connected net may be driven by more than one process or block. (ELAB-405)
-Error:  /home/gift/workplace/CourseDigitalIC/homework/ch3/VectorDetector/src/VectorDetector_m2.v:85: Net 'pos_out2_1_2_1[1]', or a directly connected net, is driven by more than one source, and at least one source is a constant net. (ELAB-368)
-Warning:  /home/gift/workplace/CourseDigitalIC/homework/ch3/VectorDetector/src/VectorDetector_m2.v:85: Net pos_out2_1_2_1[0] or a directly connected net may be driven by more than one process or block. (ELAB-405)
-*** Presto compilation terminated with 2 errors. ***
-Warning: Unable to resolve reference 'VectorDetector_m2' in 'top'. (LINK-5)
 1
 set_fix_multiple_port_nets -all -buffer_constants
 1
@@ -268,24 +230,20 @@ report_power > ../syn/report/$TOP_DESIGN.power_rpt
 check_timing > ../syn/log/last_check_timing.log
 #---------------------Generate Files -------------------------
 write -f verilog -hierarchy -output ../syn/mapped/$TOP_DESIGN.v
-Warning: Design 'top' has '1' unresolved references. For more detailed information, use the "link" command. (UID-341)
 Writing verilog file '/home/gift/workplace/CourseDigitalIC/homework/ch3/VectorDetector/syn/mapped/top.v'.
 1
 write_sdc ../syn/mapped/$TOP_DESIGN.sdc
-Warning: Design 'top' has '1' unresolved references. For more detailed information, use the "link" command. (UID-341)
 1
 write_sdf -context verilog ../syn/mapped/$TOP_DESIGN.sdf
-Warning: Design 'top' has '1' unresolved references. For more detailed information, use the "link" command. (UID-341)
 Information: Annotated 'cell' delays are assumed to include load delay. (UID-282)
 Information: Writing timing information to file '/home/gift/workplace/CourseDigitalIC/homework/ch3/VectorDetector/syn/mapped/top.sdf'. (WT-3)
-Warning: Design contains black-box components.  These cells will have no timing information. (WT-7)
 1
 1
 dc_shell> quit
 
 Memory usage for main task 167 Mbytes.
 Memory usage for this session 167 Mbytes.
-CPU usage for this session 3 seconds ( 0.00 hours ).
+CPU usage for this session 7 seconds ( 0.00 hours ).
 
 Thank you...
 

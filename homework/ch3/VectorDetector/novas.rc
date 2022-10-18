@@ -219,8 +219,6 @@ Selection-LineColor = ID_BLUE2
 Selection-LineWidth = 1
 [FSM_Dlg-Print]
 Orientation = Landscape
-[FileBrowser]
-nWaveOpenFsdbDirHistory = "\"/home/gift/workplace/CourseDigitalIC/homework/ch3/VectorDetector/build/simtop.fsdb\""
 [Form]
 version = Verdi_O-2018.09-SP2
 [General]
@@ -370,9 +368,8 @@ saveWaveformStat = TRUE
 savePropStat = FALSE
 savePropDtl = TRUE
 [QtDialog]
-openFileDlg = 290,425,602,483
-qWaveSignalDialog = 191,427,800,479
-QwUserAskDlg = 439,608,324,134
+qWaveSignalDialog = 298,427,800,479
+QwUserAskDlg = 545,608,324,134
 [Relationship]
 hideRecursiceNode = FALSE
 [Session Cache]
@@ -559,7 +556,7 @@ pdmlMacro = ID_BLACK
 font = COURIER12
 annotFont = Helvetica_M_R_10
 [Text.1]
-viewport = 141 280 900 700 45
+viewport = 248 280 899 700 45
 [TextPrinter]
 Orientation = Landscape
 Indicator = FALSE
@@ -655,28 +652,28 @@ visualIndex = 1
 isHidden = TRUE
 isUserChangeColumnVisible = FALSE
 [VIA.oneSearch.preference.vgifColumnSettingRC.setting0.column1]
+name = Time
+width = 60
+visualIndex = 0
+isHidden = TRUE
+isUserChangeColumnVisible = FALSE
+[VIA.oneSearch.preference.vgifColumnSettingRC.setting0.column2]
 name = Code
 width = 60
 visualIndex = 2
 isHidden = TRUE
 isUserChangeColumnVisible = FALSE
-[VIA.oneSearch.preference.vgifColumnSettingRC.setting0.column2]
+[VIA.oneSearch.preference.vgifColumnSettingRC.setting0.column3]
 name = Type
 width = 60
 visualIndex = 3
 isHidden = TRUE
 isUserChangeColumnVisible = FALSE
-[VIA.oneSearch.preference.vgifColumnSettingRC.setting0.column3]
+[VIA.oneSearch.preference.vgifColumnSettingRC.setting0.column4]
 name = Message
 width = 2000
 visualIndex = 4
 isHidden = FALSE
-isUserChangeColumnVisible = FALSE
-[VIA.oneSearch.preference.vgifColumnSettingRC.setting0.column4]
-name = Time
-width = 60
-visualIndex = 0
-isHidden = TRUE
 isUserChangeColumnVisible = FALSE
 [Vi]
 ViFont = "Clean 14"
@@ -693,8 +690,8 @@ ovaForbidSuccessColor = -c ID_GREEN5
 SigGroupRuleFile = 
 DisplayFileName = FALSE
 waveform_vertical_scroll_bar = TRUE
-getSignalForm = 191 390 800 479 333 381 221 89
-viewPort = 0 27 900 254 100 65
+getSignalForm = 298 390 800 479 164 381 390 89
+viewPort = 0 27 899 254 100 65
 signalSpacing = 5
 digitalSignalHeight = 15
 analogSignalHeight = 98
@@ -761,6 +758,7 @@ analogVoltageStyle = pwl
 analogCurrentStyle = pwl
 analogOthersStyle = pwl
 busSignalLayer = -c ID_ORANGE8
+busXLayer = -c ID_RED5
 busZLayer = -c ID_ORANGE6
 busMixedLayer = -c ID_GREEN5
 busNotComputedLayer = -c ID_GRAY1
@@ -1293,7 +1291,7 @@ AddImportArgument = FALSE
 LineBreakWithScope = TRUE
 StopAfterCompileOption = -s
 [wave.0]
-viewPort = 0 27 900 254 100 65
+viewPort = 0 27 899 254 100 65
 [wave.1]
 viewPort = 127 219 960 332 100 65
 [wave.2]

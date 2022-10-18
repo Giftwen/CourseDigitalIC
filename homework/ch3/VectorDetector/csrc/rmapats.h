@@ -2437,16 +2437,16 @@ extern "C" {
 void  hs_0_M_1_21__simtop_daidir (UB  * pcode, scalar  val);
 void  hs_0_M_1_0__simtop_daidir (UB  * pcode, scalar  val);
 void  hs_0_M_1_11__simtop_daidir (UB  * pcode, scalar  val);
-void  hs_0_M_7_21__simtop_daidir (UB  * pcode, scalar  val);
-void  hs_0_M_7_0__simtop_daidir (UB  * pcode, scalar  val);
-void  hs_0_M_7_1__simtop_daidir (UB  * pcode, scalar  val, U  I677, scalar  * I1303, U  did);
-void  hs_0_M_7_2__simtop_daidir (UB  * pcode);
-void  hs_0_M_7_11__simtop_daidir (UB  * pcode, scalar  val);
-void  hs_0_M_8_21__simtop_daidir (UB  * pcode, scalar  val);
-void  hs_0_M_8_0__simtop_daidir (UB  * pcode, scalar  val);
-void  hs_0_M_8_1__simtop_daidir (UB  * pcode, scalar  val, U  I677, scalar  * I1303, U  did);
-void  hs_0_M_8_2__simtop_daidir (UB  * pcode);
-void  hs_0_M_8_11__simtop_daidir (UB  * pcode, scalar  val);
+void  hs_0_M_10_21__simtop_daidir (UB  * pcode, scalar  val);
+void  hs_0_M_10_0__simtop_daidir (UB  * pcode, scalar  val);
+void  hs_0_M_10_1__simtop_daidir (UB  * pcode, scalar  val, U  I677, scalar  * I1303, U  did);
+void  hs_0_M_10_2__simtop_daidir (UB  * pcode);
+void  hs_0_M_10_11__simtop_daidir (UB  * pcode, scalar  val);
+void  hs_0_M_11_21__simtop_daidir (UB  * pcode, scalar  val);
+void  hs_0_M_11_0__simtop_daidir (UB  * pcode, scalar  val);
+void  hs_0_M_11_1__simtop_daidir (UB  * pcode, scalar  val, U  I677, scalar  * I1303, U  did);
+void  hs_0_M_11_2__simtop_daidir (UB  * pcode);
+void  hs_0_M_11_11__simtop_daidir (UB  * pcode, scalar  val);
 void  hsG_0__0 (struct dummyq_struct * I1289, EBLK  * I1283, U  I685);
 #ifdef __cplusplus
 }

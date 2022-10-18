@@ -1,12 +1,30 @@
-Warning: Design 'top' has '1' unresolved references. For more detailed information, use the "link" command. (UID-341)
  
 ****************************************
 Report : constraint
         -all_violators
 Design : top
 Version: L-2016.03-SP1
-Date   : Tue Oct  4 15:25:34 2022
+Date   : Sun Oct  9 09:11:47 2022
 ****************************************
+
+
+   max_delay/setup ('clk' group)
+
+                             Required        Actual
+   Endpoint                 Path Delay     Path Delay        Slack
+   -----------------------------------------------------------------
+   pos_out_reg_1_/RN            0.86           1.84 r        -0.98  (VIOLATED)
+   pos_out_reg_2_/RN            0.77           1.75 f        -0.97  (VIOLATED)
+   pos_out_reg_3_/RN            0.76           1.73 f        -0.97  (VIOLATED)
+   pos_out_reg_0_/RN            0.77           1.74 f        -0.97  (VIOLATED)
+   pos_out[0]                   0.71           1.48 r        -0.77  (VIOLATED)
+   pos_out[1]                   0.71           1.48 r        -0.77  (VIOLATED)
+   pos_out[3]                   0.71           1.48 r        -0.77  (VIOLATED)
+   pos_out_reg_4_/RN            0.80           1.46 f        -0.66  (VIOLATED)
+   pos_out_reg_5_/RN            0.90           1.53 r        -0.63  (VIOLATED)
+   pos_out[5]                   0.71           1.05 r        -0.34  (VIOLATED)
+   pos_out[2]                   0.71           0.96 r        -0.25  (VIOLATED)
+   pos_out[4]                   0.71           0.96 r        -0.25  (VIOLATED)
 
 
    max_area
@@ -14,7 +32,7 @@ Date   : Tue Oct  4 15:25:34 2022
                              Required        Actual
    Design                      Area           Area           Slack
    -----------------------------------------------------------------
-   top                          0.00        1938.36       -1938.36  (VIOLATED)
+   top                          0.00        4144.54       -4144.54  (VIOLATED)
 
 
    max_leakage_power
@@ -22,7 +40,8 @@ Date   : Tue Oct  4 15:25:34 2022
                              Required        Actual
    Design                   Leakage Power  Leakage Power     Slack
    -----------------------------------------------------------------
-   top                          0.00       87320.44       -87320.44 (VIOLATED)
+   top                          0.00       197892.91      -197892.91
+                                                                    (VIOLATED)
 
 
 1

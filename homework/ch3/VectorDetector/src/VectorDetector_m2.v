@@ -1,7 +1,7 @@
 /*
  * @Author: WenJiaBao-2022E8020282071
  * @Date: 2022-09-20 21:43:00
- * @LastEditTime: 2022-09-20 23:00:45
+ * @LastEditTime: 2022-10-09 09:25:40
  * @Description: Homework of AdvDigitalIC : ch3 VectorDetector source code
  * 
  * Copyright (c) 2022 by WenJiaBao wenjiabao0919@163.com, All Rights Reserved. 
@@ -68,6 +68,7 @@ assign pos_out1_2_1  =   ( |data_in[23:22] ) ?    pos_out1_2_1_1    :  pos_out1_
 assign pos_out1_2_2  =   ( |data_in[19:18] ) ?    pos_out1_2_2_1    :  pos_out1_2_2_2;
 assign pos_out2_1_1  =   ( |data_in[15:14] ) ?    pos_out2_1_1_1    :  pos_out2_1_1_2;
 assign pos_out2_1_2  =   ( |data_in[11:8] ) ?    pos_out2_1_2_1    :  pos_out2_1_2_2;
+//assign pos_out2_1_2  =   ( |data_in[11:10] ) ?    pos_out2_1_2_1    :  pos_out2_1_2_2;
 assign pos_out2_2_1  =   ( |data_in[7:6] ) ?    pos_out2_2_1_1    :  pos_out2_2_1_2;
 assign pos_out2_2_2  =   ( |data_in[3:2] ) ?    pos_out2_2_2_1    :  pos_out2_2_2_2;
 

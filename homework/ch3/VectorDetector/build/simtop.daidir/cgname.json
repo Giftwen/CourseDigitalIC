@@ -5,17 +5,17 @@
         "module",
         1
     ],
-    "VectorDetector_m2": [
-        "VectorDetector_m2",
-        "PvYvC",
-        "module",
-        2
-    ],
     "tb_VectorDetector": [
         "tb_VectorDetector",
         "K9Jmh",
         "module",
         3
+    ],
+    "VectorDetector_m3": [
+        "VectorDetector_m3",
+        "IchZA",
+        "module",
+        2
     ],
     "...MASTER...": [
         "SIM",

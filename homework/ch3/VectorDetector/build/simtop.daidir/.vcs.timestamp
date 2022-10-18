@@ -1,6 +1,6 @@
 0 
 42
-+define+M3
++define+M2
 +define+M4
 +itf+/usr/Synopsys/vcs2018/vcs/O-2018.09-SP2/linux64/lib/vcsdp_lite.tab
 +v2k
@@ -42,18 +42,20 @@
 /usr/Synopsys/vcs2018/vcs/O-2018.09-SP2/linux64/bin/vcs1
 /usr/Synopsys/verdi/verdi/Verdi_O-2018.09-SP2/share/PLI/VCS/LINUX64/verdi.tab
 /usr/Synopsys/verdi/verdi/Verdi_O-2018.09-SP2/share/PLI/VCS/LINUXAMD64/novas.tab
-68
+81
 sysc_uni_pwd=/home/gift/workplace/CourseDigitalIC/homework/ch3/VectorDetector
-XDG_SESSION_TYPE=tty
-XDG_SESSION_ID=304
+XMODIFIERS=@im=ibus
+XDG_SESSION_TYPE=wayland
+XDG_SESSION_DESKTOP=ubuntu
 XDG_SESSION_CLASS=user
 XDG_RUNTIME_DIR=/run/user/1000
-XDG_DATA_DIRS=/usr/local/share:/usr/share:/var/lib/snapd/desktop
-VSCODE_IPC_HOOK_CLI=/run/user/1000/vscode-ipc-5309bf8f-b01e-4323-89e6-a4f1cd93f22b.sock
-VSCODE_GIT_IPC_HANDLE=/run/user/1000/vscode-git-12a3c6426b.sock
-VSCODE_GIT_ASKPASS_NODE=/home/gift/.vscode-server/bin/74b1f979648cc44d385a2286793c226e611f59e7/node
-VSCODE_GIT_ASKPASS_MAIN=/home/gift/.vscode-server/bin/74b1f979648cc44d385a2286793c226e611f59e7/extensions/git/dist/askpass-main.js
-VSCODE_GIT_ASKPASS_EXTRA_ARGS=
+XDG_MENU_PREFIX=gnome-
+XDG_DATA_DIRS=/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop
+XDG_CURRENT_DESKTOP=ubuntu:GNOME
+XDG_CONFIG_DIRS=/etc/xdg/xdg-ubuntu:/etc/xdg
+XAUTHORITY=/run/user/1000/.mutter-Xwaylandauth.JC8FS1
+WAYLAND_DISPLAY=wayland-0
+VTE_VERSION=6203
 VMR_MODE_FLAG=64
 VERILATOR_AUTHOR_SITE=1
 VERDI_HOME=/usr/Synopsys/verdi/verdi/Verdi_O-2018.09-SP2
@@ -65,17 +67,19 @@ VCS_HOME=/usr/Synopsys/vcs2018/vcs/O-2018.09-SP2
 VCS_DEPTH=0
 VCS_ARG_ADDED_FOR_TMP=1
 VCS_ARCH=linux64
+USERNAME=gift
 UNAME=/bin/uname
 TOOL_HOME=/usr/Synopsys/vcs2018/vcs/O-2018.09-SP2/linux64
-TERM_PROGRAM_VERSION=1.71.2
-TERM_PROGRAM=vscode
 SYNOPSYS=/usr/Synopsys/dc2016
-SSH_CONNECTION=192.168.246.1 57934 192.168.246.129 22
-SSH_CLIENT=192.168.246.1 57934 22
+SSH_AUTH_SOCK=/run/user/1000/keyring/ssh
+SSH_AGENT_LAUNCHER=gnome-keyring
 SNPS_VCS_INTERNAL_UBUNTU_PRE_LDFLAGS= -no-pie  -Wl,--no-as-needed 
 SNPS_VCS_INTERNAL_LINKER_NEEDS_NO_AS_NEEDED=1
+SESSION_MANAGER=local/gift-virtual-machine:@/tmp/.ICE-unix/1988,unix/gift-virtual-machine:/tmp/.ICE-unix/1988
 SCRNAME=vcs
 SCRIPT_NAME=vcs
+QT_IM_MODULE=ibus
+QT_ACCESSIBILITY=1
 PT_HOME=/usr/Synopsys/primetime2016
 OVA_UUM=0
 NVBOARD_HOME=/home/gift/workplace/ysyx-workbench/nvboard
@@ -84,10 +88,9 @@ NPC_HOME=/home/gift/workplace/ysyx-workbench/npc
 NOVAS_INST_DIR=/usr/Synopsys/verdi/verdi/Verdi_O-2018.09-SP2
 NOVAS_HOME=/usr/Synopsys/verdi/verdi/Verdi_O-2018.09-SP2
 NEMU_HOME=/home/gift/workplace/ysyx-workbench/nemu
-MOTD_SHOWN=pam
 MFLAGS=
-MAKE_TERMOUT=/dev/pts/0
-MAKE_TERMERR=/dev/pts/0
+MAKE_TERMOUT=/dev/pts/6
+MAKE_TERMERR=/dev/pts/6
 MAKELEVEL=1
 MAKEFLAGS=
 LIBRARY_PATH=/usr/lib/x86_64-linux-gnu
@@ -103,9 +106,19 @@ LC_MEASUREMENT=zh_CN.UTF-8
 LC_IDENTIFICATION=zh_CN.UTF-8
 LC_ALL=C
 LC_ADDRESS=zh_CN.UTF-8
-GIT_ASKPASS=/home/gift/.vscode-server/bin/74b1f979648cc44d385a2286793c226e611f59e7/extensions/git/dist/askpass.sh
+IM_CONFIG_PHASE=1
+GTK_MODULES=gail:atk-bridge
+GNOME_TERMINAL_SERVICE=:1.556
+GNOME_TERMINAL_SCREEN=/org/gnome/Terminal/screen/b38b129d_d9ab_4a71_81aa_44ca064d586f
+GNOME_SHELL_SESSION_MODE=ubuntu
+GNOME_SETUP_DISPLAY=:1
+GNOME_DESKTOP_SESSION_ID=this-is-deprecated
+GJS_DEBUG_TOPICS=JS ERROR;JS LOG
+GJS_DEBUG_OUTPUT=stderr
+GDMSESSION=ubuntu
 FM_HOME=/usr/Synopsys/formality2015
 DVE_HOME=/usr/Synopsys/vcs2018/vcs/O-2018.09-SP2/gui/dve
+DESKTOP_SESSION=ubuntu
 DC_HOME=/usr/Synopsys/dc2016
 DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus
 CPATH=/usr/include/x86_64-linux-gnu
@@ -113,11 +126,11 @@ COLORTERM=truecolor
 AM_HOME=/home/gift/workplace/ysyx-workbench/abstract-machine
 0
 8
-1664867122 /home/gift/workplace/CourseDigitalIC/homework/ch3/VectorDetector/sim/tb_VectorDector.v
-1664866715 /home/gift/workplace/CourseDigitalIC/homework/ch3/VectorDetector/src/top.v
-1664864758 /home/gift/workplace/CourseDigitalIC/homework/ch3/VectorDetector/src/VectorDetector_m3.v
-1664864758 /home/gift/workplace/CourseDigitalIC/homework/ch3/VectorDetector/src/VectorDetector_m2.v
-1664864758 /home/gift/workplace/CourseDigitalIC/homework/ch3/VectorDetector/src/VectorDetector_m1.v
+1664873955 /home/gift/workplace/CourseDigitalIC/homework/ch3/VectorDetector/sim/tb_VectorDector.v
+1665246070 /home/gift/workplace/CourseDigitalIC/homework/ch3/VectorDetector/src/top.v
+1664870820 /home/gift/workplace/CourseDigitalIC/homework/ch3/VectorDetector/src/VectorDetector_m3.v
+1665278492 /home/gift/workplace/CourseDigitalIC/homework/ch3/VectorDetector/src/VectorDetector_m2.v
+1664870820 /home/gift/workplace/CourseDigitalIC/homework/ch3/VectorDetector/src/VectorDetector_m1.v
 1550753332 /usr/Synopsys/verdi/verdi/Verdi_O-2018.09-SP2/share/PLI/VCS/LINUX64/verdi.tab
 1550753332 /usr/Synopsys/verdi/verdi/Verdi_O-2018.09-SP2/share/PLI/VCS/LINUXAMD64/novas.tab
 1551421246 /usr/Synopsys/vcs2018/vcs/O-2018.09-SP2/linux64/lib/vcsdp_lite.tab
@@ -127,5 +140,5 @@ AM_HOME=/home/gift/workplace/ysyx-workbench/abstract-machine
 1551421768 /usr/Synopsys/vcs2018/vcs/O-2018.09-SP2/linux64/lib/libsnpsmalloc.so
 1551421789 /usr/Synopsys/vcs2018/vcs/O-2018.09-SP2/linux64/lib/libvfs.so
 1550752033 /usr/Synopsys/verdi/verdi/Verdi_O-2018.09-SP2/share/PLI/VCS/LINUXAMD64/pli.a
-1664867140 ./build/simtop.daidir
+1665278563 ./build/simtop.daidir
 -1 partitionlib

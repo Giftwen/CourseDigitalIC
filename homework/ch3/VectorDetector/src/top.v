@@ -1,7 +1,7 @@
 /*
  * @Author: WenJiaBao-2022E8020282071
  * @Date: 2022-09-20 14:43:54
- * @LastEditTime: 2022-10-04 14:58:35
+ * @LastEditTime: 2022-10-09 00:21:10
  * @Description: Homework of AdvDigitalIC : ch3 VectorDetector source code 
  * 
  * Copyright (c) 2022 by WenJiaBao wenjiabao0919@163.com, All Rights Reserved. 
@@ -39,9 +39,7 @@ VectorDetector_m2 VectorDetector_m2_u0(
 );
 
 `elsif M3
-//Timing:370Mhz slack (MET)=0.00
-//Area:3527.92
-//Power:166192
+
 
 VectorDetector_m3 VectorDetector_m3_u0(
     .data_in    (data_in_r),
