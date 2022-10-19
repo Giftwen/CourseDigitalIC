@@ -1,0 +1,43 @@
+Warning: Design 'top' has '1' unresolved references. For more detailed information, use the "link" command. (UID-341)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay min
+        -max_paths 1
+Design : top
+Version: L-2016.03-SP1
+Date   : Thu Oct 20 00:12:24 2022
+****************************************
+
+Operating Conditions: ss_1v62_125c   Library: ss_1v62_125c
+Wire Load Model Mode: top
+
+  Startpoint: a[0] (input port clocked by clk)
+  Endpoint: a_r_reg_0_ (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.19       0.19
+  input external delay                     0.00       0.19 f
+  a[0] (in)                                0.00       0.19 f
+  a_r_reg_0_/D (DFFRQX1M)                  0.00       0.19 f
+  data arrival time                                   0.19
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.19       0.19
+  clock uncertainty                        0.09       0.28
+  a_r_reg_0_/CK (DFFRQX1M)                 0.00       0.28 r
+  library hold time                        0.02       0.31
+  data required time                                  0.31
+  -----------------------------------------------------------
+  data required time                                  0.31
+  data arrival time                                  -0.19
+  -----------------------------------------------------------
+  slack (VIOLATED)                                   -0.12
+
+
+1
