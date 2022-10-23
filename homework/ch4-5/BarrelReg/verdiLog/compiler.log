@@ -1,0 +1,12 @@
+*design* DebussyLib (btIdent Verdi_O-2018.09-SP2)
+Command arguments:
+    +define+verilog
+    -f ./sim/filelist_sim.f
+        /home/gift/workplace/CourseDigitalIC/homework/ch4-5/BarrelReg/src/barrel.v
+        /home/gift/workplace/CourseDigitalIC/homework/ch4-5/BarrelReg/src/top.v
+        /home/gift/workplace/CourseDigitalIC/homework/ch4-5/BarrelReg/sim/tb_BarrelReg.v
+
+Highest level modules:
+tb_cla
+
+Total	0 error(s),   0 warning(s)

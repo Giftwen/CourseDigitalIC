@@ -1,11 +1,10 @@
-Warning: Design 'top' has '1' unresolved references. For more detailed information, use the "link" command. (UID-341)
  
 ****************************************
 Report : constraint
         -all_violators
 Design : top
 Version: L-2016.03-SP1
-Date   : Thu Oct 20 00:12:24 2022
+Date   : Sun Oct 23 22:57:45 2022
 ****************************************
 
 
@@ -14,38 +13,38 @@ Date   : Thu Oct 20 00:12:24 2022
                              Required        Actual
    Endpoint                 Path Delay     Path Delay        Slack
    -----------------------------------------------------------------
-   a_r_reg_0_/D                 0.31           0.19 f        -0.12  (VIOLATED)
-   a_r_reg_1_/D                 0.31           0.19 f        -0.12  (VIOLATED)
-   a_r_reg_2_/D                 0.31           0.19 f        -0.12  (VIOLATED)
-   a_r_reg_3_/D                 0.31           0.19 f        -0.12  (VIOLATED)
-   a_r_reg_4_/D                 0.31           0.19 f        -0.12  (VIOLATED)
-   a_r_reg_5_/D                 0.31           0.19 f        -0.12  (VIOLATED)
-   a_r_reg_6_/D                 0.31           0.19 f        -0.12  (VIOLATED)
-   a_r_reg_7_/D                 0.31           0.19 f        -0.12  (VIOLATED)
-   a_r_reg_8_/D                 0.31           0.19 f        -0.12  (VIOLATED)
-   a_r_reg_9_/D                 0.31           0.19 f        -0.12  (VIOLATED)
-   a_r_reg_10_/D                0.31           0.19 f        -0.12  (VIOLATED)
-   a_r_reg_11_/D                0.31           0.19 f        -0.12  (VIOLATED)
-   a_r_reg_12_/D                0.31           0.19 f        -0.12  (VIOLATED)
-   a_r_reg_13_/D                0.31           0.19 f        -0.12  (VIOLATED)
-   a_r_reg_14_/D                0.31           0.19 f        -0.12  (VIOLATED)
-   a_r_reg_15_/D                0.31           0.19 f        -0.12  (VIOLATED)
-   b_r_reg_0_/D                 0.31           0.19 f        -0.12  (VIOLATED)
-   b_r_reg_1_/D                 0.31           0.19 f        -0.12  (VIOLATED)
-   b_r_reg_2_/D                 0.31           0.19 f        -0.12  (VIOLATED)
-   b_r_reg_3_/D                 0.31           0.19 f        -0.12  (VIOLATED)
-   b_r_reg_4_/D                 0.31           0.19 f        -0.12  (VIOLATED)
-   b_r_reg_5_/D                 0.31           0.19 f        -0.12  (VIOLATED)
-   b_r_reg_6_/D                 0.31           0.19 f        -0.12  (VIOLATED)
-   b_r_reg_7_/D                 0.31           0.19 f        -0.12  (VIOLATED)
-   b_r_reg_8_/D                 0.31           0.19 f        -0.12  (VIOLATED)
-   b_r_reg_9_/D                 0.31           0.19 f        -0.12  (VIOLATED)
-   b_r_reg_10_/D                0.31           0.19 f        -0.12  (VIOLATED)
-   b_r_reg_11_/D                0.31           0.19 f        -0.12  (VIOLATED)
-   b_r_reg_12_/D                0.31           0.19 f        -0.12  (VIOLATED)
-   b_r_reg_13_/D                0.31           0.19 f        -0.12  (VIOLATED)
-   b_r_reg_14_/D                0.31           0.19 f        -0.12  (VIOLATED)
-   b_r_reg_15_/D                0.31           0.19 f        -0.12  (VIOLATED)
+   a_r_reg_12_/D                0.38           0.24 f        -0.14  (VIOLATED)
+   a_r_reg_14_/D                0.38           0.24 f        -0.14  (VIOLATED)
+   a_r_reg_15_/D                0.38           0.24 f        -0.14  (VIOLATED)
+   b_r_reg_12_/D                0.38           0.24 f        -0.14  (VIOLATED)
+   b_r_reg_13_/D                0.38           0.24 f        -0.14  (VIOLATED)
+   b_r_reg_14_/D                0.38           0.24 f        -0.14  (VIOLATED)
+   b_r_reg_15_/D                0.38           0.24 f        -0.14  (VIOLATED)
+   a_r_reg_1_/D                 0.36           0.24 f        -0.12  (VIOLATED)
+   a_r_reg_2_/D                 0.36           0.24 f        -0.12  (VIOLATED)
+   a_r_reg_3_/D                 0.36           0.24 f        -0.12  (VIOLATED)
+   a_r_reg_5_/D                 0.36           0.24 f        -0.12  (VIOLATED)
+   a_r_reg_6_/D                 0.36           0.24 f        -0.12  (VIOLATED)
+   a_r_reg_7_/D                 0.36           0.24 f        -0.12  (VIOLATED)
+   b_r_reg_1_/D                 0.36           0.24 f        -0.12  (VIOLATED)
+   b_r_reg_3_/D                 0.36           0.24 f        -0.12  (VIOLATED)
+   b_r_reg_5_/D                 0.36           0.24 f        -0.12  (VIOLATED)
+   b_r_reg_7_/D                 0.36           0.24 f        -0.12  (VIOLATED)
+   a_r_reg_11_/D                0.34           0.24 f        -0.10  (VIOLATED)
+   b_r_reg_2_/D                 0.34           0.24 f        -0.10  (VIOLATED)
+   b_r_reg_6_/D                 0.34           0.24 f        -0.10  (VIOLATED)
+   a_r_reg_4_/D                 0.31           0.24 f        -0.07  (VIOLATED)
+   a_r_reg_9_/D                 0.31           0.24 f        -0.07  (VIOLATED)
+   a_r_reg_10_/D                0.31           0.24 f        -0.07  (VIOLATED)
+   b_r_reg_4_/D                 0.31           0.24 f        -0.07  (VIOLATED)
+   b_r_reg_11_/D                0.31           0.24 f        -0.07  (VIOLATED)
+   a_r_reg_0_/D                 0.29           0.24 f        -0.06  (VIOLATED)
+   a_r_reg_8_/D                 0.29           0.24 f        -0.06  (VIOLATED)
+   a_r_reg_13_/D                0.29           0.24 f        -0.06  (VIOLATED)
+   b_r_reg_0_/D                 0.29           0.24 f        -0.06  (VIOLATED)
+   b_r_reg_8_/D                 0.29           0.24 f        -0.06  (VIOLATED)
+   b_r_reg_9_/D                 0.29           0.24 f        -0.06  (VIOLATED)
+   b_r_reg_10_/D                0.29           0.24 f        -0.06  (VIOLATED)
 
 
    max_area
@@ -53,7 +52,7 @@ Date   : Thu Oct 20 00:12:24 2022
                              Required        Actual
    Design                      Area           Area           Slack
    -----------------------------------------------------------------
-   top                          0.00        2333.50       -2333.50  (VIOLATED)
+   top                          0.00        6234.37       -6234.37  (VIOLATED)
 
 
    max_leakage_power
@@ -61,7 +60,18 @@ Date   : Thu Oct 20 00:12:24 2022
                              Required        Actual
    Design                   Leakage Power  Leakage Power     Slack
    -----------------------------------------------------------------
-   top                          0.00       77976.74       -77976.74 (VIOLATED)
+   top                          0.00       308552.50      -308552.50
+                                                                    (VIOLATED)
+
+
+   multiport_net
+
+                             Required        Actual
+   Net                          Cost           Cost          Violation
+   -----------------------------------------------------------------
+   cla16_u0/adder_4_u0/cla/g1
+                                0.00           1.00          -1.00  (VIOLATED)
+   cla16_u0/sum_o[16]           0.00           1.00          -1.00  (VIOLATED)
 
 
 1

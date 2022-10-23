@@ -1,15 +1,19 @@
-Warning: Design 'top' has '1' unresolved references. For more detailed information, use the "link" command. (UID-341)
  
 ****************************************
 check_design summary:
 Version:     L-2016.03-SP1
-Date:        Thu Oct 20 00:12:24 2022
+Date:        Sun Oct 23 22:57:45 2022
 ****************************************
 
                    Name                                            Total
 --------------------------------------------------------------------------------
-Tristate                                                           32
-    A tristate bus has a non tri-state driver (LINT-34)            32
+Inputs/Outputs                                                      6
+    Unconnected ports (LINT-28)                                     4
+    Feedthrough (LINT-29)                                           1
+    Shorted outputs (LINT-31)                                       1
+
+Cells                                                               3
+    Connected to power or ground (LINT-32)                          3
 --------------------------------------------------------------------------------
 
 Information: Use the 'check_design' command for 

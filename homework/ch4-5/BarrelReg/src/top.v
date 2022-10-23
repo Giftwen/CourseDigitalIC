@@ -1,7 +1,7 @@
 /*
  * @Author: WenJiaBao-2022E8020282071
  * @Date: 2022-10-18 17:20:59
- * @LastEditTime: 2022-10-19 19:46:23
+ * @LastEditTime: 2022-10-23 16:18:16
  * @Description: 
  * 
  * Copyright (c) 2022 by WenJiaBao wenjiabao0919@163.com, All Rights Reserved. 
@@ -12,10 +12,10 @@ module top(
     input   [31:0]  data_in,
     input           dir,
     input   [4:0]   sh,
-    output  [31:0]  data_out
+    output  reg[31:0]  data_out
 );
-    reg   [31:0]    data_out_r,
-    reg   [31:0]    data_in_r,
+    wire   [31:0]    data_out_r;
+    reg   [31:0]    data_in_r;
     reg             dir_r;
     reg   [4:0]     sh_r;
 
@@ -26,8 +26,8 @@ barrel barrel_u0(
     .sh         (sh_r)
 );
 
-always @(posedge clk ) begin
-    if (rst) begin
+always @(posedge clk or negedge rst_n) begin
+    if (!rst_n) begin
         data_out      <=    32'b0;
         data_in_r     <=    32'b0;
         dir_r         <=    1'b0;
@@ -35,7 +35,7 @@ always @(posedge clk ) begin
     end
     else begin
         data_out      <=      data_out_r;
-        data_in_r     <=    16'b0;
+        data_in_r     <=    data_in;
         dir_r         <=        dir;
         sh_r          <=        sh;
     end

@@ -1,0 +1,112 @@
+{
+    "CompUnits": {
+        "aNPza_d": {
+            "text": 12622,
+            "mod": "tb_cla",
+            "checksum": 0,
+            "out": "aNPza_d.o",
+            "bytes": 25648,
+            "archive": "archive.2/_222276_archive_1.a",
+            "mode": 4
+        }
+    },
+    "Modules": {
+        "...MASTER...": {
+            "end_perf": [
+                4.2104158401489258,
+                0.050594,
+                0.018397,
+                214108,
+                226536,
+                1882454450078053,
+                0,
+                0
+            ],
+            "start_perf": [
+                4.2076950073242188,
+                0.049725999999999999,
+                0.018082000000000001,
+                212644,
+                226536,
+                1666513330.7218921,
+                1882454442735694
+            ],
+            "child_modules": {
+                "tb_cla": 1
+            },
+            "nQuads": 0,
+            "nRouts": 5,
+            "nMops": 0
+        },
+        "tb_cla": {
+            "end_perf": [
+                4.2222068309783936,
+                0.053713999999999998,
+                0.026856999999999999,
+                218728,
+                226536,
+                1882454481821793,
+                17179869185,
+                0
+            ],
+            "start_perf": [
+                4.210486888885498,
+                0.050594,
+                0.018468999999999999,
+                214108,
+                226536,
+                1666513330.724684,
+                1882454450243917
+            ],
+            "child_modules": {},
+            "Compiled": "Yes",
+            "Compiled Times": 3,
+            "nQuads": 550,
+            "nRouts": 54,
+            "nMops": 1445
+        }
+    },
+    "stat": {
+        "ru_self_end": {
+            "ru_maxrss_kb": 111468,
+            "ru_utime_sec": 0.053713999999999998,
+            "ru_stime_sec": 0.031720999999999999,
+            "ru_minflt": 9828,
+            "ru_majflt": 0,
+            "ru_nvcsw": 42,
+            "ru_nivcsw": 27
+        },
+        "ru_childs_end": {
+            "ru_maxrss_kb": 103896,
+            "ru_utime_sec": 0.016775000000000002,
+            "ru_stime_sec": 0.012939000000000001,
+            "ru_minflt": 4308,
+            "ru_majflt": 0,
+            "ru_nvcsw": 25,
+            "ru_nivcsw": 2
+        },
+        "cpu_cycles_end": 1882454494799310,
+        "peak_mem_kb": 226536
+    },
+    "reusePaths": {
+        "amcQw_d": {
+            "icPath": "csrc"
+        }
+    },
+    "ObjArchives": [
+        {
+            "archive": "archive.2/_222276_archive_1.a",
+            "size": 152160,
+            "objects": [
+                [
+                    "aNPza_d.o",
+                    25648
+                ],
+                [
+                    "amcQwB.o",
+                    126512
+                ]
+            ]
+        }
+    ]
+}

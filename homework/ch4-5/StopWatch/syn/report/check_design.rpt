@@ -1,0 +1,25 @@
+ 
+****************************************
+check_design summary:
+Version:     L-2016.03-SP1
+Date:        Sun Oct 23 23:13:47 2022
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Inputs/Outputs                                                      8
+    Unconnected ports (LINT-28)                                     3
+    Shorted outputs (LINT-31)                                       2
+    Constant outputs (LINT-52)                                      3
+
+Cells                                                               1
+    Cells do not drive (LINT-1)                                     1
+
+Nets                                                                3
+    Unloaded nets (LINT-2)                                          3
+--------------------------------------------------------------------------------
+
+Information: Use the 'check_design' command for 
+	 more information about warnings. (LINT-98)
+
+1

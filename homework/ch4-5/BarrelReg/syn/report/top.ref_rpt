@@ -1,0 +1,27 @@
+ 
+****************************************
+Report : reference
+Design : top
+Version: L-2016.03-SP1
+Date   : Sun Oct 23 23:02:29 2022
+****************************************
+
+Attributes:
+    b - black box (unknown)
+   bo - allows boundary optimization
+    d - dont_touch
+   mo - map_only
+    h - hierarchical
+    n - noncombinational
+    r - removable
+    s - synthetic operator
+    u - contains unmapped logic
+
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+DFFRQX1M           ss_1v62_125c
+                                 46.099201      70   3226.944084  n
+barrel                         5250.918320       1   5250.918320  h
+-----------------------------------------------------------------------------
+Total 2 references                                   8477.862404
+1

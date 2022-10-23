@@ -1,0 +1,46 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay min
+        -max_paths 1
+Design : stop_watch
+Version: L-2016.03-SP1
+Date   : Sun Oct 23 23:13:47 2022
+****************************************
+
+Operating Conditions: ss_1v62_125c   Library: ss_1v62_125c
+Wire Load Model Mode: top
+
+  Startpoint: clear (input port clocked by clk)
+  Endpoint: watch_u0/sec_cout_reg
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.95       0.95
+  input external delay                     0.00       0.95 r
+  clear (in)                               0.00       0.95 r
+  watch_u0/clear (watch)                   0.00       0.95 r
+  watch_u0/U78/Y (OR3X1M)                  0.16       1.11 r
+  watch_u0/U67/Y (OAI22X1M)                0.15       1.26 f
+  watch_u0/sec_cout_reg/D (DFFRQX1M)       0.00       1.26 f
+  data arrival time                                   1.26
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.95       0.95
+  clock uncertainty                        0.47       1.42
+  watch_u0/sec_cout_reg/CK (DFFRQX1M)      0.00       1.42 r
+  library hold time                        0.02       1.44
+  data required time                                  1.44
+  -----------------------------------------------------------
+  data required time                                  1.44
+  data arrival time                                  -1.26
+  -----------------------------------------------------------
+  slack (VIOLATED)                                   -0.18
+
+
+1

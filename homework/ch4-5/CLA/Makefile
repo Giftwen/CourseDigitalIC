@@ -20,7 +20,7 @@ LOG_PATH = $(BUILD_DIR)/log
 TIMESCALE:=1ns/1ps  
 $(shell mkdir -p $(LOG_PATH))
 
-VCS:=vcs +v2k -full64  -debug_acc+all -debug_region+cell+encrypt 	-LDFLAGS -Wl,--no-as-needed  	-timescale=${TIMESCALE} 	   	-o $(SIMTOP)                   	-l ${LOG_PATH}/report.log      	-P $(VERDI_HOME)/share/PLI/VCS/LINUXAMD64/novas.tab 	$(VERDI_HOME)/share/PLI/VCS/LINUXAMD64/pli.a         
+VCS:=vcs +v2k -full64 +define+CLa -debug_acc+all -debug_region+cell+encrypt 	-LDFLAGS -Wl,--no-as-needed  	-timescale=${TIMESCALE} 	   	-o $(SIMTOP)                   	-l ${LOG_PATH}/report.log      	-P $(VERDI_HOME)/share/PLI/VCS/LINUXAMD64/novas.tab 	$(VERDI_HOME)/share/PLI/VCS/LINUXAMD64/pli.a         
 compile:$(VSRC)
 	${VCS} $^
 	./${SIMTOP} -l ${LOG_PATH}/run.log          

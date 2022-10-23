@@ -1,0 +1,77 @@
+Magic 271485
+Revision Verdi_O-2018.09-SP2
+
+; Window Layout <x> <y> <width> <height> <signalwidth> <valuewidth>
+viewPort 0 27 1419 805 100 65
+
+; File list:
+; openDirFile [-d delimiter] [-s time_offset] [-rf auto_bus_rule_file] path_name file_name
+openDirFile -d / "" "/home/gift/workplace/CourseDigitalIC/homework/ch4-5/StopWatch/build/simtop.fsdb"
+
+; file time scale:
+; fileTimeScale ### s|ms|us|ns|ps
+
+; signal spacing:
+signalSpacing 5
+
+; windowTimeUnit is used for zoom, cursor & marker
+; waveform viewport range
+zoom 3850028000.000000 4950036000.000000
+cursor 0.000000
+marker 0.000000
+
+; user define markers
+; userMarker time_pos marker_name color linestyle
+; visible top row signal index
+top 0
+; marker line index
+markerPos 4
+
+; event list
+; addEvent event_name event_expression
+; curEvent event_name
+
+
+
+COMPLEX_EVENT_BEGIN
+
+
+COMPLEX_EVENT_END
+
+
+
+; toolbar current search type
+; curSTATUS search_type
+curSTATUS ByChange
+
+
+addGroup "G1"
+activeDirFile "" "/home/gift/workplace/CourseDigitalIC/homework/ch4-5/StopWatch/build/simtop.fsdb"
+addSignal -h 15 /tb_cla/clk
+addSignal -h 15 -holdScope rst_n
+addSignal -h 15 -holdScope clear
+addSignal -h 15 -holdScope start_stop
+addSignal -h 15 -holdScope hr_h[3:0]
+addSignal -h 15 -holdScope hr_l[3:0]
+addSignal -h 15 -holdScope min_h[3:0]
+addSignal -h 15 -holdScope min_l[3:0]
+addSignal -h 15 -holdScope sec_h[3:0]
+addSignal -h 15 -holdScope sec_l[3:0]
+addGroup "G2"
+
+; getSignalForm Scope Hierarchy Status
+; active file of getSignalForm
+activeDirFile "" "/home/gift/workplace/CourseDigitalIC/homework/ch4-5/StopWatch/build/simtop.fsdb"
+
+GETSIGNALFORM_SCOPE_HIERARCHY_BEGIN
+getSignalForm close
+
+"/tb_cla"
+
+SCOPE_LIST_BEGIN
+"/tb_cla"
+SCOPE_LIST_END
+
+GETSIGNALFORM_SCOPE_HIERARCHY_END
+
+

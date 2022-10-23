@@ -1,0 +1,73 @@
+ 
+****************************************
+Report : constraint
+        -all_violators
+Design : top
+Version: L-2016.03-SP1
+Date   : Sun Oct 23 23:02:29 2022
+****************************************
+
+
+   min_delay/hold ('clk' group)
+
+                             Required        Actual
+   Endpoint                 Path Delay     Path Delay        Slack
+   -----------------------------------------------------------------
+   data_in_r_reg_0_/D           1.45           0.95 f        -0.50  (VIOLATED)
+   data_in_r_reg_1_/D           1.45           0.95 f        -0.50  (VIOLATED)
+   data_in_r_reg_2_/D           1.45           0.95 f        -0.50  (VIOLATED)
+   data_in_r_reg_3_/D           1.45           0.95 f        -0.50  (VIOLATED)
+   data_in_r_reg_4_/D           1.45           0.95 f        -0.50  (VIOLATED)
+   data_in_r_reg_5_/D           1.45           0.95 f        -0.50  (VIOLATED)
+   data_in_r_reg_6_/D           1.45           0.95 f        -0.50  (VIOLATED)
+   data_in_r_reg_7_/D           1.45           0.95 f        -0.50  (VIOLATED)
+   data_in_r_reg_8_/D           1.45           0.95 f        -0.50  (VIOLATED)
+   data_in_r_reg_9_/D           1.45           0.95 f        -0.50  (VIOLATED)
+   data_in_r_reg_10_/D          1.45           0.95 f        -0.50  (VIOLATED)
+   data_in_r_reg_11_/D          1.45           0.95 f        -0.50  (VIOLATED)
+   data_in_r_reg_12_/D          1.45           0.95 f        -0.50  (VIOLATED)
+   data_in_r_reg_13_/D          1.45           0.95 f        -0.50  (VIOLATED)
+   data_in_r_reg_14_/D          1.45           0.95 f        -0.50  (VIOLATED)
+   data_in_r_reg_15_/D          1.45           0.95 f        -0.50  (VIOLATED)
+   data_in_r_reg_16_/D          1.45           0.95 f        -0.50  (VIOLATED)
+   data_in_r_reg_17_/D          1.45           0.95 f        -0.50  (VIOLATED)
+   data_in_r_reg_18_/D          1.45           0.95 f        -0.50  (VIOLATED)
+   data_in_r_reg_19_/D          1.45           0.95 f        -0.50  (VIOLATED)
+   data_in_r_reg_20_/D          1.45           0.95 f        -0.50  (VIOLATED)
+   data_in_r_reg_21_/D          1.45           0.95 f        -0.50  (VIOLATED)
+   data_in_r_reg_22_/D          1.45           0.95 f        -0.50  (VIOLATED)
+   data_in_r_reg_23_/D          1.45           0.95 f        -0.50  (VIOLATED)
+   data_in_r_reg_24_/D          1.45           0.95 f        -0.50  (VIOLATED)
+   data_in_r_reg_25_/D          1.45           0.95 f        -0.50  (VIOLATED)
+   data_in_r_reg_26_/D          1.45           0.95 f        -0.50  (VIOLATED)
+   data_in_r_reg_27_/D          1.45           0.95 f        -0.50  (VIOLATED)
+   data_in_r_reg_28_/D          1.45           0.95 f        -0.50  (VIOLATED)
+   data_in_r_reg_29_/D          1.45           0.95 f        -0.50  (VIOLATED)
+   data_in_r_reg_30_/D          1.45           0.95 f        -0.50  (VIOLATED)
+   data_in_r_reg_31_/D          1.45           0.95 f        -0.50  (VIOLATED)
+   dir_r_reg/D                  1.45           0.95 f        -0.50  (VIOLATED)
+   sh_r_reg_0_/D                1.45           0.95 f        -0.50  (VIOLATED)
+   sh_r_reg_1_/D                1.45           0.95 f        -0.50  (VIOLATED)
+   sh_r_reg_2_/D                1.45           0.95 f        -0.50  (VIOLATED)
+   sh_r_reg_3_/D                1.45           0.95 f        -0.50  (VIOLATED)
+   sh_r_reg_4_/D                1.45           0.95 f        -0.50  (VIOLATED)
+
+
+   max_area
+
+                             Required        Actual
+   Design                      Area           Area           Slack
+   -----------------------------------------------------------------
+   top                          0.00        8477.86       -8477.86  (VIOLATED)
+
+
+   max_leakage_power
+
+                             Required        Actual
+   Design                   Leakage Power  Leakage Power     Slack
+   -----------------------------------------------------------------
+   top                          0.00       271765.03      -271765.03
+                                                                    (VIOLATED)
+
+
+1

@@ -1,0 +1,14 @@
+*design* DebussyLib (btIdent Verdi_O-2018.09-SP2)
+Command arguments:
+    +define+verilog
+    -f ./sim/filelist_sim.f
+        /home/gift/workplace/CourseDigitalIC/homework/ch4-5/CLA/src/sum.v
+        /home/gift/workplace/CourseDigitalIC/homework/ch4-5/CLA/src/cla.v
+        /home/gift/workplace/CourseDigitalIC/homework/ch4-5/CLA/src/top.v
+        /home/gift/workplace/CourseDigitalIC/homework/ch4-5/CLA/sim/tb_cla.v
+
+Highest level modules:
+cla16
+tb_cla
+
+Total	0 error(s),   0 warning(s)

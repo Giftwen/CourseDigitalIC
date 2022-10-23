@@ -1,0 +1,30 @@
+ 
+****************************************
+Report : area
+Design : top
+Version: L-2016.03-SP1
+Date   : Sun Oct 23 23:02:29 2022
+****************************************
+
+Library(s) Used:
+
+    ss_1v62_125c (File: /opt/PDKs/smic_180/SM00LB501-FE-00000-r0p0-00rel0/aci/sc-m/synopsys/ss_1v62_125c.db)
+
+Number of ports:                          142
+Number of nets:                           620
+Number of cells:                          511
+Number of combinational cells:            440
+Number of sequential cells:                70
+Number of macros/black boxes:               0
+Number of buf/inv:                         30
+Number of references:                       2
+
+Combinational area:               5250.918320
+Buf/Inv area:                      197.567997
+Noncombinational area:            3226.944084
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (No wire load specified)
+
+Total cell area:                  8477.862404
+Total area:                 undefined
+1

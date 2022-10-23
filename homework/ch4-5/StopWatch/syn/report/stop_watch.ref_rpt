@@ -1,0 +1,26 @@
+ 
+****************************************
+Report : reference
+Design : stop_watch
+Version: L-2016.03-SP1
+Date   : Sun Oct 23 23:13:47 2022
+****************************************
+
+Attributes:
+    b - black box (unknown)
+   bo - allows boundary optimization
+    d - dont_touch
+   mo - map_only
+    h - hierarchical
+    n - noncombinational
+    r - removable
+    s - synthetic operator
+    u - contains unmapped logic
+
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+clk_gen                         647.584005       1    647.584005  h, n
+watch                          2045.926413       1   2045.926413  h, n
+-----------------------------------------------------------------------------
+Total 2 references                                   2693.510418
+1

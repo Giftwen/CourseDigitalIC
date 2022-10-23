@@ -1,7 +1,7 @@
 /*
  * @Author: WenJiaBao-2022E8020282071
  * @Date: 2022-10-18 17:20:59
- * @LastEditTime: 2022-10-20 00:13:08
+ * @LastEditTime: 2022-10-23 15:03:27
  * @Description: 
  * 
  * Copyright (c) 2022 by WenJiaBao wenjiabao0919@163.com, All Rights Reserved. 
@@ -15,7 +15,7 @@ module top(
 );
     reg   [15:0]a_r;
     reg   [15:0]b_r;
-    reg   [16:0]sum_r;
+    wire   [16:0]sum_r;
 
 `ifdef CLa
 cla16 cla16_u0(

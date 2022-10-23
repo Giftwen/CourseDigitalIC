@@ -1,0 +1,13 @@
+*design* DebussyLib (btIdent Verdi_O-2018.09-SP2)
+Command arguments:
+    +define+verilog
+    -f ./sim/filelist_sim.f
+        /home/gift/workplace/CourseDigitalIC/homework/ch4-5/StopWatch/src/clk_gen.v
+        /home/gift/workplace/CourseDigitalIC/homework/ch4-5/StopWatch/src/stopwatch.v
+        /home/gift/workplace/CourseDigitalIC/homework/ch4-5/StopWatch/src/watch.v
+        /home/gift/workplace/CourseDigitalIC/homework/ch4-5/StopWatch/sim/tb_Stopwatch.v
+
+Highest level modules:
+tb_cla
+
+Total	0 error(s),   0 warning(s)

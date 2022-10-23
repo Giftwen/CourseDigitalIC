@@ -1,6 +1,6 @@
 
 #==================================Env Vars===================================
-set RST_NAME				rst
+set RST_NAME				rst_n
 set CLK_NAME				clk
 
 set CLK_PERIOD_I			10

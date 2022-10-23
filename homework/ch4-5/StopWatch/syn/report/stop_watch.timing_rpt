@@ -1,0 +1,1634 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1000
+Design : stop_watch
+Version: L-2016.03-SP1
+Date   : Sun Oct 23 23:13:47 2022
+****************************************
+
+Operating Conditions: ss_1v62_125c   Library: ss_1v62_125c
+Wire Load Model Mode: top
+
+  Startpoint: watch_u0/sec_h_reg_0_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: sec_h[0] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              1.90       1.90
+  watch_u0/sec_h_reg_0_/CK (DFFRQX1M)      0.00       1.90 r
+  watch_u0/sec_h_reg_0_/Q (DFFRQX1M)       1.86       3.76 r
+  watch_u0/sec_h[0] (watch)                0.00       3.76 r
+  sec_h[0] (out)                           0.00       3.76 r
+  data arrival time                                   3.76
+
+  clock clk (rise edge)                    9.50       9.50
+  clock network delay (ideal)              1.90      11.40
+  clock uncertainty                       -0.47      10.92
+  output external delay                   -3.80       7.12
+  data required time                                  7.12
+  -----------------------------------------------------------
+  data required time                                  7.12
+  data arrival time                                  -3.76
+  -----------------------------------------------------------
+  slack (MET)                                         3.36
+
+
+  Startpoint: watch_u0/hr_l_reg_1_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: hr_l[1] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              1.90       1.90
+  watch_u0/hr_l_reg_1_/CK (DFFRQX1M)       0.00       1.90 r
+  watch_u0/hr_l_reg_1_/Q (DFFRQX1M)        1.86       3.76 r
+  watch_u0/hr_l[1] (watch)                 0.00       3.76 r
+  hr_l[1] (out)                            0.00       3.76 r
+  data arrival time                                   3.76
+
+  clock clk (rise edge)                    9.50       9.50
+  clock network delay (ideal)              1.90      11.40
+  clock uncertainty                       -0.47      10.92
+  output external delay                   -3.80       7.12
+  data required time                                  7.12
+  -----------------------------------------------------------
+  data required time                                  7.12
+  data arrival time                                  -3.76
+  -----------------------------------------------------------
+  slack (MET)                                         3.37
+
+
+  Startpoint: watch_u0/sec_l_reg_1_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: sec_l[1] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              1.90       1.90
+  watch_u0/sec_l_reg_1_/CK (DFFRQX1M)      0.00       1.90 r
+  watch_u0/sec_l_reg_1_/Q (DFFRQX1M)       1.85       3.75 r
+  watch_u0/sec_l[1] (watch)                0.00       3.75 r
+  sec_l[1] (out)                           0.00       3.75 r
+  data arrival time                                   3.75
+
+  clock clk (rise edge)                    9.50       9.50
+  clock network delay (ideal)              1.90      11.40
+  clock uncertainty                       -0.47      10.92
+  output external delay                   -3.80       7.12
+  data required time                                  7.12
+  -----------------------------------------------------------
+  data required time                                  7.12
+  data arrival time                                  -3.75
+  -----------------------------------------------------------
+  slack (MET)                                         3.38
+
+
+  Startpoint: watch_u0/hr_l_reg_2_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: hr_l[2] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              1.90       1.90
+  watch_u0/hr_l_reg_2_/CK (DFFRQX1M)       0.00       1.90 r
+  watch_u0/hr_l_reg_2_/Q (DFFRQX1M)        1.84       3.74 r
+  watch_u0/hr_l[2] (watch)                 0.00       3.74 r
+  hr_l[2] (out)                            0.00       3.74 r
+  data arrival time                                   3.74
+
+  clock clk (rise edge)                    9.50       9.50
+  clock network delay (ideal)              1.90      11.40
+  clock uncertainty                       -0.47      10.92
+  output external delay                   -3.80       7.12
+  data required time                                  7.12
+  -----------------------------------------------------------
+  data required time                                  7.12
+  data arrival time                                  -3.74
+  -----------------------------------------------------------
+  slack (MET)                                         3.38
+
+
+  Startpoint: watch_u0/sec_l_reg_0_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: sec_l[0] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              1.90       1.90
+  watch_u0/sec_l_reg_0_/CK (DFFRQX1M)      0.00       1.90 r
+  watch_u0/sec_l_reg_0_/Q (DFFRQX1M)       1.83       3.73 r
+  watch_u0/sec_l[0] (watch)                0.00       3.73 r
+  sec_l[0] (out)                           0.00       3.73 r
+  data arrival time                                   3.73
+
+  clock clk (rise edge)                    9.50       9.50
+  clock network delay (ideal)              1.90      11.40
+  clock uncertainty                       -0.47      10.92
+  output external delay                   -3.80       7.12
+  data required time                                  7.12
+  -----------------------------------------------------------
+  data required time                                  7.12
+  data arrival time                                  -3.73
+  -----------------------------------------------------------
+  slack (MET)                                         3.39
+
+
+  Startpoint: watch_u0/hr_l_reg_3_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: hr_l[3] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              1.90       1.90
+  watch_u0/hr_l_reg_3_/CK (DFFRX1M)        0.00       1.90 r
+  watch_u0/hr_l_reg_3_/Q (DFFRX1M)         1.83       3.73 r
+  watch_u0/hr_l[3] (watch)                 0.00       3.73 r
+  hr_l[3] (out)                            0.00       3.73 r
+  data arrival time                                   3.73
+
+  clock clk (rise edge)                    9.50       9.50
+  clock network delay (ideal)              1.90      11.40
+  clock uncertainty                       -0.47      10.92
+  output external delay                   -3.80       7.12
+  data required time                                  7.12
+  -----------------------------------------------------------
+  data required time                                  7.12
+  data arrival time                                  -3.73
+  -----------------------------------------------------------
+  slack (MET)                                         3.39
+
+
+  Startpoint: watch_u0/sec_l_reg_2_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: sec_l[2] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              1.90       1.90
+  watch_u0/sec_l_reg_2_/CK (DFFRX1M)       0.00       1.90 r
+  watch_u0/sec_l_reg_2_/Q (DFFRX1M)        1.83       3.73 r
+  watch_u0/sec_l[2] (watch)                0.00       3.73 r
+  sec_l[2] (out)                           0.00       3.73 r
+  data arrival time                                   3.73
+
+  clock clk (rise edge)                    9.50       9.50
+  clock network delay (ideal)              1.90      11.40
+  clock uncertainty                       -0.47      10.92
+  output external delay                   -3.80       7.12
+  data required time                                  7.12
+  -----------------------------------------------------------
+  data required time                                  7.12
+  data arrival time                                  -3.73
+  -----------------------------------------------------------
+  slack (MET)                                         3.39
+
+
+  Startpoint: watch_u0/min_l_reg_2_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: min_l[2] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              1.90       1.90
+  watch_u0/min_l_reg_2_/CK (DFFRX1M)       0.00       1.90 r
+  watch_u0/min_l_reg_2_/Q (DFFRX1M)        1.83       3.73 r
+  watch_u0/min_l[2] (watch)                0.00       3.73 r
+  min_l[2] (out)                           0.00       3.73 r
+  data arrival time                                   3.73
+
+  clock clk (rise edge)                    9.50       9.50
+  clock network delay (ideal)              1.90      11.40
+  clock uncertainty                       -0.47      10.92
+  output external delay                   -3.80       7.12
+  data required time                                  7.12
+  -----------------------------------------------------------
+  data required time                                  7.12
+  data arrival time                                  -3.73
+  -----------------------------------------------------------
+  slack (MET)                                         3.39
+
+
+  Startpoint: watch_u0/hr_h_reg_0_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: hr_h[0] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              1.90       1.90
+  watch_u0/hr_h_reg_0_/CK (DFFRQX1M)       0.00       1.90 r
+  watch_u0/hr_h_reg_0_/Q (DFFRQX1M)        1.83       3.73 r
+  watch_u0/hr_h[0] (watch)                 0.00       3.73 r
+  hr_h[0] (out)                            0.00       3.73 r
+  data arrival time                                   3.73
+
+  clock clk (rise edge)                    9.50       9.50
+  clock network delay (ideal)              1.90      11.40
+  clock uncertainty                       -0.47      10.92
+  output external delay                   -3.80       7.12
+  data required time                                  7.12
+  -----------------------------------------------------------
+  data required time                                  7.12
+  data arrival time                                  -3.73
+  -----------------------------------------------------------
+  slack (MET)                                         3.39
+
+
+  Startpoint: watch_u0/min_h_reg_0_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: min_h[0] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              1.90       1.90
+  watch_u0/min_h_reg_0_/CK (DFFRQX1M)      0.00       1.90 r
+  watch_u0/min_h_reg_0_/Q (DFFRQX1M)       1.83       3.73 r
+  watch_u0/min_h[0] (watch)                0.00       3.73 r
+  min_h[0] (out)                           0.00       3.73 r
+  data arrival time                                   3.73
+
+  clock clk (rise edge)                    9.50       9.50
+  clock network delay (ideal)              1.90      11.40
+  clock uncertainty                       -0.47      10.92
+  output external delay                   -3.80       7.12
+  data required time                                  7.12
+  -----------------------------------------------------------
+  data required time                                  7.12
+  data arrival time                                  -3.73
+  -----------------------------------------------------------
+  slack (MET)                                         3.40
+
+
+  Startpoint: watch_u0/sec_h_reg_1_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: sec_h[1] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              1.90       1.90
+  watch_u0/sec_h_reg_1_/CK (DFFRQX1M)      0.00       1.90 r
+  watch_u0/sec_h_reg_1_/Q (DFFRQX1M)       1.82       3.72 r
+  watch_u0/sec_h[1] (watch)                0.00       3.72 r
+  sec_h[1] (out)                           0.00       3.72 r
+  data arrival time                                   3.72
+
+  clock clk (rise edge)                    9.50       9.50
+  clock network delay (ideal)              1.90      11.40
+  clock uncertainty                       -0.47      10.92
+  output external delay                   -3.80       7.12
+  data required time                                  7.12
+  -----------------------------------------------------------
+  data required time                                  7.12
+  data arrival time                                  -3.72
+  -----------------------------------------------------------
+  slack (MET)                                         3.40
+
+
+  Startpoint: watch_u0/min_l_reg_1_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: min_l[1] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              1.90       1.90
+  watch_u0/min_l_reg_1_/CK (DFFRQX1M)      0.00       1.90 r
+  watch_u0/min_l_reg_1_/Q (DFFRQX1M)       1.82       3.72 r
+  watch_u0/min_l[1] (watch)                0.00       3.72 r
+  min_l[1] (out)                           0.00       3.72 r
+  data arrival time                                   3.72
+
+  clock clk (rise edge)                    9.50       9.50
+  clock network delay (ideal)              1.90      11.40
+  clock uncertainty                       -0.47      10.92
+  output external delay                   -3.80       7.12
+  data required time                                  7.12
+  -----------------------------------------------------------
+  data required time                                  7.12
+  data arrival time                                  -3.72
+  -----------------------------------------------------------
+  slack (MET)                                         3.41
+
+
+  Startpoint: watch_u0/hr_l_reg_0_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: hr_l[0] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              1.90       1.90
+  watch_u0/hr_l_reg_0_/CK (DFFRQX1M)       0.00       1.90 r
+  watch_u0/hr_l_reg_0_/Q (DFFRQX1M)        1.81       3.71 r
+  watch_u0/hr_l[0] (watch)                 0.00       3.71 r
+  hr_l[0] (out)                            0.00       3.71 r
+  data arrival time                                   3.71
+
+  clock clk (rise edge)                    9.50       9.50
+  clock network delay (ideal)              1.90      11.40
+  clock uncertainty                       -0.47      10.92
+  output external delay                   -3.80       7.12
+  data required time                                  7.12
+  -----------------------------------------------------------
+  data required time                                  7.12
+  data arrival time                                  -3.71
+  -----------------------------------------------------------
+  slack (MET)                                         3.41
+
+
+  Startpoint: watch_u0/hr_h_reg_1_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: hr_h[1] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              1.90       1.90
+  watch_u0/hr_h_reg_1_/CK (DFFRQX1M)       0.00       1.90 r
+  watch_u0/hr_h_reg_1_/Q (DFFRQX1M)        1.81       3.71 r
+  watch_u0/hr_h[1] (watch)                 0.00       3.71 r
+  hr_h[1] (out)                            0.00       3.71 r
+  data arrival time                                   3.71
+
+  clock clk (rise edge)                    9.50       9.50
+  clock network delay (ideal)              1.90      11.40
+  clock uncertainty                       -0.47      10.92
+  output external delay                   -3.80       7.12
+  data required time                                  7.12
+  -----------------------------------------------------------
+  data required time                                  7.12
+  data arrival time                                  -3.71
+  -----------------------------------------------------------
+  slack (MET)                                         3.42
+
+
+  Startpoint: watch_u0/min_h_reg_1_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: min_h[1] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              1.90       1.90
+  watch_u0/min_h_reg_1_/CK (DFFRQX1M)      0.00       1.90 r
+  watch_u0/min_h_reg_1_/Q (DFFRQX1M)       1.81       3.71 r
+  watch_u0/min_h[1] (watch)                0.00       3.71 r
+  min_h[1] (out)                           0.00       3.71 r
+  data arrival time                                   3.71
+
+  clock clk (rise edge)                    9.50       9.50
+  clock network delay (ideal)              1.90      11.40
+  clock uncertainty                       -0.47      10.92
+  output external delay                   -3.80       7.12
+  data required time                                  7.12
+  -----------------------------------------------------------
+  data required time                                  7.12
+  data arrival time                                  -3.71
+  -----------------------------------------------------------
+  slack (MET)                                         3.42
+
+
+  Startpoint: watch_u0/min_l_reg_0_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: min_l[0] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              1.90       1.90
+  watch_u0/min_l_reg_0_/CK (DFFRQX1M)      0.00       1.90 r
+  watch_u0/min_l_reg_0_/Q (DFFRQX1M)       1.80       3.70 r
+  watch_u0/min_l[0] (watch)                0.00       3.70 r
+  min_l[0] (out)                           0.00       3.70 r
+  data arrival time                                   3.70
+
+  clock clk (rise edge)                    9.50       9.50
+  clock network delay (ideal)              1.90      11.40
+  clock uncertainty                       -0.47      10.92
+  output external delay                   -3.80       7.12
+  data required time                                  7.12
+  -----------------------------------------------------------
+  data required time                                  7.12
+  data arrival time                                  -3.70
+  -----------------------------------------------------------
+  slack (MET)                                         3.43
+
+
+  Startpoint: watch_u0/sec_h_reg_2_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: sec_h[2] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              1.90       1.90
+  watch_u0/sec_h_reg_2_/CK (DFFRQX1M)      0.00       1.90 r
+  watch_u0/sec_h_reg_2_/Q (DFFRQX1M)       1.80       3.70 r
+  watch_u0/sec_h[2] (watch)                0.00       3.70 r
+  sec_h[2] (out)                           0.00       3.70 r
+  data arrival time                                   3.70
+
+  clock clk (rise edge)                    9.50       9.50
+  clock network delay (ideal)              1.90      11.40
+  clock uncertainty                       -0.47      10.92
+  output external delay                   -3.80       7.12
+  data required time                                  7.12
+  -----------------------------------------------------------
+  data required time                                  7.12
+  data arrival time                                  -3.70
+  -----------------------------------------------------------
+  slack (MET)                                         3.43
+
+
+  Startpoint: watch_u0/sec_l_reg_3_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: sec_l[3] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              1.90       1.90
+  watch_u0/sec_l_reg_3_/CK (DFFRQX1M)      0.00       1.90 r
+  watch_u0/sec_l_reg_3_/Q (DFFRQX1M)       1.78       3.68 r
+  watch_u0/sec_l[3] (watch)                0.00       3.68 r
+  sec_l[3] (out)                           0.00       3.68 r
+  data arrival time                                   3.68
+
+  clock clk (rise edge)                    9.50       9.50
+  clock network delay (ideal)              1.90      11.40
+  clock uncertainty                       -0.47      10.92
+  output external delay                   -3.80       7.12
+  data required time                                  7.12
+  -----------------------------------------------------------
+  data required time                                  7.12
+  data arrival time                                  -3.68
+  -----------------------------------------------------------
+  slack (MET)                                         3.45
+
+
+  Startpoint: watch_u0/min_l_reg_3_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: min_l[3] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              1.90       1.90
+  watch_u0/min_l_reg_3_/CK (DFFRQX1M)      0.00       1.90 r
+  watch_u0/min_l_reg_3_/Q (DFFRQX1M)       1.78       3.68 r
+  watch_u0/min_l[3] (watch)                0.00       3.68 r
+  min_l[3] (out)                           0.00       3.68 r
+  data arrival time                                   3.68
+
+  clock clk (rise edge)                    9.50       9.50
+  clock network delay (ideal)              1.90      11.40
+  clock uncertainty                       -0.47      10.92
+  output external delay                   -3.80       7.12
+  data required time                                  7.12
+  -----------------------------------------------------------
+  data required time                                  7.12
+  data arrival time                                  -3.68
+  -----------------------------------------------------------
+  slack (MET)                                         3.45
+
+
+  Startpoint: watch_u0/hr_h_reg_2_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: hr_h[2] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              1.90       1.90
+  watch_u0/hr_h_reg_2_/CK (DFFRQX1M)       0.00       1.90 r
+  watch_u0/hr_h_reg_2_/Q (DFFRQX1M)        1.77       3.67 r
+  watch_u0/hr_h[2] (watch)                 0.00       3.67 r
+  hr_h[2] (out)                            0.00       3.67 r
+  data arrival time                                   3.67
+
+  clock clk (rise edge)                    9.50       9.50
+  clock network delay (ideal)              1.90      11.40
+  clock uncertainty                       -0.47      10.92
+  output external delay                   -3.80       7.12
+  data required time                                  7.12
+  -----------------------------------------------------------
+  data required time                                  7.12
+  data arrival time                                  -3.67
+  -----------------------------------------------------------
+  slack (MET)                                         3.45
+
+
+  Startpoint: watch_u0/min_h_reg_2_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: min_h[2] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              1.90       1.90
+  watch_u0/min_h_reg_2_/CK (DFFRQX1M)      0.00       1.90 r
+  watch_u0/min_h_reg_2_/Q (DFFRQX1M)       1.77       3.67 r
+  watch_u0/min_h[2] (watch)                0.00       3.67 r
+  min_h[2] (out)                           0.00       3.67 r
+  data arrival time                                   3.67
+
+  clock clk (rise edge)                    9.50       9.50
+  clock network delay (ideal)              1.90      11.40
+  clock uncertainty                       -0.47      10.92
+  output external delay                   -3.80       7.12
+  data required time                                  7.12
+  -----------------------------------------------------------
+  data required time                                  7.12
+  data arrival time                                  -3.67
+  -----------------------------------------------------------
+  slack (MET)                                         3.45
+
+
+  Startpoint: clear (input port clocked by clk)
+  Endpoint: watch_u0/sec_l_reg_3_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              1.90       1.90
+  input external delay                     3.80       5.70 f
+  clear (in)                               0.00       5.70 f
+  watch_u0/clear (watch)                   0.00       5.70 f
+  watch_u0/U88/Y (CLKINVX1M)               0.34       6.04 r
+  watch_u0/U83/Y (NAND3X1M)                0.33       6.37 f
+  watch_u0/U5/Y (NOR2BXLM)                 0.30       6.67 r
+  watch_u0/U63/Y (CLKNAND2X2M)             0.15       6.81 f
+  watch_u0/U60/Y (OAI2BB2X1M)              0.18       6.99 r
+  watch_u0/sec_l_reg_3_/D (DFFRQX1M)       0.00       6.99 r
+  data arrival time                                   6.99
+
+  clock clk (rise edge)                    9.50       9.50
+  clock network delay (ideal)              1.90      11.40
+  clock uncertainty                       -0.47      10.92
+  watch_u0/sec_l_reg_3_/CK (DFFRQX1M)      0.00      10.92 r
+  library setup time                      -0.26      10.66
+  data required time                                 10.66
+  -----------------------------------------------------------
+  data required time                                 10.66
+  data arrival time                                  -6.99
+  -----------------------------------------------------------
+  slack (MET)                                         3.67
+
+
+  Startpoint: clear (input port clocked by clk)
+  Endpoint: watch_u0/sec_l_reg_2_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              1.90       1.90
+  input external delay                     3.80       5.70 f
+  clear (in)                               0.00       5.70 f
+  watch_u0/clear (watch)                   0.00       5.70 f
+  watch_u0/U88/Y (CLKINVX1M)               0.34       6.04 r
+  watch_u0/U83/Y (NAND3X1M)                0.33       6.37 f
+  watch_u0/U5/Y (NOR2BXLM)                 0.30       6.67 r
+  watch_u0/U63/Y (CLKNAND2X2M)             0.15       6.81 f
+  watch_u0/U61/Y (AOI2BB2X1M)              0.16       6.98 r
+  watch_u0/sec_l_reg_2_/D (DFFRX1M)        0.00       6.98 r
+  data arrival time                                   6.98
+
+  clock clk (rise edge)                    9.50       9.50
+  clock network delay (ideal)              1.90      11.40
+  clock uncertainty                       -0.47      10.92
+  watch_u0/sec_l_reg_2_/CK (DFFRX1M)       0.00      10.92 r
+  library setup time                      -0.21      10.72
+  data required time                                 10.72
+  -----------------------------------------------------------
+  data required time                                 10.72
+  data arrival time                                  -6.98
+  -----------------------------------------------------------
+  slack (MET)                                         3.74
+
+
+  Startpoint: clear (input port clocked by clk)
+  Endpoint: watch_u0/sec_l_reg_1_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              1.90       1.90
+  input external delay                     3.80       5.70 f
+  clear (in)                               0.00       5.70 f
+  watch_u0/clear (watch)                   0.00       5.70 f
+  watch_u0/U88/Y (CLKINVX1M)               0.34       6.04 r
+  watch_u0/U83/Y (NAND3X1M)                0.33       6.37 f
+  watch_u0/U5/Y (NOR2BXLM)                 0.30       6.67 r
+  watch_u0/U64/Y (AOI2BB2X1M)              0.22       6.88 r
+  watch_u0/sec_l_reg_1_/D (DFFRQX1M)       0.00       6.88 r
+  data arrival time                                   6.88
+
+  clock clk (rise edge)                    9.50       9.50
+  clock network delay (ideal)              1.90      11.40
+  clock uncertainty                       -0.47      10.92
+  watch_u0/sec_l_reg_1_/CK (DFFRQX1M)      0.00      10.92 r
+  library setup time                      -0.28      10.65
+  data required time                                 10.65
+  -----------------------------------------------------------
+  data required time                                 10.65
+  data arrival time                                  -6.88
+  -----------------------------------------------------------
+  slack (MET)                                         3.77
+
+
+  Startpoint: clear (input port clocked by clk)
+  Endpoint: watch_u0/hr_l_reg_2_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              1.90       1.90
+  input external delay                     3.80       5.70 f
+  clear (in)                               0.00       5.70 f
+  watch_u0/clear (watch)                   0.00       5.70 f
+  watch_u0/U88/Y (CLKINVX1M)               0.34       6.04 r
+  watch_u0/U30/Y (CLKNAND2X2M)             0.27       6.31 f
+  watch_u0/U22/Y (AOI2B1X1M)               0.34       6.65 f
+  watch_u0/U20/Y (OAI32X1M)                0.14       6.79 r
+  watch_u0/hr_l_reg_2_/D (DFFRQX1M)        0.00       6.79 r
+  data arrival time                                   6.79
+
+  clock clk (rise edge)                    9.50       9.50
+  clock network delay (ideal)              1.90      11.40
+  clock uncertainty                       -0.47      10.92
+  watch_u0/hr_l_reg_2_/CK (DFFRQX1M)       0.00      10.92 r
+  library setup time                      -0.31      10.62
+  data required time                                 10.62
+  -----------------------------------------------------------
+  data required time                                 10.62
+  data arrival time                                  -6.79
+  -----------------------------------------------------------
+  slack (MET)                                         3.83
+
+
+  Startpoint: clear (input port clocked by clk)
+  Endpoint: watch_u0/hr_h_reg_0_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              1.90       1.90
+  input external delay                     3.80       5.70 f
+  clear (in)                               0.00       5.70 f
+  watch_u0/clear (watch)                   0.00       5.70 f
+  watch_u0/U88/Y (CLKINVX1M)               0.34       6.04 r
+  watch_u0/U30/Y (CLKNAND2X2M)             0.27       6.31 f
+  watch_u0/U15/Y (OAI2BB1X1M)              0.34       6.65 f
+  watch_u0/U8/Y (AOI22X1M)                 0.16       6.81 r
+  watch_u0/hr_h_reg_0_/D (DFFRQX1M)        0.00       6.81 r
+  data arrival time                                   6.81
+
+  clock clk (rise edge)                    9.50       9.50
+  clock network delay (ideal)              1.90      11.40
+  clock uncertainty                       -0.47      10.92
+  watch_u0/hr_h_reg_0_/CK (DFFRQX1M)       0.00      10.92 r
+  library setup time                      -0.28      10.64
+  data required time                                 10.64
+  -----------------------------------------------------------
+  data required time                                 10.64
+  data arrival time                                  -6.81
+  -----------------------------------------------------------
+  slack (MET)                                         3.83
+
+
+  Startpoint: clear (input port clocked by clk)
+  Endpoint: watch_u0/sec_h_reg_0_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              1.90       1.90
+  input external delay                     3.80       5.70 f
+  clear (in)                               0.00       5.70 f
+  watch_u0/clear (watch)                   0.00       5.70 f
+  watch_u0/U88/Y (CLKINVX1M)               0.34       6.04 r
+  watch_u0/U17/Y (NAND2XLM)                0.35       6.39 f
+  watch_u0/U85/Y (CLKINVX1M)               0.18       6.57 r
+  watch_u0/U77/Y (NOR2BX1M)                0.09       6.67 f
+  watch_u0/U75/Y (OAI32X1M)                0.11       6.78 r
+  watch_u0/sec_h_reg_0_/D (DFFRQX1M)       0.00       6.78 r
+  data arrival time                                   6.78
+
+  clock clk (rise edge)                    9.50       9.50
+  clock network delay (ideal)              1.90      11.40
+  clock uncertainty                       -0.47      10.92
+  watch_u0/sec_h_reg_0_/CK (DFFRQX1M)      0.00      10.92 r
+  library setup time                      -0.31      10.62
+  data required time                                 10.62
+  -----------------------------------------------------------
+  data required time                                 10.62
+  data arrival time                                  -6.78
+  -----------------------------------------------------------
+  slack (MET)                                         3.84
+
+
+  Startpoint: clear (input port clocked by clk)
+  Endpoint: watch_u0/hr_l_reg_1_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              1.90       1.90
+  input external delay                     3.80       5.70 f
+  clear (in)                               0.00       5.70 f
+  watch_u0/clear (watch)                   0.00       5.70 f
+  watch_u0/U88/Y (CLKINVX1M)               0.34       6.04 r
+  watch_u0/U30/Y (CLKNAND2X2M)             0.27       6.31 f
+  watch_u0/U29/Y (NOR2X1M)                 0.19       6.50 r
+  watch_u0/U25/Y (OAI21X1M)                0.15       6.65 f
+  watch_u0/U24/Y (OAI31XLM)                0.13       6.78 r
+  watch_u0/hr_l_reg_1_/D (DFFRQX1M)        0.00       6.78 r
+  data arrival time                                   6.78
+
+  clock clk (rise edge)                    9.50       9.50
+  clock network delay (ideal)              1.90      11.40
+  clock uncertainty                       -0.47      10.92
+  watch_u0/hr_l_reg_1_/CK (DFFRQX1M)       0.00      10.92 r
+  library setup time                      -0.30      10.63
+  data required time                                 10.63
+  -----------------------------------------------------------
+  data required time                                 10.63
+  data arrival time                                  -6.78
+  -----------------------------------------------------------
+  slack (MET)                                         3.84
+
+
+  Startpoint: clear (input port clocked by clk)
+  Endpoint: watch_u0/min_l_reg_1_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              1.90       1.90
+  input external delay                     3.80       5.70 f
+  clear (in)                               0.00       5.70 f
+  watch_u0/clear (watch)                   0.00       5.70 f
+  watch_u0/U88/Y (CLKINVX1M)               0.34       6.04 r
+  watch_u0/U58/Y (CLKNAND2X2M)             0.16       6.20 f
+  watch_u0/U57/Y (CLKINVX1M)               0.19       6.39 r
+  watch_u0/U48/Y (AOI31X1M)                0.21       6.60 f
+  watch_u0/U47/Y (AOI31X1M)                0.20       6.80 r
+  watch_u0/min_l_reg_1_/D (DFFRQX1M)       0.00       6.80 r
+  data arrival time                                   6.80
+
+  clock clk (rise edge)                    9.50       9.50
+  clock network delay (ideal)              1.90      11.40
+  clock uncertainty                       -0.47      10.92
+  watch_u0/min_l_reg_1_/CK (DFFRQX1M)      0.00      10.92 r
+  library setup time                      -0.28      10.65
+  data required time                                 10.65
+  -----------------------------------------------------------
+  data required time                                 10.65
+  data arrival time                                  -6.80
+  -----------------------------------------------------------
+  slack (MET)                                         3.85
+
+
+  Startpoint: clear (input port clocked by clk)
+  Endpoint: watch_u0/hr_h_reg_1_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              1.90       1.90
+  input external delay                     3.80       5.70 f
+  clear (in)                               0.00       5.70 f
+  watch_u0/clear (watch)                   0.00       5.70 f
+  watch_u0/U88/Y (CLKINVX1M)               0.34       6.04 r
+  watch_u0/U30/Y (CLKNAND2X2M)             0.27       6.31 f
+  watch_u0/U15/Y (OAI2BB1X1M)              0.34       6.65 f
+  watch_u0/U10/Y (OAI2B2X1M)               0.13       6.78 r
+  watch_u0/hr_h_reg_1_/D (DFFRQX1M)        0.00       6.78 r
+  data arrival time                                   6.78
+
+  clock clk (rise edge)                    9.50       9.50
+  clock network delay (ideal)              1.90      11.40
+  clock uncertainty                       -0.47      10.92
+  watch_u0/hr_h_reg_1_/CK (DFFRQX1M)       0.00      10.92 r
+  library setup time                      -0.27      10.65
+  data required time                                 10.65
+  -----------------------------------------------------------
+  data required time                                 10.65
+  data arrival time                                  -6.78
+  -----------------------------------------------------------
+  slack (MET)                                         3.87
+
+
+  Startpoint: clear (input port clocked by clk)
+  Endpoint: watch_u0/sec_l_reg_0_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              1.90       1.90
+  input external delay                     3.80       5.70 f
+  clear (in)                               0.00       5.70 f
+  watch_u0/clear (watch)                   0.00       5.70 f
+  watch_u0/U88/Y (CLKINVX1M)               0.34       6.04 r
+  watch_u0/U17/Y (NAND2XLM)                0.35       6.39 f
+  watch_u0/U85/Y (CLKINVX1M)               0.18       6.57 r
+  watch_u0/U81/Y (AO21XLM)                 0.21       6.78 r
+  watch_u0/sec_l_reg_0_/D (DFFRQX1M)       0.00       6.78 r
+  data arrival time                                   6.78
+
+  clock clk (rise edge)                    9.50       9.50
+  clock network delay (ideal)              1.90      11.40
+  clock uncertainty                       -0.47      10.92
+  watch_u0/sec_l_reg_0_/CK (DFFRQX1M)      0.00      10.92 r
+  library setup time                      -0.26      10.67
+  data required time                                 10.67
+  -----------------------------------------------------------
+  data required time                                 10.67
+  data arrival time                                  -6.78
+  -----------------------------------------------------------
+  slack (MET)                                         3.88
+
+
+  Startpoint: start_stop (input port clocked by clk)
+  Endpoint: watch_u0/sec_h_reg_1_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              1.90       1.90
+  input external delay                     3.80       5.70 r
+  start_stop (in)                          0.00       5.70 r
+  watch_u0/start_stop (watch)              0.00       5.70 r
+  watch_u0/U87/Y (CLKINVX1M)               0.10       5.80 f
+  watch_u0/U78/Y (OR3X1M)                  0.38       6.18 f
+  watch_u0/U72/Y (NAND3BX1M)               0.34       6.52 f
+  watch_u0/U70/Y (AOI22X1M)                0.24       6.75 r
+  watch_u0/sec_h_reg_1_/D (DFFRQX1M)       0.00       6.75 r
+  data arrival time                                   6.75
+
+  clock clk (rise edge)                    9.50       9.50
+  clock network delay (ideal)              1.90      11.40
+  clock uncertainty                       -0.47      10.92
+  watch_u0/sec_h_reg_1_/CK (DFFRQX1M)      0.00      10.92 r
+  library setup time                      -0.28      10.64
+  data required time                                 10.64
+  -----------------------------------------------------------
+  data required time                                 10.64
+  data arrival time                                  -6.75
+  -----------------------------------------------------------
+  slack (MET)                                         3.89
+
+
+  Startpoint: clear (input port clocked by clk)
+  Endpoint: watch_u0/hr_l_reg_3_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              1.90       1.90
+  input external delay                     3.80       5.70 f
+  clear (in)                               0.00       5.70 f
+  watch_u0/clear (watch)                   0.00       5.70 f
+  watch_u0/U88/Y (CLKINVX1M)               0.34       6.04 r
+  watch_u0/U30/Y (CLKNAND2X2M)             0.27       6.31 f
+  watch_u0/U22/Y (AOI2B1X1M)               0.34       6.65 f
+  watch_u0/U19/Y (OAI32X1M)                0.14       6.79 r
+  watch_u0/hr_l_reg_3_/D (DFFRX1M)         0.00       6.79 r
+  data arrival time                                   6.79
+
+  clock clk (rise edge)                    9.50       9.50
+  clock network delay (ideal)              1.90      11.40
+  clock uncertainty                       -0.47      10.92
+  watch_u0/hr_l_reg_3_/CK (DFFRX1M)        0.00      10.92 r
+  library setup time                      -0.24      10.69
+  data required time                                 10.69
+  -----------------------------------------------------------
+  data required time                                 10.69
+  data arrival time                                  -6.79
+  -----------------------------------------------------------
+  slack (MET)                                         3.90
+
+
+  Startpoint: start_stop (input port clocked by clk)
+  Endpoint: watch_u0/sec_h_reg_2_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              1.90       1.90
+  input external delay                     3.80       5.70 r
+  start_stop (in)                          0.00       5.70 r
+  watch_u0/start_stop (watch)              0.00       5.70 r
+  watch_u0/U87/Y (CLKINVX1M)               0.10       5.80 f
+  watch_u0/U78/Y (OR3X1M)                  0.38       6.18 f
+  watch_u0/U72/Y (NAND3BX1M)               0.34       6.52 f
+  watch_u0/U69/Y (OAI2B2X1M)               0.23       6.75 r
+  watch_u0/sec_h_reg_2_/D (DFFRQX1M)       0.00       6.75 r
+  data arrival time                                   6.75
+
+  clock clk (rise edge)                    9.50       9.50
+  clock network delay (ideal)              1.90      11.40
+  clock uncertainty                       -0.47      10.92
+  watch_u0/sec_h_reg_2_/CK (DFFRQX1M)      0.00      10.92 r
+  library setup time                      -0.28      10.65
+  data required time                                 10.65
+  -----------------------------------------------------------
+  data required time                                 10.65
+  data arrival time                                  -6.75
+  -----------------------------------------------------------
+  slack (MET)                                         3.90
+
+
+  Startpoint: clear (input port clocked by clk)
+  Endpoint: watch_u0/hr_l_reg_0_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              1.90       1.90
+  input external delay                     3.80       5.70 f
+  clear (in)                               0.00       5.70 f
+  watch_u0/clear (watch)                   0.00       5.70 f
+  watch_u0/U88/Y (CLKINVX1M)               0.34       6.04 r
+  watch_u0/U30/Y (CLKNAND2X2M)             0.27       6.31 f
+  watch_u0/U29/Y (NOR2X1M)                 0.19       6.50 r
+  watch_u0/U27/Y (AO22X1M)                 0.22       6.72 r
+  watch_u0/hr_l_reg_0_/D (DFFRQX1M)        0.00       6.72 r
+  data arrival time                                   6.72
+
+  clock clk (rise edge)                    9.50       9.50
+  clock network delay (ideal)              1.90      11.40
+  clock uncertainty                       -0.47      10.92
+  watch_u0/hr_l_reg_0_/CK (DFFRQX1M)       0.00      10.92 r
+  library setup time                      -0.26      10.67
+  data required time                                 10.67
+  -----------------------------------------------------------
+  data required time                                 10.67
+  data arrival time                                  -6.72
+  -----------------------------------------------------------
+  slack (MET)                                         3.95
+
+
+  Startpoint: clear (input port clocked by clk)
+  Endpoint: watch_u0/min_l_reg_3_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              1.90       1.90
+  input external delay                     3.80       5.70 f
+  clear (in)                               0.00       5.70 f
+  watch_u0/clear (watch)                   0.00       5.70 f
+  watch_u0/U88/Y (CLKINVX1M)               0.34       6.04 r
+  watch_u0/U58/Y (CLKNAND2X2M)             0.16       6.20 f
+  watch_u0/U57/Y (CLKINVX1M)               0.19       6.39 r
+  watch_u0/U51/Y (CLKNAND2X2M)             0.14       6.53 f
+  watch_u0/U49/Y (OAI2BB2X1M)              0.16       6.68 r
+  watch_u0/min_l_reg_3_/D (DFFRQX1M)       0.00       6.68 r
+  data arrival time                                   6.68
+
+  clock clk (rise edge)                    9.50       9.50
+  clock network delay (ideal)              1.90      11.40
+  clock uncertainty                       -0.47      10.92
+  watch_u0/min_l_reg_3_/CK (DFFRQX1M)      0.00      10.92 r
+  library setup time                      -0.26      10.66
+  data required time                                 10.66
+  -----------------------------------------------------------
+  data required time                                 10.66
+  data arrival time                                  -6.68
+  -----------------------------------------------------------
+  slack (MET)                                         3.98
+
+
+  Startpoint: clear (input port clocked by clk)
+  Endpoint: watch_u0/min_l_reg_0_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              1.90       1.90
+  input external delay                     3.80       5.70 f
+  clear (in)                               0.00       5.70 f
+  watch_u0/clear (watch)                   0.00       5.70 f
+  watch_u0/U88/Y (CLKINVX1M)               0.34       6.04 r
+  watch_u0/U58/Y (CLKNAND2X2M)             0.16       6.20 f
+  watch_u0/U57/Y (CLKINVX1M)               0.19       6.39 r
+  watch_u0/U55/Y (CLKNAND2X2M)             0.14       6.53 f
+  watch_u0/U53/Y (OAI22X1M)                0.14       6.67 r
+  watch_u0/min_l_reg_0_/D (DFFRQX1M)       0.00       6.67 r
+  data arrival time                                   6.67
+
+  clock clk (rise edge)                    9.50       9.50
+  clock network delay (ideal)              1.90      11.40
+  clock uncertainty                       -0.47      10.92
+  watch_u0/min_l_reg_0_/CK (DFFRQX1M)      0.00      10.92 r
+  library setup time                      -0.28      10.65
+  data required time                                 10.65
+  -----------------------------------------------------------
+  data required time                                 10.65
+  data arrival time                                  -6.67
+  -----------------------------------------------------------
+  slack (MET)                                         3.98
+
+
+  Startpoint: clear (input port clocked by clk)
+  Endpoint: watch_u0/sec_cout_reg
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              1.90       1.90
+  input external delay                     3.80       5.70 f
+  clear (in)                               0.00       5.70 f
+  watch_u0/clear (watch)                   0.00       5.70 f
+  watch_u0/U88/Y (CLKINVX1M)               0.34       6.04 r
+  watch_u0/U17/Y (NAND2XLM)                0.35       6.39 f
+  watch_u0/U67/Y (OAI22X1M)                0.22       6.61 r
+  watch_u0/sec_cout_reg/D (DFFRQX1M)       0.00       6.61 r
+  data arrival time                                   6.61
+
+  clock clk (rise edge)                    9.50       9.50
+  clock network delay (ideal)              1.90      11.40
+  clock uncertainty                       -0.47      10.92
+  watch_u0/sec_cout_reg/CK (DFFRQX1M)      0.00      10.92 r
+  library setup time                      -0.27      10.65
+  data required time                                 10.65
+  -----------------------------------------------------------
+  data required time                                 10.65
+  data arrival time                                  -6.61
+  -----------------------------------------------------------
+  slack (MET)                                         4.05
+
+
+  Startpoint: clear (input port clocked by clk)
+  Endpoint: watch_u0/min_l_reg_2_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              1.90       1.90
+  input external delay                     3.80       5.70 f
+  clear (in)                               0.00       5.70 f
+  watch_u0/clear (watch)                   0.00       5.70 f
+  watch_u0/U88/Y (CLKINVX1M)               0.34       6.04 r
+  watch_u0/U58/Y (CLKNAND2X2M)             0.16       6.20 f
+  watch_u0/U57/Y (CLKINVX1M)               0.19       6.39 r
+  watch_u0/U51/Y (CLKNAND2X2M)             0.14       6.53 f
+  watch_u0/U46/Y (AOI2BB2X1M)              0.14       6.67 r
+  watch_u0/min_l_reg_2_/D (DFFRX1M)        0.00       6.67 r
+  data arrival time                                   6.67
+
+  clock clk (rise edge)                    9.50       9.50
+  clock network delay (ideal)              1.90      11.40
+  clock uncertainty                       -0.47      10.92
+  watch_u0/min_l_reg_2_/CK (DFFRX1M)       0.00      10.92 r
+  library setup time                      -0.21      10.72
+  data required time                                 10.72
+  -----------------------------------------------------------
+  data required time                                 10.72
+  data arrival time                                  -6.67
+  -----------------------------------------------------------
+  slack (MET)                                         4.05
+
+
+  Startpoint: clear (input port clocked by clk)
+  Endpoint: watch_u0/min_h_reg_2_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              1.90       1.90
+  input external delay                     3.80       5.70 f
+  clear (in)                               0.00       5.70 f
+  watch_u0/clear (watch)                   0.00       5.70 f
+  watch_u0/U88/Y (CLKINVX1M)               0.34       6.04 r
+  watch_u0/U45/Y (OAI21X1M)                0.29       6.33 f
+  watch_u0/U35/Y (CLKNAND2X2M)             0.09       6.42 r
+  watch_u0/U34/Y (OAI2BB2X1M)              0.19       6.61 r
+  watch_u0/min_h_reg_2_/D (DFFRQX1M)       0.00       6.61 r
+  data arrival time                                   6.61
+
+  clock clk (rise edge)                    9.50       9.50
+  clock network delay (ideal)              1.90      11.40
+  clock uncertainty                       -0.47      10.92
+  watch_u0/min_h_reg_2_/CK (DFFRQX1M)      0.00      10.92 r
+  library setup time                      -0.27      10.66
+  data required time                                 10.66
+  -----------------------------------------------------------
+  data required time                                 10.66
+  data arrival time                                  -6.61
+  -----------------------------------------------------------
+  slack (MET)                                         4.05
+
+
+  Startpoint: clear (input port clocked by clk)
+  Endpoint: watch_u0/hr_h_reg_2_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              1.90       1.90
+  input external delay                     3.80       5.70 f
+  clear (in)                               0.00       5.70 f
+  watch_u0/clear (watch)                   0.00       5.70 f
+  watch_u0/U88/Y (CLKINVX1M)               0.34       6.04 r
+  watch_u0/U13/Y (NAND3BX1M)               0.32       6.36 f
+  watch_u0/U6/Y (OAI2B2X1M)                0.23       6.59 r
+  watch_u0/hr_h_reg_2_/D (DFFRQX1M)        0.00       6.59 r
+  data arrival time                                   6.59
+
+  clock clk (rise edge)                    9.50       9.50
+  clock network delay (ideal)              1.90      11.40
+  clock uncertainty                       -0.47      10.92
+  watch_u0/hr_h_reg_2_/CK (DFFRQX1M)       0.00      10.92 r
+  library setup time                      -0.28      10.65
+  data required time                                 10.65
+  -----------------------------------------------------------
+  data required time                                 10.65
+  data arrival time                                  -6.59
+  -----------------------------------------------------------
+  slack (MET)                                         4.06
+
+
+  Startpoint: clear (input port clocked by clk)
+  Endpoint: watch_u0/min_h_reg_0_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              1.90       1.90
+  input external delay                     3.80       5.70 f
+  clear (in)                               0.00       5.70 f
+  watch_u0/clear (watch)                   0.00       5.70 f
+  watch_u0/U88/Y (CLKINVX1M)               0.34       6.04 r
+  watch_u0/U45/Y (OAI21X1M)                0.29       6.33 f
+  watch_u0/U36/Y (AOI22X1M)                0.19       6.52 r
+  watch_u0/min_h_reg_0_/D (DFFRQX1M)       0.00       6.52 r
+  data arrival time                                   6.52
+
+  clock clk (rise edge)                    9.50       9.50
+  clock network delay (ideal)              1.90      11.40
+  clock uncertainty                       -0.47      10.92
+  watch_u0/min_h_reg_0_/CK (DFFRQX1M)      0.00      10.92 r
+  library setup time                      -0.28      10.64
+  data required time                                 10.64
+  -----------------------------------------------------------
+  data required time                                 10.64
+  data arrival time                                  -6.52
+  -----------------------------------------------------------
+  slack (MET)                                         4.12
+
+
+  Startpoint: clear (input port clocked by clk)
+  Endpoint: watch_u0/min_h_reg_1_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              1.90       1.90
+  input external delay                     3.80       5.70 f
+  clear (in)                               0.00       5.70 f
+  watch_u0/clear (watch)                   0.00       5.70 f
+  watch_u0/U88/Y (CLKINVX1M)               0.34       6.04 r
+  watch_u0/U45/Y (OAI21X1M)                0.29       6.33 f
+  watch_u0/U38/Y (OAI2B2X1M)               0.15       6.49 r
+  watch_u0/min_h_reg_1_/D (DFFRQX1M)       0.00       6.49 r
+  data arrival time                                   6.49
+
+  clock clk (rise edge)                    9.50       9.50
+  clock network delay (ideal)              1.90      11.40
+  clock uncertainty                       -0.47      10.92
+  watch_u0/min_h_reg_1_/CK (DFFRQX1M)      0.00      10.92 r
+  library setup time                      -0.28      10.65
+  data required time                                 10.65
+  -----------------------------------------------------------
+  data required time                                 10.65
+  data arrival time                                  -6.49
+  -----------------------------------------------------------
+  slack (MET)                                         4.16
+
+
+  Startpoint: clear (input port clocked by clk)
+  Endpoint: watch_u0/min_cout_reg
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              1.90       1.90
+  input external delay                     3.80       5.70 f
+  clear (in)                               0.00       5.70 f
+  watch_u0/clear (watch)                   0.00       5.70 f
+  watch_u0/U33/Y (NOR3X1M)                 0.18       5.88 r
+  watch_u0/U32/Y (AO2B2X1M)                0.25       6.14 r
+  watch_u0/min_cout_reg/D (DFFRQX1M)       0.00       6.14 r
+  data arrival time                                   6.14
+
+  clock clk (rise edge)                    9.50       9.50
+  clock network delay (ideal)              1.90      11.40
+  clock uncertainty                       -0.47      10.92
+  watch_u0/min_cout_reg/CK (DFFRQX1M)      0.00      10.92 r
+  library setup time                      -0.25      10.67
+  data required time                                 10.67
+  -----------------------------------------------------------
+  data required time                                 10.67
+  data arrival time                                  -6.14
+  -----------------------------------------------------------
+  slack (MET)                                         4.54
+
+
+  Startpoint: clk_gen/count_reg_0_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: clk_gen/count_reg_6_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             1.90       1.90
+  clk_gen/count_reg_0_/CK (DFFRQX1M)                      0.00       1.90 r
+  clk_gen/count_reg_0_/Q (DFFRQX1M)                       0.61       2.51 f
+  clk_gen/add_x_2/A[0] (clk_gen_DW01_inc_0)               0.00       2.51 f
+  clk_gen/add_x_2/U6/CO (ADDHX1M)                         0.23       2.74 f
+  clk_gen/add_x_2/U5/CO (ADDHX1M)                         0.22       2.96 f
+  clk_gen/add_x_2/U4/CO (ADDHX1M)                         0.22       3.17 f
+  clk_gen/add_x_2/U3/CO (ADDHX1M)                         0.22       3.39 f
+  clk_gen/add_x_2/U2/CO (ADDHX1M)                         0.20       3.59 f
+  clk_gen/add_x_2/U10/Y (XOR2XLM)                         0.12       3.71 r
+  clk_gen/add_x_2/SUM[6] (clk_gen_DW01_inc_0)             0.00       3.71 r
+  clk_gen/U3/Y (NOR2BXLM)                                 0.21       3.92 r
+  clk_gen/count_reg_6_/D (DFFRQX1M)                       0.00       3.92 r
+  data arrival time                                                  3.92
+
+  clock clk (rise edge)                                   9.50       9.50
+  clock network delay (ideal)                             1.90      11.40
+  clock uncertainty                                      -0.47      10.92
+  clk_gen/count_reg_6_/CK (DFFRQX1M)                      0.00      10.92 r
+  library setup time                                     -0.26      10.66
+  data required time                                                10.66
+  --------------------------------------------------------------------------
+  data required time                                                10.66
+  data arrival time                                                 -3.92
+  --------------------------------------------------------------------------
+  slack (MET)                                                        6.74
+
+
+  Startpoint: clk_gen/count_reg_0_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: clk_gen/count_reg_5_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             1.90       1.90
+  clk_gen/count_reg_0_/CK (DFFRQX1M)                      0.00       1.90 r
+  clk_gen/count_reg_0_/Q (DFFRQX1M)                       0.61       2.51 f
+  clk_gen/add_x_2/A[0] (clk_gen_DW01_inc_0)               0.00       2.51 f
+  clk_gen/add_x_2/U6/CO (ADDHX1M)                         0.23       2.74 f
+  clk_gen/add_x_2/U5/CO (ADDHX1M)                         0.22       2.96 f
+  clk_gen/add_x_2/U4/CO (ADDHX1M)                         0.22       3.17 f
+  clk_gen/add_x_2/U3/CO (ADDHX1M)                         0.22       3.39 f
+  clk_gen/add_x_2/U2/S (ADDHX1M)                          0.10       3.49 r
+  clk_gen/add_x_2/SUM[5] (clk_gen_DW01_inc_0)             0.00       3.49 r
+  clk_gen/U4/Y (NOR2BXLM)                                 0.20       3.69 r
+  clk_gen/count_reg_5_/D (DFFRQX1M)                       0.00       3.69 r
+  data arrival time                                                  3.69
+
+  clock clk (rise edge)                                   9.50       9.50
+  clock network delay (ideal)                             1.90      11.40
+  clock uncertainty                                      -0.47      10.92
+  clk_gen/count_reg_5_/CK (DFFRQX1M)                      0.00      10.92 r
+  library setup time                                     -0.26      10.66
+  data required time                                                10.66
+  --------------------------------------------------------------------------
+  data required time                                                10.66
+  data arrival time                                                 -3.69
+  --------------------------------------------------------------------------
+  slack (MET)                                                        6.97
+
+
+  Startpoint: clk_gen/count_reg_0_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: clk_gen/count_reg_4_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             1.90       1.90
+  clk_gen/count_reg_0_/CK (DFFRQX1M)                      0.00       1.90 r
+  clk_gen/count_reg_0_/Q (DFFRQX1M)                       0.61       2.51 f
+  clk_gen/add_x_2/A[0] (clk_gen_DW01_inc_0)               0.00       2.51 f
+  clk_gen/add_x_2/U6/CO (ADDHX1M)                         0.23       2.74 f
+  clk_gen/add_x_2/U5/CO (ADDHX1M)                         0.22       2.96 f
+  clk_gen/add_x_2/U4/CO (ADDHX1M)                         0.22       3.17 f
+  clk_gen/add_x_2/U3/S (ADDHX1M)                          0.10       3.28 r
+  clk_gen/add_x_2/SUM[4] (clk_gen_DW01_inc_0)             0.00       3.28 r
+  clk_gen/U5/Y (NOR2BXLM)                                 0.20       3.48 r
+  clk_gen/count_reg_4_/D (DFFRQX1M)                       0.00       3.48 r
+  data arrival time                                                  3.48
+
+  clock clk (rise edge)                                   9.50       9.50
+  clock network delay (ideal)                             1.90      11.40
+  clock uncertainty                                      -0.47      10.92
+  clk_gen/count_reg_4_/CK (DFFRQX1M)                      0.00      10.92 r
+  library setup time                                     -0.26      10.66
+  data required time                                                10.66
+  --------------------------------------------------------------------------
+  data required time                                                10.66
+  data arrival time                                                 -3.48
+  --------------------------------------------------------------------------
+  slack (MET)                                                        7.18
+
+
+  Startpoint: clk_gen/count_reg_3_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: clk_gen/count_reg_3_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              1.90       1.90
+  clk_gen/count_reg_3_/CK (DFFRQX1M)       0.00       1.90 r
+  clk_gen/count_reg_3_/Q (DFFRQX1M)        0.60       2.50 f
+  clk_gen/U11/Y (NOR4X1M)                  0.28       2.78 r
+  clk_gen/U10/Y (NAND2XLM)                 0.35       3.13 f
+  clk_gen/U6/Y (NOR2BXLM)                  0.19       3.32 r
+  clk_gen/count_reg_3_/D (DFFRQX1M)        0.00       3.32 r
+  data arrival time                                   3.32
+
+  clock clk (rise edge)                    9.50       9.50
+  clock network delay (ideal)              1.90      11.40
+  clock uncertainty                       -0.47      10.92
+  clk_gen/count_reg_3_/CK (DFFRQX1M)       0.00      10.92 r
+  library setup time                      -0.26      10.66
+  data required time                                 10.66
+  -----------------------------------------------------------
+  data required time                                 10.66
+  data arrival time                                  -3.32
+  -----------------------------------------------------------
+  slack (MET)                                         7.34
+
+
+  Startpoint: clk_gen/count_reg_3_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: clk_gen/count_reg_2_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              1.90       1.90
+  clk_gen/count_reg_3_/CK (DFFRQX1M)       0.00       1.90 r
+  clk_gen/count_reg_3_/Q (DFFRQX1M)        0.60       2.50 f
+  clk_gen/U11/Y (NOR4X1M)                  0.28       2.78 r
+  clk_gen/U10/Y (NAND2XLM)                 0.35       3.13 f
+  clk_gen/U7/Y (NOR2BXLM)                  0.19       3.32 r
+  clk_gen/count_reg_2_/D (DFFRQX1M)        0.00       3.32 r
+  data arrival time                                   3.32
+
+  clock clk (rise edge)                    9.50       9.50
+  clock network delay (ideal)              1.90      11.40
+  clock uncertainty                       -0.47      10.92
+  clk_gen/count_reg_2_/CK (DFFRQX1M)       0.00      10.92 r
+  library setup time                      -0.26      10.66
+  data required time                                 10.66
+  -----------------------------------------------------------
+  data required time                                 10.66
+  data arrival time                                  -3.32
+  -----------------------------------------------------------
+  slack (MET)                                         7.34
+
+
+  Startpoint: clk_gen/count_reg_3_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: clk_gen/count_reg_1_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              1.90       1.90
+  clk_gen/count_reg_3_/CK (DFFRQX1M)       0.00       1.90 r
+  clk_gen/count_reg_3_/Q (DFFRQX1M)        0.60       2.50 f
+  clk_gen/U11/Y (NOR4X1M)                  0.28       2.78 r
+  clk_gen/U10/Y (NAND2XLM)                 0.35       3.13 f
+  clk_gen/U8/Y (NOR2BXLM)                  0.19       3.32 r
+  clk_gen/count_reg_1_/D (DFFRQX1M)        0.00       3.32 r
+  data arrival time                                   3.32
+
+  clock clk (rise edge)                    9.50       9.50
+  clock network delay (ideal)              1.90      11.40
+  clock uncertainty                       -0.47      10.92
+  clk_gen/count_reg_1_/CK (DFFRQX1M)       0.00      10.92 r
+  library setup time                      -0.26      10.66
+  data required time                                 10.66
+  -----------------------------------------------------------
+  data required time                                 10.66
+  data arrival time                                  -3.32
+  -----------------------------------------------------------
+  slack (MET)                                         7.34
+
+
+  Startpoint: clk_gen/count_reg_3_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: clk_gen/count_reg_0_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              1.90       1.90
+  clk_gen/count_reg_3_/CK (DFFRQX1M)       0.00       1.90 r
+  clk_gen/count_reg_3_/Q (DFFRQX1M)        0.60       2.50 f
+  clk_gen/U11/Y (NOR4X1M)                  0.28       2.78 r
+  clk_gen/U10/Y (NAND2XLM)                 0.35       3.13 f
+  clk_gen/U9/Y (NOR2BXLM)                  0.19       3.32 r
+  clk_gen/count_reg_0_/D (DFFRQX1M)        0.00       3.32 r
+  data arrival time                                   3.32
+
+  clock clk (rise edge)                    9.50       9.50
+  clock network delay (ideal)              1.90      11.40
+  clock uncertainty                       -0.47      10.92
+  clk_gen/count_reg_0_/CK (DFFRQX1M)       0.00      10.92 r
+  library setup time                      -0.26      10.66
+  data required time                                 10.66
+  -----------------------------------------------------------
+  data required time                                 10.66
+  data arrival time                                  -3.32
+  -----------------------------------------------------------
+  slack (MET)                                         7.34
+
+
+  Startpoint: clk_gen/count_reg_3_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: clk_gen/clk_out_reg
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              1.90       1.90
+  clk_gen/count_reg_3_/CK (DFFRQX1M)       0.00       1.90 r
+  clk_gen/count_reg_3_/Q (DFFRQX1M)        0.60       2.50 f
+  clk_gen/U11/Y (NOR4X1M)                  0.28       2.78 r
+  clk_gen/U10/Y (NAND2XLM)                 0.35       3.13 f
+  clk_gen/clk_out_reg/D (DFFRQX1M)         0.00       3.13 f
+  data arrival time                                   3.13
+
+  clock clk (rise edge)                    9.50       9.50
+  clock network delay (ideal)              1.90      11.40
+  clock uncertainty                       -0.47      10.92
+  clk_gen/clk_out_reg/CK (DFFRQX1M)        0.00      10.92 r
+  library setup time                      -0.13      10.80
+  data required time                                 10.80
+  -----------------------------------------------------------
+  data required time                                 10.80
+  data arrival time                                  -3.13
+  -----------------------------------------------------------
+  slack (MET)                                         7.66
+
+
+1

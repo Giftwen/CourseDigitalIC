@@ -1,0 +1,58 @@
+debImport "-f" "./sim/filelist_sim.f"
+debLoadSimResult \
+           /home/gift/workplace/CourseDigitalIC/homework/ch4-5/BarrelReg/build/simtop.fsdb
+wvCreateWindow
+wvGetSignalOpen -win $_nWave2
+wvGetSignalSetScope -win $_nWave2 "/tb_cla"
+wvGetSignalSetScope -win $_nWave2 "/tb_cla/top"
+wvSetPosition -win $_nWave2 {("G1" 10)}
+wvSetPosition -win $_nWave2 {("G1" 10)}
+wvAddSignal -win $_nWave2 -clear
+wvAddSignal -win $_nWave2 -group {"G1" \
+{/tb_cla/top/clk} \
+{/tb_cla/top/data_in\[31:0\]} \
+{/tb_cla/top/data_in_r\[31:0\]} \
+{/tb_cla/top/data_out\[31:0\]} \
+{/tb_cla/top/data_out_r\[31:0\]} \
+{/tb_cla/top/dir} \
+{/tb_cla/top/dir_r} \
+{/tb_cla/top/rst_n} \
+{/tb_cla/top/sh\[4:0\]} \
+{/tb_cla/top/sh_r\[4:0\]} \
+}
+wvAddSignal -win $_nWave2 -group {"G2" \
+}
+wvSelectSignal -win $_nWave2 {( "G1" 1 2 3 4 5 6 7 8 9 10 )} 
+wvSetPosition -win $_nWave2 {("G1" 10)}
+wvSetPosition -win $_nWave2 {("G1" 10)}
+wvSetPosition -win $_nWave2 {("G1" 10)}
+wvAddSignal -win $_nWave2 -clear
+wvAddSignal -win $_nWave2 -group {"G1" \
+{/tb_cla/top/clk} \
+{/tb_cla/top/data_in\[31:0\]} \
+{/tb_cla/top/data_in_r\[31:0\]} \
+{/tb_cla/top/data_out\[31:0\]} \
+{/tb_cla/top/data_out_r\[31:0\]} \
+{/tb_cla/top/dir} \
+{/tb_cla/top/dir_r} \
+{/tb_cla/top/rst_n} \
+{/tb_cla/top/sh\[4:0\]} \
+{/tb_cla/top/sh_r\[4:0\]} \
+}
+wvAddSignal -win $_nWave2 -group {"G2" \
+}
+wvSelectSignal -win $_nWave2 {( "G1" 1 2 3 4 5 6 7 8 9 10 )} 
+wvSetPosition -win $_nWave2 {("G1" 10)}
+wvGetSignalClose -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomIn -win $_nWave2
+wvSelectSignal -win $_nWave2 {( "G1" 3 )} 
+wvSelectSignal -win $_nWave2 {( "G1" 4 )} 
+wvSelectSignal -win $_nWave2 {( "G1" 4 )} 
+wvSetRadix -win $_nWave2 -format Bin
+wvSelectSignal -win $_nWave2 {( "G1" 3 )} 
+wvSelectSignal -win $_nWave2 {( "G1" 3 )} 
+wvSetRadix -win $_nWave2 -format Bin
+debExit

@@ -1,0 +1,112 @@
+{
+    "reusePaths": {
+        "amcQw_d": {
+            "icPath": "csrc"
+        }
+    },
+    "Modules": {
+        "...MASTER...": {
+            "start_perf": [
+                4.1932070255279541,
+                0.028412,
+                0.030995000000000002,
+                212096,
+                225988,
+                1666519901.7275779,
+                1900117482749040
+            ],
+            "nMops": 0,
+            "child_modules": {
+                "tb_cla": 1
+            },
+            "end_perf": [
+                4.1968231201171875,
+                0.028615999999999999,
+                0.032703999999999997,
+                213592,
+                225988,
+                1900117492548279,
+                0,
+                0
+            ],
+            "nQuads": 0,
+            "nRouts": 5
+        },
+        "tb_cla": {
+            "start_perf": [
+                4.1969320774078369,
+                0.028667999999999999,
+                0.032763,
+                213592,
+                225988,
+                1666519901.731303,
+                1900117492788237
+            ],
+            "nMops": 2441,
+            "child_modules": {},
+            "Compiled": "Yes",
+            "nQuads": 990,
+            "Compiled Times": 20,
+            "end_perf": [
+                4.2118830680847168,
+                0.040201000000000001,
+                0.036180999999999998,
+                218432,
+                225988,
+                1900117533020641,
+                21474836481,
+                0
+            ],
+            "nRouts": 100
+        }
+    },
+    "CompUnits": {
+        "aNPza_d": {
+            "out": "aNPza_d.o",
+            "mod": "tb_cla",
+            "mode": 4,
+            "bytes": 31188,
+            "text": 14874,
+            "archive": "archive.19/_244842_archive_1.a",
+            "checksum": 0
+        }
+    },
+    "ObjArchives": [
+        {
+            "archive": "archive.19/_244842_archive_1.a",
+            "objects": [
+                [
+                    "aNPza_d.o",
+                    31188
+                ],
+                [
+                    "amcQwB.o",
+                    126496
+                ]
+            ],
+            "size": 157684
+        }
+    ],
+    "stat": {
+        "ru_self_end": {
+            "ru_utime_sec": 0.044324000000000002,
+            "ru_stime_sec": 0.036873000000000003,
+            "ru_maxrss_kb": 110396,
+            "ru_majflt": 0,
+            "ru_minflt": 9744,
+            "ru_nvcsw": 44,
+            "ru_nivcsw": 5
+        },
+        "ru_childs_end": {
+            "ru_utime_sec": 0.017160000000000002,
+            "ru_stime_sec": 0.012658000000000001,
+            "ru_maxrss_kb": 102820,
+            "ru_majflt": 0,
+            "ru_minflt": 4308,
+            "ru_nvcsw": 26,
+            "ru_nivcsw": 1
+        },
+        "cpu_cycles_end": 1900117545877983,
+        "peak_mem_kb": 225988
+    }
+}

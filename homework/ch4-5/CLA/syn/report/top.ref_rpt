@@ -1,10 +1,9 @@
-Warning: Design 'top' has '1' unresolved references. For more detailed information, use the "link" command. (UID-341)
  
 ****************************************
 Report : reference
 Design : top
 Version: L-2016.03-SP1
-Date   : Thu Oct 20 00:12:24 2022
+Date   : Sun Oct 23 22:57:45 2022
 ****************************************
 
 Attributes:
@@ -20,11 +19,19 @@ Attributes:
 
 Reference          Library       Unit Area   Count    Total Area   Attributes
 -----------------------------------------------------------------------------
-DFFRQX1M           ss_1v62_125c
-                                 46.099201      32   1475.174438  n
+DFFRHQX1M          ss_1v62_125c
+                                 54.880001       7    384.160007  n
+DFFRHQX2M          ss_1v62_125c
+                                 59.270401      12    711.244812  n
+DFFRHQX4M          ss_1v62_125c
+                                 74.636803       3    223.910408  n
+DFFRHQX8M          ss_1v62_125c
+                                103.174400      10   1031.744003  n
+DFFRQX2M           ss_1v62_125c
+                                 46.099201       7    322.694408  n
 DFFRQX4M           ss_1v62_125c
-                                 50.489601      17    858.323219  n
-cla16                             0.000000       1      0.000000  b
+                                 50.489601      10    504.896011  n
+cla16                          3055.718386       1   3055.718386  h
 -----------------------------------------------------------------------------
-Total 3 references                                   2333.497658
+Total 7 references                                   6234.368036
 1

@@ -1,7 +1,7 @@
 /*
  * @Author: WenJiaBao-2022E8020282071
  * @Date: 2022-10-12 23:23:12
- * @LastEditTime: 2022-10-13 09:28:41
+ * @LastEditTime: 2022-10-23 16:52:55
  * @Description: 
  * 
  * Copyright (c) 2022 by WenJiaBao wenjiabao0919@163.com, All Rights Reserved. 
@@ -22,7 +22,7 @@
     wire my_clk;
 
     watch   watch_u0(
-        .clk        (my_clk),
+        .clk        (clk),
         .rst_n      (rst_n),
         .clear      (clear),
         .start_stop (start_stop),

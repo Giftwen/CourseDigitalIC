@@ -1,0 +1,88 @@
+Magic 271485
+Revision Verdi_O-2018.09-SP2
+
+; Window Layout <x> <y> <width> <height> <signalwidth> <valuewidth>
+viewPort 0 27 1419 641 314 269
+
+; File list:
+; openDirFile [-d delimiter] [-s time_offset] [-rf auto_bus_rule_file] path_name file_name
+openDirFile -d / "" "/home/gift/workplace/CourseDigitalIC/homework/ch4-5/CLA/build/simtop.fsdb"
+
+; file time scale:
+; fileTimeScale ### s|ms|us|ns|ps
+
+; signal spacing:
+signalSpacing 5
+
+; windowTimeUnit is used for zoom, cursor & marker
+; waveform viewport range
+zoom 2909.262706 7617.367120
+cursor 5000.000000
+marker 0.000000
+
+; user define markers
+; userMarker time_pos marker_name color linestyle
+; visible top row signal index
+top 0
+; marker line index
+markerPos 5
+
+; event list
+; addEvent event_name event_expression
+; curEvent event_name
+
+
+
+COMPLEX_EVENT_BEGIN
+
+
+COMPLEX_EVENT_END
+
+
+
+; toolbar current search type
+; curSTATUS search_type
+curSTATUS ByChange
+
+
+addGroup "G1"
+activeDirFile "" "/home/gift/workplace/CourseDigitalIC/homework/ch4-5/CLA/build/simtop.fsdb"
+addSignal -h 15 /tb_cla/clk
+addSignal -h 15 -holdScope rst_n
+addSignal -h 15 -UNSIGNED -UDEC /tb_cla/top/a[15:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope b[15:0]
+addSignal -h 15 -UNSIGNED -BIN -holdScope sum[16:0]
+addGroup "G2"
+
+; getSignalForm Scope Hierarchy Status
+; active file of getSignalForm
+activeDirFile "" "/home/gift/workplace/CourseDigitalIC/homework/ch4-5/CLA/build/simtop.fsdb"
+
+GETSIGNALFORM_SCOPE_HIERARCHY_BEGIN
+getSignalForm close
+
+"/sum"
+"/tb_cla"
+"/tb_cla/top"
+"/tb_cla/top/cla16_u0"
+"/tb_cla/top/cla16_u0/adder_4_u0"
+
+SCOPE_LIST_BEGIN
+"/sum"
+"/tb_cla"
+"/tb_cla/top"
+"/tb_cla/top/cla16_u0"
+"/tb_cla/top/cla16_u0/adder_4_u3"
+"/tb_cla/top/cla16_u0/adder_4_u2"
+"/tb_cla/top/cla16_u0/adder_4_u0"
+"/tb_cla/top/cla16_u0/adder_4_u1"
+"/tb_cla/top/cla16_u0/adder_4_u0/adder_u0"
+"/tb_cla/top/cla16_u0/adder_4_u0/adder_u1"
+"/tb_cla/top/cla16_u0/adder_4_u0/adder_u2"
+"/tb_cla/top/cla16_u0/adder_4_u0/adder_u3"
+"/tb_cla/top/cla16_u0/adder_4_u0/cla"
+SCOPE_LIST_END
+
+GETSIGNALFORM_SCOPE_HIERARCHY_END
+
+

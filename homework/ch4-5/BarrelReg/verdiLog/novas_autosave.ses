@@ -1,0 +1,82 @@
+@verdi rc file Version 1.0
+[General]
+saveDB = TRUE
+relativePath = FALSE
+saveSingleView = FALSE
+saveNWaveWinId = 
+VerdiVersion = Verdi_O-2018.09-SP2
+[KeyNote]
+Line1 = Automatic Backup 0
+Line2 = Save Open Database Information: Yes
+Line3 = Path Option: Absolute Paths
+Line4 = Windows Option: All Windows
+[TestBench]
+ConstrViewShow = 0
+InherViewShow = 0
+FSDBMsgShow = 0
+AnnotationShow = 0
+Console = FALSE
+powerDumped = 0
+[hb]
+postSimFile = /home/gift/workplace/CourseDigitalIC/homework/ch4-5/BarrelReg/build/simtop.fsdb
+syncTime = 0
+viewport = 0 26 1419 1163 0 0 326 1417
+activeNode = "tb_cla"
+activeScope = "tb_cla"
+activeFile = "/home/gift/workplace/CourseDigitalIC/homework/ch4-5/BarrelReg/sim/tb_BarrelReg.v"
+interactiveMode = False
+viewType = Source
+simulatorMode = False
+sourceBeginLine = 17
+baMode = False
+srcLineNum = True
+AutoWrap = True
+IdentifyFalseLogic = False
+syncSignal = False
+traceMode = Hierarchical
+showTraceInSchema = True
+paMode = False
+funcMode = False
+powerAwareAnnot = True
+amsAnnot = True
+traceCrossHier = True
+DnDtraceCrossHierOnly = True
+traceIncTopPort = False
+leadingZero = False
+signalPane = False
+Scope1 = "tb_cla"
+multipleSelection = 1 17 3 0 0
+sdfCheckUndef = FALSE
+simFlow = FALSE
+[hb.design]
+importCmd = "-f" "./sim/filelist_sim.f" 
+invokeDir = /home/gift/workplace/CourseDigitalIC/homework/ch4-5/BarrelReg
+[hb.sourceTab.1]
+scope = tb_cla
+File = /home/gift/workplace/CourseDigitalIC/homework/ch4-5/BarrelReg/sim/tb_BarrelReg.v
+Line = 18
+[nMemoryManager]
+WaveformFile = /home/gift/workplace/CourseDigitalIC/homework/ch4-5/BarrelReg/build/simtop.fsdb
+UserActionNum = 0
+nMemWindowNum = 0
+[wave.0]
+viewPort = 0 27 1419 352 152 65
+primaryWindow = TRUE
+SessionFile = /home/gift/workplace/CourseDigitalIC/homework/ch4-5/BarrelReg/verdiLog/novas_autosave.ses.wave.0
+displayGrid = FALSE
+hierarchicalName = FALSE
+snap = TRUE
+displayLeadingZeros = FALSE
+fixDelta = FALSE
+displayCursorMarker = FALSE
+autoUpdate = FALSE
+highlightGlitchs = FALSE
+waveformSyncCursorMarker = FALSE
+waveformSyncHorizontalRange = FALSE
+waveformSyncVerticalscroll = FALSE
+displayErrors = TRUE
+displayMsgSymbols = TRUE
+showMsgDescriptions = TRUE
+autoFit = FALSE
+displayDeltaY = FALSE
+centerCursor = FALSE
