@@ -1,0 +1,3 @@
+Command Line: /usr/Synopsys/verdi/verdi/Verdi_O-2018.09-SP2/platform/LINUXAMD64/bin/Novas -f ./sim/filelist_sim.f -ssf ./build/simtop.fsdb
+uname(Linux gift-virtual-machine 5.11.0-49-generic #55-Ubuntu SMP Wed Jan 12 17:36:34 UTC 2022 x86_64)
+au time 318.952284 4.707259 3.483193 delta 382312448 382312448 total 754176000 754176000

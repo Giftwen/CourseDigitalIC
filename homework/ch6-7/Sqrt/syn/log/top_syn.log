@@ -1,0 +1,693 @@
+Initializing gui preferences from file  /home/gift/.synopsys_dv_prefs.tcl
+#--------------------------Specify Libraries--------------------------
+set DESIGN_PATH /opt/PDKs/smic_180/SM00LB501-FE-00000-r0p0-00rel0/aci/sc-m/synopsys 
+/opt/PDKs/smic_180/SM00LB501-FE-00000-r0p0-00rel0/aci/sc-m/synopsys
+set search_path "$search_path $DESIGN_PATH"
+. /usr/Synopsys/dc2016/syn/L-2016.03-SP1/libraries/syn /usr/Synopsys/dc2016/syn/L-2016.03-SP1/minpower/syn /usr/Synopsys/dc2016/syn/L-2016.03-SP1/dw/syn_ver /usr/Synopsys/dc2016/syn/L-2016.03-SP1/dw/sim_ver /opt/PDKs/smic_180/SM00LB501-FE-00000-r0p0-00rel0/aci/sc-m/synopsys
+set target_library "ss_1v62_125c.db"
+ss_1v62_125c.db
+set link_library "* $target_library"
+* ss_1v62_125c.db
+echo "\n\nSettings:"
+
+
+Settings:
+echo "search_path: $search_path"
+search_path: . /usr/Synopsys/dc2016/syn/L-2016.03-SP1/libraries/syn /usr/Synopsys/dc2016/syn/L-2016.03-SP1/minpower/syn /usr/Synopsys/dc2016/syn/L-2016.03-SP1/dw/syn_ver /usr/Synopsys/dc2016/syn/L-2016.03-SP1/dw/sim_ver /opt/PDKs/smic_180/SM00LB501-FE-00000-r0p0-00rel0/aci/sc-m/synopsys
+echo "link_library: $link_library"
+link_library: * ss_1v62_125c.db
+echo "target_library: $target_library"
+target_library: ss_1v62_125c.db
+echo "\n\nI'm Ready!"
+
+
+I'm Ready!
+#set search_path "$TAR_PATH $MEM_LINK_PATH"
+#--------------------------Prepare Filelist---------------------------
+set FILE_LIST ""
+set f [open "../syn/filelist_syn.f" r]
+file10
+while {![eof $f]} {
+    gets $f line
+    append FILE_LIST "$line "
+}
+echo $FILE_LIST
+/home/gift/workplace/CourseDigitalIC/homework/ch6-7/Sqrt/src/top.v  
+close $f
+#--------------------------Read Designs------------------------------
+set TOP_DESIGN top
+top
+analyze -format verilog $FILE_LIST 
+Running PRESTO HDLC
+Compiling source file /home/gift/workplace/CourseDigitalIC/homework/ch6-7/Sqrt/src/top.v
+Presto compilation completed successfully.
+Loading db file '/opt/PDKs/smic_180/SM00LB501-FE-00000-r0p0-00rel0/aci/sc-m/synopsys/ss_1v62_125c.db'
+1
+elaborate $TOP_DESIGN
+Loading db file '/usr/Synopsys/dc2016/syn/L-2016.03-SP1/libraries/syn/gtech.db'
+Loading db file '/usr/Synopsys/dc2016/syn/L-2016.03-SP1/libraries/syn/standard.sldb'
+  Loading link library 'ss_1v62_125c'
+  Loading link library 'gtech'
+Running PRESTO HDLC
+Warning:  /home/gift/workplace/CourseDigitalIC/homework/ch6-7/Sqrt/src/top.v:55: signed to unsigned conversion occurs. (VER-318)
+Warning:  /home/gift/workplace/CourseDigitalIC/homework/ch6-7/Sqrt/src/top.v:58: signed to unsigned conversion occurs. (VER-318)
+
+Inferred memory devices in process
+        in routine top line 25 in file
+                '/home/gift/workplace/CourseDigitalIC/homework/ch6-7/Sqrt/src/top.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|       Q_z_reg       | Flip-flop |  16   |  Y  | N  | Y  | N  | N  | N  | N  |
+|       Q_q_reg       | Flip-flop |  16   |  Y  | N  | Y  | N  | N  | N  | N  |
+|   valid_flag_reg    | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|        D_reg        | Flip-flop |  32   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+        in routine top line 47 in file
+                '/home/gift/workplace/CourseDigitalIC/homework/ch6-7/Sqrt/src/top.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|       Q_q_reg       | Flip-flop |  240  |  Y  | N  | Y  | N  | N  | N  | N  |
+|        D_reg        | Flip-flop |  480  |  Y  | N  | Y  | N  | N  | N  | N  |
+|       Q_z_reg       | Flip-flop |  240  |  Y  | N  | Y  | N  | N  | N  | N  |
+|   valid_flag_reg    | Flip-flop |  15   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+        in routine top line 73 in file
+                '/home/gift/workplace/CourseDigitalIC/homework/ch6-7/Sqrt/src/top.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|        y_reg        | Flip-flop |  17   |  Y  | N  | Y  | N  | N  | N  | N  |
+|     vld_out_reg     | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Elaborated 1 design.
+Current design is now 'top'.
+1
+#------------------------Set Current Design&&Link Designs--------------------------
+#current_design $TOP_DESIGN(auto)
+#link(auto)
+#-------------------------------SDC----------------------------------
+source ../syn/script/Sdc.tcl
+1
+#--------------------Map and Optimize the Design---------------------
+compile_ultra -no_autoungroup -incremental -no_boundary_optimization
+Warning: The value of variable 'compile_preserve_subdesign_interfaces' has been changed to true because '-no_boundary_optimization' is used. (OPT-133)
+Information: Starting from 2013.12 release, constant propagation is enabled even when boundary optimization is disabled. (OPT-1318)
+Information: Performing power optimization. (PWR-850)
+Analyzing: "/opt/PDKs/smic_180/SM00LB501-FE-00000-r0p0-00rel0/aci/sc-m/synopsys/ss_1v62_125c.db"
+Library analysis succeeded.
+Loading db file '/usr/Synopsys/dc2016/syn/L-2016.03-SP1/libraries/syn/dw_foundation.sldb'
+Warning: DesignWare synthetic library dw_foundation.sldb is added to the synthetic_library in the current command. (UISN-40)
+Information: Evaluating DesignWare library utilization. (UISN-27)
+
+============================================================================
+| DesignWare Building Block Library  |         Version         | Available |
+============================================================================
+| Basic DW Building Blocks           | L-2016.03-DWBB_201603.1 |     *     |
+| Licensed DW Building Blocks        | L-2016.03-DWBB_201603.1 |     *     |
+============================================================================
+
+
+Information: There are 16 potential problems in your design. Please run 'check_design' for more information. (LINT-99)
+
+
+Loaded alib file './alib-52/ss_1v62_125c.db.alib'
+Information: State dependent leakage is now switched from on to off.
+
+  Beginning Pass 1 Mapping  (Incremental)
+  ------------------------
+  Processing 'top'
+Information: The register 'Q_z_reg[16][14]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_z_reg[16][13]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_z_reg[16][12]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_z_reg[16][11]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_z_reg[16][10]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_z_reg[16][9]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_z_reg[16][8]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_z_reg[16][7]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_z_reg[16][6]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_z_reg[16][5]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_z_reg[16][4]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_z_reg[16][3]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_z_reg[16][2]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_z_reg[16][1]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_z_reg[16][0]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_q_reg[16][15]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_q_reg[16][14]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_q_reg[16][13]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_q_reg[16][12]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_q_reg[16][11]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_q_reg[16][10]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_q_reg[16][9]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_q_reg[16][8]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_q_reg[16][7]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_q_reg[16][6]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_q_reg[16][5]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_q_reg[16][4]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_q_reg[16][3]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_q_reg[16][2]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_q_reg[16][1]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_q_reg[16][0]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_q_reg[15][14]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_q_reg[15][13]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_q_reg[15][12]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_q_reg[15][11]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_q_reg[15][10]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_q_reg[15][9]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_q_reg[15][8]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_q_reg[15][7]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_q_reg[15][6]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_q_reg[15][5]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_q_reg[15][4]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_q_reg[15][3]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_q_reg[15][2]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_q_reg[15][1]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_q_reg[15][0]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_z_reg[15][13]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_z_reg[15][12]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_z_reg[15][11]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_z_reg[15][10]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_z_reg[15][9]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_z_reg[15][8]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_z_reg[15][7]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_z_reg[15][6]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_z_reg[15][5]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_z_reg[15][4]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_z_reg[15][3]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_z_reg[15][2]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_z_reg[15][1]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_z_reg[15][0]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_q_reg[14][13]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_q_reg[14][12]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_q_reg[14][11]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_q_reg[14][10]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_q_reg[14][9]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_q_reg[14][8]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_q_reg[14][7]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_q_reg[14][6]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_q_reg[14][5]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_q_reg[14][4]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_q_reg[14][3]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_q_reg[14][2]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_q_reg[14][1]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_q_reg[14][0]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_z_reg[14][12]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_z_reg[14][11]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_z_reg[14][10]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_z_reg[14][9]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_z_reg[14][8]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_z_reg[14][7]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_z_reg[14][6]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_z_reg[14][5]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_z_reg[14][4]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_z_reg[14][3]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_z_reg[14][2]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_z_reg[14][1]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_z_reg[14][0]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_q_reg[13][12]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_q_reg[13][11]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_q_reg[13][10]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_q_reg[13][9]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_q_reg[13][8]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_q_reg[13][7]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_q_reg[13][6]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_q_reg[13][5]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_q_reg[13][4]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_q_reg[13][3]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_q_reg[13][2]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_q_reg[13][1]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_q_reg[13][0]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_z_reg[13][11]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_z_reg[13][10]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_z_reg[13][9]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_z_reg[13][8]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_z_reg[13][7]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_z_reg[13][6]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_z_reg[13][5]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_z_reg[13][4]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_z_reg[13][3]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_z_reg[13][2]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_z_reg[13][1]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_z_reg[13][0]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_q_reg[12][11]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_q_reg[12][10]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_q_reg[12][9]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_q_reg[12][8]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_q_reg[12][7]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_q_reg[12][6]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_q_reg[12][5]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_q_reg[12][4]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_q_reg[12][3]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_q_reg[12][2]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_q_reg[12][1]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_q_reg[12][0]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_z_reg[12][10]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_z_reg[12][9]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_z_reg[12][8]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_z_reg[12][7]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_z_reg[12][6]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_z_reg[12][5]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_z_reg[12][4]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_z_reg[12][3]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_z_reg[12][2]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_z_reg[12][1]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_z_reg[12][0]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_q_reg[11][10]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_q_reg[11][9]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_q_reg[11][8]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_q_reg[11][7]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_q_reg[11][6]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_q_reg[11][5]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_q_reg[11][4]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_q_reg[11][3]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_q_reg[11][2]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_q_reg[11][1]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_q_reg[11][0]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_z_reg[11][9]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_z_reg[11][8]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_z_reg[11][7]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_z_reg[11][6]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_z_reg[11][5]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_z_reg[11][4]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_z_reg[11][3]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_z_reg[11][2]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_z_reg[11][1]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_z_reg[11][0]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_q_reg[10][9]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_q_reg[10][8]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_q_reg[10][7]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_q_reg[10][6]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_q_reg[10][5]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_q_reg[10][4]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_q_reg[10][3]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_q_reg[10][2]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_q_reg[10][1]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_q_reg[10][0]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_z_reg[10][8]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_z_reg[10][7]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_z_reg[10][6]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_z_reg[10][5]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_z_reg[10][4]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_z_reg[10][3]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_z_reg[10][2]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_z_reg[10][1]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_z_reg[10][0]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_q_reg[9][8]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_q_reg[9][7]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_q_reg[9][6]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_q_reg[9][5]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_q_reg[9][4]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_q_reg[9][3]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_q_reg[9][2]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_q_reg[9][1]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_q_reg[9][0]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_z_reg[9][7]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_z_reg[9][6]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_z_reg[9][5]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_z_reg[9][4]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_z_reg[9][3]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_z_reg[9][2]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_z_reg[9][1]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_z_reg[9][0]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_q_reg[8][7]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_q_reg[8][6]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_q_reg[8][5]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_q_reg[8][4]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_q_reg[8][3]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_q_reg[8][2]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_q_reg[8][1]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_q_reg[8][0]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_z_reg[8][6]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_z_reg[8][5]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_z_reg[8][4]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_z_reg[8][3]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_z_reg[8][2]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_z_reg[8][1]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_z_reg[8][0]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_q_reg[7][6]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_q_reg[7][5]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_q_reg[7][4]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_q_reg[7][3]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_q_reg[7][2]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_q_reg[7][1]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_q_reg[7][0]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_z_reg[7][5]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_z_reg[7][4]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_z_reg[7][3]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_z_reg[7][2]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_z_reg[7][1]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_z_reg[7][0]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_q_reg[6][5]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_q_reg[6][4]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_q_reg[6][3]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_q_reg[6][2]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_q_reg[6][1]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_q_reg[6][0]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_z_reg[6][4]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_z_reg[6][3]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_z_reg[6][2]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_z_reg[6][1]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_z_reg[6][0]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_q_reg[5][4]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_q_reg[5][3]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_q_reg[5][2]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_q_reg[5][1]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_q_reg[5][0]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_z_reg[5][3]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_z_reg[5][2]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_z_reg[5][1]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_z_reg[5][0]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_q_reg[4][3]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_q_reg[4][2]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_q_reg[4][1]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_q_reg[4][0]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_z_reg[4][2]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_z_reg[4][1]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_z_reg[4][0]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_q_reg[3][2]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_q_reg[3][1]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_q_reg[3][0]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_z_reg[3][1]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_z_reg[3][0]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_q_reg[2][1]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_q_reg[2][0]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_z_reg[2][0]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Q_q_reg[1][0]' is a constant and will be removed. (OPT-1206)
+Information: The register 'y_reg[16]' is a constant and will be removed. (OPT-1206)
+
+  Updating timing information
+Information: Updating design information... (UID-85)
+Information: The library cell 'HOLDX1M' in the library 'ss_1v62_125c' is not characterized for internal power. (PWR-536)
+Information: The target library(s) contains cell(s), other than black boxes, that are not characterized for internal power. (PWR-24)
+  Mapping 'top_DP_OP_206_137_6467_0'
+  Mapping 'top_DP_OP_205_136_6467_0'
+  Mapping 'top_DP_OP_204_135_6467_0'
+  Mapping 'top_DP_OP_203_134_6467_0'
+  Mapping 'top_DP_OP_202_133_6467_0'
+  Mapping 'top_DP_OP_201_132_6467_0'
+  Mapping 'top_DP_OP_200_131_6467_0'
+  Mapping 'top_DP_OP_199_130_6467_0'
+  Mapping 'top_DP_OP_198_129_6467_0'
+  Mapping 'top_DP_OP_197_128_6467_0'
+  Mapping 'top_DP_OP_196_127_6467_0'
+  Mapping 'top_DP_OP_195_126_6467_0'
+  Mapping 'top_DP_OP_194_125_6467_0'
+  Mapping 'top_DP_OP_193_124_6467_0'
+  Mapping 'top_DP_OP_192_123_6467_0'
+  Mapping 'top_DP_OP_191_122_6467_0'
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:00:04  139118.6      8.29     837.2       0.0                           7236071.0000
+    0:00:04  139118.6      8.29     837.2       0.0                           7236071.0000
+
+  Beginning Mapping Optimizations  (Ultra High effort)  (Incremental)
+  -------------------------------
+Information: Added key list 'DesignWare' to design 'top'. (DDB-72)
+
+  Beginning Incremental Implementation Selection
+  ----------------------------------------------
+  Mapping 'top_DP_OP_206_137_6467_1'
+  Mapping 'top_DP_OP_205_136_6467_1'
+  Mapping 'top_DP_OP_204_135_6467_1'
+  Mapping 'top_DP_OP_203_134_6467_1'
+  Mapping 'top_DP_OP_202_133_6467_1'
+  Mapping 'top_DP_OP_201_132_6467_1'
+  Mapping 'top_DP_OP_200_131_6467_1'
+  Mapping 'top_DP_OP_199_130_6467_1'
+  Mapping 'top_DP_OP_198_129_6467_1'
+  Mapping 'top_DP_OP_195_126_6467_1'
+  Mapping 'top_DP_OP_196_127_6467_1'
+  Mapping 'top_DP_OP_197_128_6467_1'
+Information: In design 'top', the register 'Q_z_reg[16][15]' is removed because it is merged to 'valid_flag_reg[16]'. (OPT-1215)
+Information: In design 'top', the register 'Q_z_reg[15][14]' is removed because it is merged to 'valid_flag_reg[15]'. (OPT-1215)
+Information: In design 'top', the register 'Q_z_reg[14][13]' is removed because it is merged to 'valid_flag_reg[14]'. (OPT-1215)
+Information: In design 'top', the register 'Q_z_reg[13][12]' is removed because it is merged to 'valid_flag_reg[13]'. (OPT-1215)
+Information: In design 'top', the register 'Q_z_reg[12][11]' is removed because it is merged to 'valid_flag_reg[12]'. (OPT-1215)
+Information: In design 'top', the register 'Q_z_reg[11][10]' is removed because it is merged to 'valid_flag_reg[11]'. (OPT-1215)
+Information: In design 'top', the register 'Q_z_reg[10][9]' is removed because it is merged to 'valid_flag_reg[10]'. (OPT-1215)
+Information: In design 'top', the register 'Q_z_reg[9][8]' is removed because it is merged to 'valid_flag_reg[9]'. (OPT-1215)
+Information: In design 'top', the register 'Q_z_reg[8][7]' is removed because it is merged to 'valid_flag_reg[8]'. (OPT-1215)
+Information: In design 'top', the register 'Q_z_reg[7][6]' is removed because it is merged to 'valid_flag_reg[7]'. (OPT-1215)
+Information: In design 'top', the register 'Q_z_reg[6][5]' is removed because it is merged to 'valid_flag_reg[6]'. (OPT-1215)
+Information: In design 'top', the register 'Q_z_reg[5][4]' is removed because it is merged to 'valid_flag_reg[5]'. (OPT-1215)
+Information: In design 'top', the register 'Q_z_reg[4][3]' is removed because it is merged to 'valid_flag_reg[4]'. (OPT-1215)
+Information: In design 'top', the register 'Q_z_reg[3][2]' is removed because it is merged to 'valid_flag_reg[3]'. (OPT-1215)
+Information: In design 'top', the register 'Q_z_reg[2][1]' is removed because it is merged to 'valid_flag_reg[2]'. (OPT-1215)
+Information: In design 'top', the register 'Q_z_reg[1][0]' is removed because it is merged to 'valid_flag_reg[1]'. (OPT-1215)
+Information: In design 'top', the register 'Q_q_reg[15][15]' is removed because it is merged to 'Q_z_reg[15][15]'. (OPT-1215)
+Information: In design 'top', the register 'Q_q_reg[14][14]' is removed because it is merged to 'Q_z_reg[14][14]'. (OPT-1215)
+Information: In design 'top', the register 'Q_q_reg[14][15]' is removed because it is merged to 'Q_z_reg[14][15]'. (OPT-1215)
+Information: In design 'top', the register 'Q_q_reg[13][13]' is removed because it is merged to 'Q_z_reg[13][13]'. (OPT-1215)
+Information: In design 'top', the register 'Q_q_reg[13][14]' is removed because it is merged to 'Q_z_reg[13][14]'. (OPT-1215)
+Information: In design 'top', the register 'Q_q_reg[13][15]' is removed because it is merged to 'Q_z_reg[13][15]'. (OPT-1215)
+Information: In design 'top', the register 'Q_q_reg[12][12]' is removed because it is merged to 'Q_z_reg[12][12]'. (OPT-1215)
+Information: In design 'top', the register 'Q_q_reg[12][13]' is removed because it is merged to 'Q_z_reg[12][13]'. (OPT-1215)
+Information: In design 'top', the register 'Q_q_reg[12][14]' is removed because it is merged to 'Q_z_reg[12][14]'. (OPT-1215)
+Information: In design 'top', the register 'Q_q_reg[12][15]' is removed because it is merged to 'Q_z_reg[12][15]'. (OPT-1215)
+Information: In design 'top', the register 'Q_q_reg[11][11]' is removed because it is merged to 'Q_z_reg[11][11]'. (OPT-1215)
+Information: In design 'top', the register 'Q_q_reg[11][12]' is removed because it is merged to 'Q_z_reg[11][12]'. (OPT-1215)
+Information: In design 'top', the register 'Q_q_reg[11][13]' is removed because it is merged to 'Q_z_reg[11][13]'. (OPT-1215)
+Information: In design 'top', the register 'Q_q_reg[11][14]' is removed because it is merged to 'Q_z_reg[11][14]'. (OPT-1215)
+Information: In design 'top', the register 'Q_q_reg[11][15]' is removed because it is merged to 'Q_z_reg[11][15]'. (OPT-1215)
+Information: In design 'top', the register 'Q_q_reg[10][10]' is removed because it is merged to 'Q_z_reg[10][10]'. (OPT-1215)
+Information: In design 'top', the register 'Q_q_reg[10][11]' is removed because it is merged to 'Q_z_reg[10][11]'. (OPT-1215)
+Information: In design 'top', the register 'Q_q_reg[10][12]' is removed because it is merged to 'Q_z_reg[10][12]'. (OPT-1215)
+Information: In design 'top', the register 'Q_q_reg[10][13]' is removed because it is merged to 'Q_z_reg[10][13]'. (OPT-1215)
+Information: In design 'top', the register 'Q_q_reg[10][14]' is removed because it is merged to 'Q_z_reg[10][14]'. (OPT-1215)
+Information: In design 'top', the register 'Q_q_reg[10][15]' is removed because it is merged to 'Q_z_reg[10][15]'. (OPT-1215)
+Information: In design 'top', the register 'Q_q_reg[9][9]' is removed because it is merged to 'Q_z_reg[9][9]'. (OPT-1215)
+Information: In design 'top', the register 'Q_q_reg[9][10]' is removed because it is merged to 'Q_z_reg[9][10]'. (OPT-1215)
+Information: In design 'top', the register 'Q_q_reg[9][11]' is removed because it is merged to 'Q_z_reg[9][11]'. (OPT-1215)
+Information: In design 'top', the register 'Q_q_reg[9][12]' is removed because it is merged to 'Q_z_reg[9][12]'. (OPT-1215)
+Information: In design 'top', the register 'Q_q_reg[9][13]' is removed because it is merged to 'Q_z_reg[9][13]'. (OPT-1215)
+Information: In design 'top', the register 'Q_q_reg[9][14]' is removed because it is merged to 'Q_z_reg[9][14]'. (OPT-1215)
+Information: In design 'top', the register 'Q_q_reg[9][15]' is removed because it is merged to 'Q_z_reg[9][15]'. (OPT-1215)
+Information: In design 'top', the register 'Q_q_reg[8][8]' is removed because it is merged to 'Q_z_reg[8][8]'. (OPT-1215)
+Information: In design 'top', the register 'Q_q_reg[8][9]' is removed because it is merged to 'Q_z_reg[8][9]'. (OPT-1215)
+Information: In design 'top', the register 'Q_q_reg[8][10]' is removed because it is merged to 'Q_z_reg[8][10]'. (OPT-1215)
+Information: In design 'top', the register 'Q_q_reg[8][11]' is removed because it is merged to 'Q_z_reg[8][11]'. (OPT-1215)
+Information: In design 'top', the register 'Q_q_reg[8][12]' is removed because it is merged to 'Q_z_reg[8][12]'. (OPT-1215)
+Information: In design 'top', the register 'Q_q_reg[8][13]' is removed because it is merged to 'Q_z_reg[8][13]'. (OPT-1215)
+Information: In design 'top', the register 'Q_q_reg[8][14]' is removed because it is merged to 'Q_z_reg[8][14]'. (OPT-1215)
+Information: In design 'top', the register 'Q_q_reg[8][15]' is removed because it is merged to 'Q_z_reg[8][15]'. (OPT-1215)
+Information: In design 'top', the register 'Q_q_reg[7][7]' is removed because it is merged to 'Q_z_reg[7][7]'. (OPT-1215)
+Information: In design 'top', the register 'Q_q_reg[7][8]' is removed because it is merged to 'Q_z_reg[7][8]'. (OPT-1215)
+Information: In design 'top', the register 'Q_q_reg[7][9]' is removed because it is merged to 'Q_z_reg[7][9]'. (OPT-1215)
+Information: In design 'top', the register 'Q_q_reg[7][10]' is removed because it is merged to 'Q_z_reg[7][10]'. (OPT-1215)
+Information: In design 'top', the register 'Q_q_reg[7][11]' is removed because it is merged to 'Q_z_reg[7][11]'. (OPT-1215)
+Information: In design 'top', the register 'Q_q_reg[7][12]' is removed because it is merged to 'Q_z_reg[7][12]'. (OPT-1215)
+Information: In design 'top', the register 'Q_q_reg[7][13]' is removed because it is merged to 'Q_z_reg[7][13]'. (OPT-1215)
+Information: In design 'top', the register 'Q_q_reg[7][14]' is removed because it is merged to 'Q_z_reg[7][14]'. (OPT-1215)
+Information: In design 'top', the register 'Q_q_reg[7][15]' is removed because it is merged to 'Q_z_reg[7][15]'. (OPT-1215)
+Information: In design 'top', the register 'Q_q_reg[6][6]' is removed because it is merged to 'Q_z_reg[6][6]'. (OPT-1215)
+Information: In design 'top', the register 'Q_q_reg[6][7]' is removed because it is merged to 'Q_z_reg[6][7]'. (OPT-1215)
+Information: In design 'top', the register 'Q_q_reg[6][8]' is removed because it is merged to 'Q_z_reg[6][8]'. (OPT-1215)
+Information: In design 'top', the register 'Q_q_reg[6][9]' is removed because it is merged to 'Q_z_reg[6][9]'. (OPT-1215)
+Information: In design 'top', the register 'Q_q_reg[6][10]' is removed because it is merged to 'Q_z_reg[6][10]'. (OPT-1215)
+Information: In design 'top', the register 'Q_q_reg[6][11]' is removed because it is merged to 'Q_z_reg[6][11]'. (OPT-1215)
+Information: In design 'top', the register 'Q_q_reg[6][12]' is removed because it is merged to 'Q_z_reg[6][12]'. (OPT-1215)
+Information: In design 'top', the register 'Q_q_reg[6][13]' is removed because it is merged to 'Q_z_reg[6][13]'. (OPT-1215)
+Information: In design 'top', the register 'Q_q_reg[6][14]' is removed because it is merged to 'Q_z_reg[6][14]'. (OPT-1215)
+Information: In design 'top', the register 'Q_q_reg[6][15]' is removed because it is merged to 'Q_z_reg[6][15]'. (OPT-1215)
+Information: In design 'top', the register 'Q_q_reg[5][5]' is removed because it is merged to 'Q_z_reg[5][5]'. (OPT-1215)
+Information: In design 'top', the register 'Q_q_reg[5][6]' is removed because it is merged to 'Q_z_reg[5][6]'. (OPT-1215)
+Information: In design 'top', the register 'Q_q_reg[5][7]' is removed because it is merged to 'Q_z_reg[5][7]'. (OPT-1215)
+Information: In design 'top', the register 'Q_q_reg[5][8]' is removed because it is merged to 'Q_z_reg[5][8]'. (OPT-1215)
+Information: In design 'top', the register 'Q_q_reg[5][9]' is removed because it is merged to 'Q_z_reg[5][9]'. (OPT-1215)
+Information: In design 'top', the register 'Q_q_reg[5][10]' is removed because it is merged to 'Q_z_reg[5][10]'. (OPT-1215)
+Information: In design 'top', the register 'Q_q_reg[5][11]' is removed because it is merged to 'Q_z_reg[5][11]'. (OPT-1215)
+Information: In design 'top', the register 'Q_q_reg[5][12]' is removed because it is merged to 'Q_z_reg[5][12]'. (OPT-1215)
+Information: In design 'top', the register 'Q_q_reg[5][13]' is removed because it is merged to 'Q_z_reg[5][13]'. (OPT-1215)
+Information: In design 'top', the register 'Q_q_reg[5][14]' is removed because it is merged to 'Q_z_reg[5][14]'. (OPT-1215)
+Information: In design 'top', the register 'Q_q_reg[5][15]' is removed because it is merged to 'Q_z_reg[5][15]'. (OPT-1215)
+Information: In design 'top', the register 'Q_q_reg[4][4]' is removed because it is merged to 'Q_z_reg[4][4]'. (OPT-1215)
+Information: In design 'top', the register 'Q_q_reg[4][5]' is removed because it is merged to 'Q_z_reg[4][5]'. (OPT-1215)
+Information: In design 'top', the register 'Q_q_reg[4][6]' is removed because it is merged to 'Q_z_reg[4][6]'. (OPT-1215)
+Information: In design 'top', the register 'Q_q_reg[4][7]' is removed because it is merged to 'Q_z_reg[4][7]'. (OPT-1215)
+Information: In design 'top', the register 'Q_q_reg[4][8]' is removed because it is merged to 'Q_z_reg[4][8]'. (OPT-1215)
+Information: In design 'top', the register 'Q_q_reg[4][9]' is removed because it is merged to 'Q_z_reg[4][9]'. (OPT-1215)
+Information: In design 'top', the register 'Q_q_reg[4][10]' is removed because it is merged to 'Q_z_reg[4][10]'. (OPT-1215)
+Information: In design 'top', the register 'Q_q_reg[4][11]' is removed because it is merged to 'Q_z_reg[4][11]'. (OPT-1215)
+Information: In design 'top', the register 'Q_q_reg[4][12]' is removed because it is merged to 'Q_z_reg[4][12]'. (OPT-1215)
+Information: In design 'top', the register 'Q_q_reg[4][13]' is removed because it is merged to 'Q_z_reg[4][13]'. (OPT-1215)
+Information: In design 'top', the register 'Q_q_reg[4][14]' is removed because it is merged to 'Q_z_reg[4][14]'. (OPT-1215)
+Information: In design 'top', the register 'Q_q_reg[4][15]' is removed because it is merged to 'Q_z_reg[4][15]'. (OPT-1215)
+Information: In design 'top', the register 'Q_q_reg[3][3]' is removed because it is merged to 'Q_z_reg[3][3]'. (OPT-1215)
+Information: In design 'top', the register 'Q_q_reg[3][4]' is removed because it is merged to 'Q_z_reg[3][4]'. (OPT-1215)
+Information: In design 'top', the register 'Q_q_reg[3][5]' is removed because it is merged to 'Q_z_reg[3][5]'. (OPT-1215)
+Information: In design 'top', the register 'Q_q_reg[3][6]' is removed because it is merged to 'Q_z_reg[3][6]'. (OPT-1215)
+Information: In design 'top', the register 'Q_q_reg[3][7]' is removed because it is merged to 'Q_z_reg[3][7]'. (OPT-1215)
+Information: In design 'top', the register 'Q_q_reg[3][8]' is removed because it is merged to 'Q_z_reg[3][8]'. (OPT-1215)
+Information: In design 'top', the register 'Q_q_reg[3][9]' is removed because it is merged to 'Q_z_reg[3][9]'. (OPT-1215)
+Information: In design 'top', the register 'Q_q_reg[3][10]' is removed because it is merged to 'Q_z_reg[3][10]'. (OPT-1215)
+Information: In design 'top', the register 'Q_q_reg[3][11]' is removed because it is merged to 'Q_z_reg[3][11]'. (OPT-1215)
+Information: In design 'top', the register 'Q_q_reg[3][12]' is removed because it is merged to 'Q_z_reg[3][12]'. (OPT-1215)
+Information: In design 'top', the register 'Q_q_reg[3][13]' is removed because it is merged to 'Q_z_reg[3][13]'. (OPT-1215)
+Information: In design 'top', the register 'Q_q_reg[3][14]' is removed because it is merged to 'Q_z_reg[3][14]'. (OPT-1215)
+Information: In design 'top', the register 'Q_q_reg[3][15]' is removed because it is merged to 'Q_z_reg[3][15]'. (OPT-1215)
+Information: In design 'top', the register 'Q_q_reg[2][2]' is removed because it is merged to 'Q_z_reg[2][2]'. (OPT-1215)
+Information: In design 'top', the register 'Q_q_reg[2][3]' is removed because it is merged to 'Q_z_reg[2][3]'. (OPT-1215)
+Information: In design 'top', the register 'Q_q_reg[2][4]' is removed because it is merged to 'Q_z_reg[2][4]'. (OPT-1215)
+Information: In design 'top', the register 'Q_q_reg[2][5]' is removed because it is merged to 'Q_z_reg[2][5]'. (OPT-1215)
+Information: In design 'top', the register 'Q_q_reg[2][6]' is removed because it is merged to 'Q_z_reg[2][6]'. (OPT-1215)
+Information: In design 'top', the register 'Q_q_reg[2][7]' is removed because it is merged to 'Q_z_reg[2][7]'. (OPT-1215)
+Information: In design 'top', the register 'Q_q_reg[2][8]' is removed because it is merged to 'Q_z_reg[2][8]'. (OPT-1215)
+Information: In design 'top', the register 'Q_q_reg[2][9]' is removed because it is merged to 'Q_z_reg[2][9]'. (OPT-1215)
+Information: In design 'top', the register 'Q_q_reg[2][10]' is removed because it is merged to 'Q_z_reg[2][10]'. (OPT-1215)
+Information: In design 'top', the register 'Q_q_reg[2][11]' is removed because it is merged to 'Q_z_reg[2][11]'. (OPT-1215)
+Information: In design 'top', the register 'Q_q_reg[2][12]' is removed because it is merged to 'Q_z_reg[2][12]'. (OPT-1215)
+Information: In design 'top', the register 'Q_q_reg[2][13]' is removed because it is merged to 'Q_z_reg[2][13]'. (OPT-1215)
+Information: In design 'top', the register 'Q_q_reg[2][14]' is removed because it is merged to 'Q_z_reg[2][14]'. (OPT-1215)
+Information: In design 'top', the register 'Q_q_reg[2][15]' is removed because it is merged to 'Q_z_reg[2][15]'. (OPT-1215)
+Information: In design 'top', the register 'Q_q_reg[1][1]' is removed because it is merged to 'Q_z_reg[1][1]'. (OPT-1215)
+Information: In design 'top', the register 'Q_q_reg[1][2]' is removed because it is merged to 'Q_z_reg[1][2]'. (OPT-1215)
+Information: In design 'top', the register 'Q_q_reg[1][3]' is removed because it is merged to 'Q_z_reg[1][3]'. (OPT-1215)
+Information: In design 'top', the register 'Q_q_reg[1][4]' is removed because it is merged to 'Q_z_reg[1][4]'. (OPT-1215)
+Information: In design 'top', the register 'Q_q_reg[1][5]' is removed because it is merged to 'Q_z_reg[1][5]'. (OPT-1215)
+Information: In design 'top', the register 'Q_q_reg[1][6]' is removed because it is merged to 'Q_z_reg[1][6]'. (OPT-1215)
+Information: In design 'top', the register 'Q_q_reg[1][7]' is removed because it is merged to 'Q_z_reg[1][7]'. (OPT-1215)
+Information: In design 'top', the register 'Q_q_reg[1][8]' is removed because it is merged to 'Q_z_reg[1][8]'. (OPT-1215)
+Information: In design 'top', the register 'Q_q_reg[1][9]' is removed because it is merged to 'Q_z_reg[1][9]'. (OPT-1215)
+Information: In design 'top', the register 'Q_q_reg[1][10]' is removed because it is merged to 'Q_z_reg[1][10]'. (OPT-1215)
+Information: In design 'top', the register 'Q_q_reg[1][11]' is removed because it is merged to 'Q_z_reg[1][11]'. (OPT-1215)
+Information: In design 'top', the register 'Q_q_reg[1][12]' is removed because it is merged to 'Q_z_reg[1][12]'. (OPT-1215)
+Information: In design 'top', the register 'Q_q_reg[1][13]' is removed because it is merged to 'Q_z_reg[1][13]'. (OPT-1215)
+Information: In design 'top', the register 'Q_q_reg[1][14]' is removed because it is merged to 'Q_z_reg[1][14]'. (OPT-1215)
+Information: In design 'top', the register 'Q_q_reg[1][15]' is removed because it is merged to 'Q_z_reg[1][15]'. (OPT-1215)
+    0:00:05  214148.3      0.00       0.0       0.0                           15821251.0000
+    0:00:06  214148.3      0.00       0.0       0.0                           15821251.0000
+    0:00:06  214148.3      0.00       0.0       0.0                           15821251.0000
+    0:00:06  214148.3      0.00       0.0       0.0                           15821251.0000
+  Global Optimization (Phase 1)
+  Global Optimization (Phase 2)
+  Global Optimization (Phase 3)
+  Global Optimization (Phase 4)
+  Global Optimization (Phase 5)
+  Global Optimization (Phase 6)
+
+
+
+  Beginning Delay Optimization Phase
+  ----------------------------------
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:00:06  205622.2      0.00       0.0       0.0                           15125872.0000
+    0:00:06  205622.2      0.00       0.0       0.0                           15125872.0000
+    0:00:06  182127.0      0.00       0.0       0.0                           13242091.0000
+    0:00:06  182127.0      0.00       0.0       0.0                           13242091.0000
+    0:00:06  182127.0      0.00       0.0       0.0                           13242091.0000
+    0:00:06  182127.0      0.00       0.0       0.0                           13242091.0000
+    0:00:06  182127.0      0.00       0.0       0.0                           13242091.0000
+
+  Beginning Delay Optimization
+  ----------------------------
+    0:00:06  182127.0      0.00       0.0       0.0                           13242091.0000
+    0:00:06  182127.0      0.00       0.0       0.0                           13242091.0000
+    0:00:06  182127.0      0.00       0.0       0.0                           13242091.0000
+    0:00:06  182127.0      0.00       0.0       0.0                           13242091.0000
+    0:00:06  182127.0      0.00       0.0       0.0                           13242091.0000
+    0:00:07  146964.3      0.00       0.0       0.0                           10485318.0000
+    0:00:07  146964.3      0.00       0.0       0.0                           10485318.0000
+    0:00:07  146749.1      0.00       0.0       0.0                           10453811.0000
+    0:00:07  146749.1      0.00       0.0       0.0                           10453811.0000
+    0:00:07  146749.1      0.00       0.0       0.0                           10453811.0000
+    0:00:07  146749.1      0.00       0.0       0.0                           10453811.0000
+    0:00:07  146749.1      0.00       0.0       0.0                           10453811.0000
+    0:00:07  146749.1      0.00       0.0       0.0                           10453811.0000
+    0:00:07  146749.1      0.00       0.0       0.0                           10453811.0000
+    0:00:07  146749.1      0.00       0.0       0.0                           10453811.0000
+    0:00:07  146749.1      0.00       0.0       0.0                           10453811.0000
+
+
+  Beginning Leakage Power Optimization  (max_leakage_power 0)
+  ------------------------------------
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:00:07  146749.1      0.00       0.0       0.0                           10453811.0000
+    0:00:07  146749.1      0.00       0.0       0.0                           10453811.0000
+    0:00:08  146720.6      0.00       0.0       0.0                           10448772.0000
+    0:00:08  146720.6      0.00       0.0       0.0                           10448772.0000
+    0:00:08  146720.6      0.00       0.0       0.0                           10448772.0000
+    0:00:08  146720.6      0.00       0.0       0.0                           10448772.0000
+    0:00:08  146720.6      0.00       0.0       0.0                           10448772.0000
+    0:00:08  146720.6      0.00       0.0       0.0                           10448772.0000
+    0:00:08  146720.6      0.00       0.0       0.0                           10448772.0000
+    0:00:08  146720.6      0.00       0.0       0.0                           10448772.0000
+    0:00:08  146720.6      0.00       0.0       0.0                           10448772.0000
+    0:00:08  146720.6      0.00       0.0       0.0                           10448772.0000
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:00:08  146720.6      0.00       0.0       0.0                           10448772.0000
+    0:00:08  146714.0      0.00       0.0       0.0                           10447759.0000
+    0:00:09   92308.2      0.00       0.0       0.0                           3757444.7500
+    0:00:09   92308.2      0.00       0.0       0.0                           3757444.7500
+    0:00:09   91658.4      0.00       0.0       0.0                           3660213.2500
+Loading db file '/opt/PDKs/smic_180/SM00LB501-FE-00000-r0p0-00rel0/aci/sc-m/synopsys/ss_1v62_125c.db'
+
+
+Note: Symbol # after min delay cost means estimated hold TNS across all active scenarios 
+
+
+  Optimization Complete
+  ---------------------
+Information: State dependent leakage is now switched from off to on.
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+1
+#----------------------Save Design Database--------------------------
+change_names -rules verilog -hierarchy
+1
+set_fix_multiple_port_nets -all -buffer_constants
+1
+#---------------Check the Synthesized Design for Consistency---------
+check_design -summary > ../syn/report/check_design.rpt
+check_timing > ../syn/report/check_timing.rpt
+#---------------------Report Timing and Area-------------------------
+report_qor                  > ../syn/report/$TOP_DESIGN.qor_rpt
+report_timing -max_paths 1000 > ../syn/report/$TOP_DESIGN.timing_rpt
+report_timing -path full    > ../syn/report/$TOP_DESIGN.full_timing_rpt
+report_timing -delay max    > ../syn/report/$TOP_DESIGN.setup_timing_rpt
+report_timing -delay min    > ../syn/report/$TOP_DESIGN.hold_timing_rpt
+report_reference            > ../syn/report/$TOP_DESIGN.ref_rpt
+report_area                 > ../syn/report/$TOP_DESIGN.area_rpt
+report_constraints          > ../syn/report/$TOP_DESIGN.const_rpt
+report_constraint -all_violators > ../syn/report/$TOP_DESIGN.violators_rpt
+report_power > ../syn/report/$TOP_DESIGN.power_rpt
+check_timing > ../syn/log/last_check_timing.log
+#---------------------Generate Files -------------------------
+write -f verilog -hierarchy -output ../syn/mapped/$TOP_DESIGN.v
+Writing verilog file '/home/gift/workplace/CourseDigitalIC/homework/ch6-7/Sqrt/syn/mapped/top.v'.
+Warning: Verilog 'assign' or 'tran' statements are written out. (VO-4)
+1
+write_sdc ../syn/mapped/$TOP_DESIGN.sdc
+1
+write_sdf -context verilog ../syn/mapped/$TOP_DESIGN.sdf
+Information: Annotated 'cell' delays are assumed to include load delay. (UID-282)
+Information: Writing timing information to file '/home/gift/workplace/CourseDigitalIC/homework/ch6-7/Sqrt/syn/mapped/top.sdf'. (WT-3)
+1
+1
+dc_shell> quit
+
+Memory usage for main task 180 Mbytes.
+Memory usage for this session 180 Mbytes.
+CPU usage for this session 72 seconds ( 0.02 hours ).
+
+Thank you...
+

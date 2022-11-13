@@ -1,0 +1,95 @@
+ 
+****************************************
+Report : constraint
+        -all_violators
+Design : top
+Version: L-2016.03-SP1
+Date   : Sun Nov 13 17:30:10 2022
+****************************************
+
+
+   min_delay/hold ('clk' group)
+
+                             Required        Actual
+   Endpoint                 Path Delay     Path Delay        Slack
+   -----------------------------------------------------------------
+   cur_state_reg_0_/D           1.42           1.13 f        -0.29  (VIOLATED)
+   cur_state_reg_1_/D           1.42           1.25 f        -0.17  (VIOLATED)
+   data_fifo_reg_0__5_/D        1.34           1.33 r        -0.02  (VIOLATED)
+   data_fifo_reg_27__6_/D       1.34           1.33 r        -0.02  (VIOLATED)
+   data_fifo_reg_29__7_/D       1.34           1.33 r        -0.02  (VIOLATED)
+   data_fifo_reg_2__0_/D        1.34           1.33 r        -0.02  (VIOLATED)
+   data_fifo_reg_2__4_/D        1.34           1.33 r        -0.02  (VIOLATED)
+   data_fifo_reg_2__5_/D        1.34           1.33 r        -0.02  (VIOLATED)
+   data_fifo_reg_2__6_/D        1.34           1.33 r        -0.02  (VIOLATED)
+   data_fifo_reg_2__7_/D        1.34           1.33 r        -0.02  (VIOLATED)
+   data_fifo_reg_2__1_/D        1.34           1.33 r        -0.02  (VIOLATED)
+   data_fifo_reg_2__2_/D        1.34           1.33 r        -0.02  (VIOLATED)
+   data_fifo_reg_2__3_/D        1.34           1.33 r        -0.02  (VIOLATED)
+   data_fifo_reg_26__7_/D       1.34           1.33 r        -0.02  (VIOLATED)
+   data_fifo_reg_27__0_/D       1.34           1.33 r        -0.02  (VIOLATED)
+   data_fifo_reg_27__1_/D       1.34           1.33 r        -0.02  (VIOLATED)
+   data_fifo_reg_27__2_/D       1.34           1.33 r        -0.02  (VIOLATED)
+   data_fifo_reg_27__3_/D       1.34           1.33 r        -0.02  (VIOLATED)
+   data_fifo_reg_27__4_/D       1.34           1.33 r        -0.02  (VIOLATED)
+   data_fifo_reg_27__5_/D       1.34           1.33 r        -0.02  (VIOLATED)
+   data_fifo_reg_27__7_/D       1.34           1.33 r        -0.02  (VIOLATED)
+   data_fifo_reg_28__0_/D       1.34           1.33 r        -0.02  (VIOLATED)
+   data_fifo_reg_28__1_/D       1.34           1.33 r        -0.02  (VIOLATED)
+   data_fifo_reg_28__2_/D       1.34           1.33 r        -0.02  (VIOLATED)
+   data_fifo_reg_28__3_/D       1.34           1.33 r        -0.02  (VIOLATED)
+   data_fifo_reg_28__4_/D       1.34           1.33 r        -0.02  (VIOLATED)
+   data_fifo_reg_28__6_/D       1.34           1.33 r        -0.02  (VIOLATED)
+   data_fifo_reg_28__7_/D       1.34           1.33 r        -0.02  (VIOLATED)
+   data_fifo_reg_29__0_/D       1.34           1.33 r        -0.02  (VIOLATED)
+   data_fifo_reg_29__1_/D       1.34           1.33 r        -0.02  (VIOLATED)
+   data_fifo_reg_29__2_/D       1.34           1.33 r        -0.02  (VIOLATED)
+   data_fifo_reg_29__3_/D       1.34           1.33 r        -0.02  (VIOLATED)
+   data_fifo_reg_29__4_/D       1.34           1.33 r        -0.02  (VIOLATED)
+   data_fifo_reg_29__5_/D       1.34           1.33 r        -0.02  (VIOLATED)
+   data_fifo_reg_29__6_/D       1.34           1.33 r        -0.02  (VIOLATED)
+   data_fifo_reg_30__0_/D       1.34           1.33 r        -0.02  (VIOLATED)
+   data_fifo_reg_30__1_/D       1.34           1.33 r        -0.02  (VIOLATED)
+   data_fifo_reg_30__2_/D       1.34           1.33 r        -0.02  (VIOLATED)
+   data_fifo_reg_30__3_/D       1.34           1.33 r        -0.02  (VIOLATED)
+   data_fifo_reg_30__4_/D       1.34           1.33 r        -0.02  (VIOLATED)
+   data_fifo_reg_30__5_/D       1.34           1.33 r        -0.02  (VIOLATED)
+   data_fifo_reg_30__6_/D       1.34           1.33 r        -0.02  (VIOLATED)
+   data_fifo_reg_30__7_/D       1.34           1.33 r        -0.02  (VIOLATED)
+   data_fifo_reg_31__1_/D       1.34           1.33 r        -0.02  (VIOLATED)
+   data_fifo_reg_31__2_/D       1.34           1.33 r        -0.02  (VIOLATED)
+   data_fifo_reg_31__3_/D       1.34           1.33 r        -0.02  (VIOLATED)
+   data_fifo_reg_31__4_/D       1.34           1.33 r        -0.02  (VIOLATED)
+   data_fifo_reg_31__5_/D       1.34           1.33 r        -0.02  (VIOLATED)
+   data_fifo_reg_31__6_/D       1.34           1.33 r        -0.02  (VIOLATED)
+   data_fifo_reg_31__7_/D       1.34           1.33 r        -0.02  (VIOLATED)
+   data_fifo_reg_0__2_/D        1.34           1.33 r        -0.02  (VIOLATED)
+   data_fifo_reg_0__3_/D        1.34           1.33 r        -0.02  (VIOLATED)
+   data_fifo_reg_0__4_/D        1.34           1.33 r        -0.02  (VIOLATED)
+   data_fifo_reg_0__6_/D        1.34           1.33 r        -0.02  (VIOLATED)
+   data_fifo_reg_0__7_/D        1.34           1.33 r        -0.02  (VIOLATED)
+   data_fifo_reg_31__0_/D       1.34           1.34 r         0.00  (VIOLATED: increase significant digits)
+   data_fifo_reg_26__6_/D       1.34           1.34 r         0.00  (VIOLATED: increase significant digits)
+   data_fifo_reg_28__5_/D       1.34           1.34 r         0.00  (VIOLATED: increase significant digits)
+   data_fifo_reg_0__0_/D        1.34           1.34 r         0.00  (VIOLATED: increase significant digits)
+   data_fifo_reg_0__1_/D        1.34           1.34 r         0.00  (VIOLATED: increase significant digits)
+
+
+   max_area
+
+                             Required        Actual
+   Design                      Area           Area           Slack
+   -----------------------------------------------------------------
+   top                          0.00       32381.39       -32381.39 (VIOLATED)
+
+
+   max_leakage_power
+
+                             Required        Actual
+   Design                   Leakage Power  Leakage Power     Slack
+   -----------------------------------------------------------------
+   top                          0.00       1070603.00     -1070603.00
+                                                                    (VIOLATED)
+
+
+1

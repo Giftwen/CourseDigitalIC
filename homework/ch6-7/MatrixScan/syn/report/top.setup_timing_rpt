@@ -1,0 +1,44 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : top
+Version: L-2016.03-SP1
+Date   : Sun Nov 13 17:29:34 2022
+****************************************
+
+Operating Conditions: ss_1v62_125c   Library: ss_1v62_125c
+Wire Load Model Mode: top
+
+  Startpoint: u_sram/dout_reg_0_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: dout[0] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             1.90       1.90
+  u_sram/dout_reg_0_/CK (DFFRQX1M)                        0.00       1.90 r
+  u_sram/dout_reg_0_/Q (DFFRQX1M)                         1.75       3.65 r
+  u_sram/dout[0] (sram_ADDR_DEPTH6_DATA_WIDTH10_DATA_DEPTH64)
+                                                          0.00       3.65 r
+  dout[0] (out)                                           0.00       3.65 r
+  data arrival time                                                  3.65
+
+  clock clk (rise edge)                                   9.50       9.50
+  clock network delay (ideal)                             1.90      11.40
+  clock uncertainty                                      -0.47      10.92
+  output external delay                                  -3.80       7.12
+  data required time                                                 7.12
+  --------------------------------------------------------------------------
+  data required time                                                 7.12
+  data arrival time                                                 -3.65
+  --------------------------------------------------------------------------
+  slack (MET)                                                        3.47
+
+
+1

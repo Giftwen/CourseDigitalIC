@@ -1,0 +1,126 @@
+0 
+38
++itf+/usr/Synopsys/vcs2018/vcs/O-2018.09-SP2/linux64/lib/vcsdp_lite.tab
++v2k
++vcsd1
++vpi
+-Mamsrun=
+-Masflags=
+-Mcc=gcc
+-Mcfl= -pipe -fPIC -O -I/usr/Synopsys/vcs2018/vcs/O-2018.09-SP2/include
+-Mcplusplus=g++
+-Mcrt0=
+-Mcrtn=
+-Mcsrc=
+-Mexternalobj=
+-Mldflags=-L/usr/lib/x86_64-linux-gnu -L/lib/x86_64-linux-gnu -Wl,--no-as-needed -Wl,--no-as-needed -rdynamic
+-Mobjects= /usr/Synopsys/vcs2018/vcs/O-2018.09-SP2/linux64/lib/libvirsim.so /usr/Synopsys/vcs2018/vcs/O-2018.09-SP2/linux64/lib/liberrorinf.so /usr/Synopsys/vcs2018/vcs/O-2018.09-SP2/linux64/lib/libsnpsmalloc.so /usr/Synopsys/vcs2018/vcs/O-2018.09-SP2/linux64/lib/libvfs.so /usr/Synopsys/verdi/verdi/Verdi_O-2018.09-SP2/share/PLI/VCS/LINUXAMD64/pli.a
+-Mout=./build/simtop
+-Msaverestoreobj=/usr/Synopsys/vcs2018/vcs/O-2018.09-SP2/linux64/lib/vcs_save_restore_new.o
+-Msyslibs=/usr/Synopsys/verdi/verdi/Verdi_O-2018.09-SP2/share/PLI/VCS/LINUX64/pli.a -ldl -lm
+-Mvcsaceobjs=
+-Mxcflags= -pipe -fPIC -I/usr/Synopsys/vcs2018/vcs/O-2018.09-SP2/include
+-P
+-P
+-debug_acc+all
+-debug_region+cell+encrypt
+-fsdb
+-full64
+-gen_obj
+-l
+-o ./build/simtop
+-picarchive
+-timescale=1ns/1ps
+./build/log/report.log
+/home/gift/workplace/CourseDigitalIC/homework/ch6-7/MatrixScan/sim/tb_matrixsort.v
+/home/gift/workplace/CourseDigitalIC/homework/ch6-7/MatrixScan/src/sram.v
+/home/gift/workplace/CourseDigitalIC/homework/ch6-7/MatrixScan/src/top.v
+/usr/Synopsys/vcs2018/vcs/O-2018.09-SP2/linux64/bin/vcs1
+/usr/Synopsys/verdi/verdi/Verdi_O-2018.09-SP2/share/PLI/VCS/LINUX64/verdi.tab
+/usr/Synopsys/verdi/verdi/Verdi_O-2018.09-SP2/share/PLI/VCS/LINUXAMD64/novas.tab
+69
+sysc_uni_pwd=/home/gift/workplace/CourseDigitalIC/homework/ch6-7/MatrixScan
+XDG_SESSION_TYPE=tty
+XDG_SESSION_ID=4
+XDG_SESSION_CLASS=user
+XDG_RUNTIME_DIR=/run/user/1000
+XDG_DATA_DIRS=/usr/local/share:/usr/share:/var/lib/snapd/desktop
+VSCODE_IPC_HOOK_CLI=/run/user/1000/vscode-ipc-68834213-3d7f-45af-86cf-3d912912ed4e.sock
+VSCODE_GIT_IPC_HANDLE=/run/user/1000/vscode-git-f2c12297d5.sock
+VSCODE_GIT_ASKPASS_NODE=/home/gift/.vscode-server/bin/8fa188b2b301d36553cbc9ce1b0a146ccb93351f/node
+VSCODE_GIT_ASKPASS_MAIN=/home/gift/.vscode-server/bin/8fa188b2b301d36553cbc9ce1b0a146ccb93351f/extensions/git/dist/askpass-main.js
+VSCODE_GIT_ASKPASS_EXTRA_ARGS=
+VMR_MODE_FLAG=64
+VERILATOR_AUTHOR_SITE=1
+VERDI_HOME=/usr/Synopsys/verdi/verdi/Verdi_O-2018.09-SP2
+VERDI_DIR=/usr/Synopsys/verdi/verdi/Verdi_O-2018.09-SP2
+VCS_TARGET_ARCH=amd64
+VCS_MODE_FLAG=64
+VCS_LOG_FILE=./build/log/report.log
+VCS_HOME=/usr/Synopsys/vcs2018/vcs/O-2018.09-SP2
+VCS_DEPTH=0
+VCS_ARG_ADDED_FOR_TMP=1
+VCS_ARCH=linux64
+UNAME=/bin/uname
+TOOL_HOME=/usr/Synopsys/vcs2018/vcs/O-2018.09-SP2/linux64
+TERM_PROGRAM_VERSION=1.73.0
+TERM_PROGRAM=vscode
+SYNOPSYS=/usr/Synopsys/dc2016
+SSH_CONNECTION=192.168.246.1 52060 192.168.246.129 22
+SSH_CLIENT=192.168.246.1 52060 22
+SNPS_VCS_INTERNAL_UBUNTU_PRE_LDFLAGS= -no-pie  -Wl,--no-as-needed 
+SNPS_VCS_INTERNAL_LINKER_NEEDS_NO_AS_NEEDED=1
+SCRNAME=vcs
+SCRIPT_NAME=vcs
+PT_HOME=/usr/Synopsys/primetime2016
+OVA_UUM=0
+NVBOARD_HOME=/home/gift/workplace/ysyx-workbench/nvboard
+NPI_PLATFORM=LINUX64_GNU_472
+NPC_HOME=/home/gift/workplace/ysyx-workbench/npc
+NOVAS_INST_DIR=/usr/Synopsys/verdi/verdi/Verdi_O-2018.09-SP2
+NOVAS_HOME=/usr/Synopsys/verdi/verdi/Verdi_O-2018.09-SP2
+NEMU_HOME=/home/gift/workplace/ysyx-workbench/nemu
+MOTD_SHOWN=pam
+MFLAGS=
+MAKE_TERMOUT=/dev/pts/15
+MAKE_TERMERR=/dev/pts/15
+MAKELEVEL=1
+MAKEFLAGS=
+LIBRARY_PATH=/usr/lib/x86_64-linux-gnu
+LESSOPEN=| /usr/bin/lesspipe %s
+LESSCLOSE=/usr/bin/lesspipe %s %s
+LC_TIME=zh_CN.UTF-8
+LC_TELEPHONE=zh_CN.UTF-8
+LC_PAPER=zh_CN.UTF-8
+LC_NUMERIC=zh_CN.UTF-8
+LC_NAME=zh_CN.UTF-8
+LC_MONETARY=zh_CN.UTF-8
+LC_MEASUREMENT=zh_CN.UTF-8
+LC_IDENTIFICATION=zh_CN.UTF-8
+LC_ALL=C
+LC_ADDRESS=zh_CN.UTF-8
+GIT_ASKPASS=/home/gift/.vscode-server/bin/8fa188b2b301d36553cbc9ce1b0a146ccb93351f/extensions/git/dist/askpass.sh
+FM_HOME=/usr/Synopsys/formality2015
+DVE_HOME=/usr/Synopsys/vcs2018/vcs/O-2018.09-SP2/gui/dve
+DC_HOME=/usr/Synopsys/dc2016
+DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus
+CPATH=/usr/include/x86_64-linux-gnu
+COLORTERM=truecolor
+CHIPLAB_HOME=/home/gift/workplace/chiplab
+AM_HOME=/home/gift/workplace/ysyx-workbench/abstract-machine
+0
+6
+1668331033 /home/gift/workplace/CourseDigitalIC/homework/ch6-7/MatrixScan/sim/tb_matrixsort.v
+1668330893 /home/gift/workplace/CourseDigitalIC/homework/ch6-7/MatrixScan/src/top.v
+1668330920 /home/gift/workplace/CourseDigitalIC/homework/ch6-7/MatrixScan/src/sram.v
+1550753332 /usr/Synopsys/verdi/verdi/Verdi_O-2018.09-SP2/share/PLI/VCS/LINUX64/verdi.tab
+1550753332 /usr/Synopsys/verdi/verdi/Verdi_O-2018.09-SP2/share/PLI/VCS/LINUXAMD64/novas.tab
+1551421246 /usr/Synopsys/vcs2018/vcs/O-2018.09-SP2/linux64/lib/vcsdp_lite.tab
+5
+1551422344 /usr/Synopsys/vcs2018/vcs/O-2018.09-SP2/linux64/lib/libvirsim.so
+1551421792 /usr/Synopsys/vcs2018/vcs/O-2018.09-SP2/linux64/lib/liberrorinf.so
+1551421768 /usr/Synopsys/vcs2018/vcs/O-2018.09-SP2/linux64/lib/libsnpsmalloc.so
+1551421789 /usr/Synopsys/vcs2018/vcs/O-2018.09-SP2/linux64/lib/libvfs.so
+1550752033 /usr/Synopsys/verdi/verdi/Verdi_O-2018.09-SP2/share/PLI/VCS/LINUXAMD64/pli.a
+1668331038 ./build/simtop.daidir
+-1 partitionlib

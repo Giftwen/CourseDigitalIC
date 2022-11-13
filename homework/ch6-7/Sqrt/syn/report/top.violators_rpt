@@ -1,0 +1,69 @@
+ 
+****************************************
+Report : constraint
+        -all_violators
+Design : top
+Version: L-2016.03-SP1
+Date   : Sun Nov 13 17:30:43 2022
+****************************************
+
+
+   min_delay/hold ('clk' group)
+
+                             Required        Actual
+   Endpoint                 Path Delay     Path Delay        Slack
+   -----------------------------------------------------------------
+   valid_flag_reg_16_/D         1.43           0.95 f        -0.48  (VIOLATED)
+   D_reg_16__0_/D               1.43           1.10 f        -0.33  (VIOLATED)
+   D_reg_16__1_/D               1.43           1.10 f        -0.33  (VIOLATED)
+   D_reg_16__2_/D               1.43           1.10 f        -0.33  (VIOLATED)
+   D_reg_16__3_/D               1.43           1.10 f        -0.33  (VIOLATED)
+   D_reg_16__4_/D               1.43           1.10 f        -0.33  (VIOLATED)
+   D_reg_16__5_/D               1.43           1.10 f        -0.33  (VIOLATED)
+   D_reg_16__6_/D               1.43           1.10 f        -0.33  (VIOLATED)
+   D_reg_16__7_/D               1.43           1.10 f        -0.33  (VIOLATED)
+   D_reg_16__8_/D               1.43           1.10 f        -0.33  (VIOLATED)
+   D_reg_16__9_/D               1.43           1.10 f        -0.33  (VIOLATED)
+   D_reg_16__10_/D              1.43           1.10 f        -0.33  (VIOLATED)
+   D_reg_16__11_/D              1.43           1.10 f        -0.33  (VIOLATED)
+   D_reg_16__12_/D              1.43           1.10 f        -0.33  (VIOLATED)
+   D_reg_16__13_/D              1.43           1.10 f        -0.33  (VIOLATED)
+   D_reg_16__14_/D              1.43           1.10 f        -0.33  (VIOLATED)
+   D_reg_16__15_/D              1.43           1.10 f        -0.33  (VIOLATED)
+   D_reg_16__16_/D              1.43           1.10 f        -0.33  (VIOLATED)
+   D_reg_16__17_/D              1.43           1.10 f        -0.33  (VIOLATED)
+   D_reg_16__18_/D              1.43           1.10 f        -0.33  (VIOLATED)
+   D_reg_16__19_/D              1.43           1.10 f        -0.33  (VIOLATED)
+   D_reg_16__20_/D              1.43           1.10 f        -0.33  (VIOLATED)
+   D_reg_16__21_/D              1.43           1.10 f        -0.33  (VIOLATED)
+   D_reg_16__22_/D              1.43           1.10 f        -0.33  (VIOLATED)
+   D_reg_16__23_/D              1.43           1.10 f        -0.33  (VIOLATED)
+   D_reg_16__24_/D              1.43           1.10 f        -0.33  (VIOLATED)
+   D_reg_16__25_/D              1.43           1.10 f        -0.33  (VIOLATED)
+   D_reg_16__26_/D              1.43           1.10 f        -0.33  (VIOLATED)
+   D_reg_16__27_/D              1.43           1.10 f        -0.33  (VIOLATED)
+   D_reg_16__28_/D              1.43           1.10 f        -0.33  (VIOLATED)
+   D_reg_16__29_/D              1.43           1.10 f        -0.33  (VIOLATED)
+   D_reg_16__30_/D              1.43           1.10 f        -0.33  (VIOLATED)
+   D_reg_16__31_/D              1.43           1.10 f        -0.33  (VIOLATED)
+   y_reg_0_/D                   1.43           1.40 f        -0.03  (VIOLATED)
+
+
+   max_area
+
+                             Required        Actual
+   Design                      Area           Area           Slack
+   -----------------------------------------------------------------
+   top                          0.00       91658.38       -91658.38 (VIOLATED)
+
+
+   max_leakage_power
+
+                             Required        Actual
+   Design                   Leakage Power  Leakage Power     Slack
+   -----------------------------------------------------------------
+   top                          0.00       4092835.00     -4092835.00
+                                                                    (VIOLATED)
+
+
+1

@@ -1,0 +1,20 @@
+*design* DebussyLib (btIdent Verdi_O-2018.09-SP2)
+Command arguments:
+    +define+verilog
+    -f ./sim/filelist_sim.f
+        /home/gift/workplace/CourseDigitalIC/homework/ch6-7/Sqrt/src/top.v
+        /home/gift/workplace/CourseDigitalIC/homework/ch6-7/Sqrt/sim/tb_sqrt.v
+
+
+*Warning* number -2147483648 overflow
+"/home/gift/workplace/CourseDigitalIC/homework/ch6-7/Sqrt/sim/tb_sqrt.v", 33: 
+
+*Warning* number -1 overflow
+"/home/gift/workplace/CourseDigitalIC/homework/ch6-7/Sqrt/sim/tb_sqrt.v", 35: 
+Highest level modules:
+tb_sqrt
+
+
+*Warning* port sizes differ (17 vs 16) in port connection (port y)
+"/home/gift/workplace/CourseDigitalIC/homework/ch6-7/Sqrt/sim/tb_sqrt.v", 48: 
+Total	0 error(s),   3 warning(s)

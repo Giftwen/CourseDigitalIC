@@ -1,0 +1,11 @@
+*design* DebussyLib (btIdent Verdi_O-2018.09-SP2)
+Command arguments:
+    +define+verilog
+    -f ./sim/filelist_sim.f
+        /home/gift/workplace/CourseDigitalIC/homework/ch6-7/DataSort/src/top.v
+        /home/gift/workplace/CourseDigitalIC/homework/ch6-7/DataSort/sim/tb_datasort.v
+
+Highest level modules:
+tb_datasort
+
+Total	0 error(s),   0 warning(s)

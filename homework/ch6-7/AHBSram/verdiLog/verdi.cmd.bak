@@ -1,0 +1,5 @@
+debImport "-f" "./sim/filelist_sim.f"
+wvCreateWindow
+wvOpenFile -win $_nWave2 \
+           {/home/gift/workplace/CourseDigitalIC/homework/ch6-7/AHBSram/build/simtop.fsdb}
+debExit

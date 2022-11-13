@@ -1,0 +1,59 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : top
+Version: L-2016.03-SP1
+Date   : Sun Nov 13 17:30:10 2022
+****************************************
+
+Operating Conditions: ss_1v62_125c   Library: ss_1v62_125c
+Wire Load Model Mode: top
+
+  Startpoint: cnt_i_reg_3_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: data_fifo_reg_1__0_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              1.90       1.90
+  cnt_i_reg_3_/CK (DFFQX1M)                0.00       1.90 r
+  cnt_i_reg_3_/Q (DFFQX1M)                 0.78       2.68 r
+  I_38/Y (INVXLM)                          0.29       2.97 f
+  U1626/Y (NOR3X1M)                        2.07       5.04 r
+  U1580/Y (AOI22XLM)                       0.48       5.52 f
+  U1577/Y (NAND4X1M)                       0.18       5.70 r
+  U1576/Y (AOI22X1M)                       0.20       5.89 f
+  U1575/Y (CLKNAND2X2M)                    0.13       6.02 r
+  U1834/Y (AOI2BB1X1M)                     0.20       6.22 r
+  U1835/Y (AOI22X1M)                       0.12       6.34 f
+  U1836/Y (AOI211X1M)                      0.26       6.61 r
+  U1841/Y (OAI31X1M)                       0.14       6.75 f
+  U1845/Y (AOI32X1M)                       0.22       6.96 r
+  U1444/Y (INVXLM)                         0.15       7.11 f
+  U1443/Y (NOR3X4M)                        0.85       7.97 r
+  U1441/Y (CLKINVX1M)                      1.16       9.13 f
+  U496/Y (OAI21X1M)                        0.94      10.07 r
+  data_fifo_reg_1__0_/E (EDFFTRX1M)        0.00      10.07 r
+  data arrival time                                  10.07
+
+  clock clk (rise edge)                    9.50       9.50
+  clock network delay (ideal)              1.90      11.40
+  clock uncertainty                       -0.47      10.92
+  data_fifo_reg_1__0_/CK (EDFFTRX1M)       0.00      10.92 r
+  library setup time                      -0.66      10.26
+  data required time                                 10.26
+  -----------------------------------------------------------
+  data required time                                 10.26
+  data arrival time                                 -10.07
+  -----------------------------------------------------------
+  slack (MET)                                         0.20
+
+
+1

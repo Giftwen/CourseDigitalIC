@@ -1,0 +1,66 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : top
+Version: L-2016.03-SP1
+Date   : Sun Nov 13 17:30:43 2022
+****************************************
+
+Operating Conditions: ss_1v62_125c   Library: ss_1v62_125c
+Wire Load Model Mode: top
+
+  Startpoint: Q_z_reg_10__10_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: Q_z_reg_9__10_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             1.90       1.90
+  Q_z_reg_10__10_/CK (DFFRX1M)                            0.00       1.90 r
+  Q_z_reg_10__10_/Q (DFFRX1M)                             0.76       2.66 r
+  DP_OP_197_128_6467/I1[10] (top_DP_OP_197_128_6467_0)
+                                                          0.00       2.66 r
+  DP_OP_197_128_6467/U205/Y (AND2X1M)                     0.22       2.88 r
+  DP_OP_197_128_6467/U144/S (ADDHX1M)                     0.12       3.00 r
+  DP_OP_197_128_6467/U191/Y (INVXLM)                      0.12       3.12 f
+  DP_OP_197_128_6467/U238/Y (AOI211X1M)                   0.27       3.39 r
+  DP_OP_197_128_6467/U193/Y (AOI2BB2XLM)                  0.19       3.58 f
+  DP_OP_197_128_6467/U237/Y (AOI222XLM)                   0.59       4.18 r
+  DP_OP_197_128_6467/U236/Y (AOI222XLM)                   0.38       4.55 f
+  DP_OP_197_128_6467/U235/Y (AOI222XLM)                   0.62       5.18 r
+  DP_OP_197_128_6467/U234/Y (AOI222XLM)                   0.33       5.50 f
+  DP_OP_197_128_6467/U233/Y (AOI222XLM)                   0.63       6.14 r
+  DP_OP_197_128_6467/U232/Y (AOI222XLM)                   0.34       6.48 f
+  DP_OP_197_128_6467/U231/Y (AOI222XLM)                   0.61       7.09 r
+  DP_OP_197_128_6467/U230/Y (AOI222XLM)                   0.34       7.43 f
+  DP_OP_197_128_6467/U229/Y (AOI222XLM)                   0.62       8.06 r
+  DP_OP_197_128_6467/U227/Y (AOI222XLM)                   0.38       8.43 f
+  DP_OP_197_128_6467/U226/Y (AOI222XLM)                   0.53       8.97 r
+  DP_OP_197_128_6467/O1 (top_DP_OP_197_128_6467_0)        0.00       8.97 r
+  U833/Y (INVXLM)                                         0.13       9.10 f
+  U834/Y (NOR2XLM)                                        0.41       9.51 r
+  U838/Y (AO22XLM)                                        0.27       9.77 r
+  Q_z_reg_9__10_/D (DFFRX1M)                              0.00       9.77 r
+  data arrival time                                                  9.77
+
+  clock clk (rise edge)                                   9.50       9.50
+  clock network delay (ideal)                             1.90      11.40
+  clock uncertainty                                      -0.47      10.92
+  Q_z_reg_9__10_/CK (DFFRX1M)                             0.00      10.92 r
+  library setup time                                     -0.20      10.72
+  data required time                                                10.72
+  --------------------------------------------------------------------------
+  data required time                                                10.72
+  data arrival time                                                 -9.77
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.95
+
+
+1

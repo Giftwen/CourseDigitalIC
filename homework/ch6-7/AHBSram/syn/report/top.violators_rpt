@@ -1,0 +1,128 @@
+ 
+****************************************
+Report : constraint
+        -all_violators
+Design : top
+Version: L-2016.03-SP1
+Date   : Sun Nov 13 17:28:42 2022
+****************************************
+
+
+   min_delay/hold ('hclk' group)
+
+                             Required        Actual
+   Endpoint                 Path Delay     Path Delay        Slack
+   -----------------------------------------------------------------
+   hrdata_reg_0_/D              1.45           0.95 f        -0.50  (VIOLATED)
+   hrdata_reg_1_/D              1.45           0.95 f        -0.50  (VIOLATED)
+   hrdata_reg_2_/D              1.45           0.95 f        -0.50  (VIOLATED)
+   hrdata_reg_3_/D              1.45           0.95 f        -0.50  (VIOLATED)
+   hrdata_reg_4_/D              1.45           0.95 f        -0.50  (VIOLATED)
+   hrdata_reg_5_/D              1.45           0.95 f        -0.50  (VIOLATED)
+   hrdata_reg_6_/D              1.45           0.95 f        -0.50  (VIOLATED)
+   hrdata_reg_7_/D              1.45           0.95 f        -0.50  (VIOLATED)
+   hrdata_reg_8_/D              1.45           0.95 f        -0.50  (VIOLATED)
+   hrdata_reg_9_/D              1.45           0.95 f        -0.50  (VIOLATED)
+   hrdata_reg_10_/D             1.45           0.95 f        -0.50  (VIOLATED)
+   hrdata_reg_11_/D             1.45           0.95 f        -0.50  (VIOLATED)
+   hrdata_reg_12_/D             1.45           0.95 f        -0.50  (VIOLATED)
+   hrdata_reg_13_/D             1.45           0.95 f        -0.50  (VIOLATED)
+   hrdata_reg_14_/D             1.45           0.95 f        -0.50  (VIOLATED)
+   hrdata_reg_15_/D             1.45           0.95 f        -0.50  (VIOLATED)
+   hrdata_reg_16_/D             1.45           0.95 f        -0.50  (VIOLATED)
+   hrdata_reg_17_/D             1.45           0.95 f        -0.50  (VIOLATED)
+   hrdata_reg_18_/D             1.45           0.95 f        -0.50  (VIOLATED)
+   hrdata_reg_19_/D             1.45           0.95 f        -0.50  (VIOLATED)
+   hrdata_reg_20_/D             1.45           0.95 f        -0.50  (VIOLATED)
+   hrdata_reg_21_/D             1.45           0.95 f        -0.50  (VIOLATED)
+   hrdata_reg_22_/D             1.45           0.95 f        -0.50  (VIOLATED)
+   hrdata_reg_23_/D             1.45           0.95 f        -0.50  (VIOLATED)
+   hrdata_reg_24_/D             1.45           0.95 f        -0.50  (VIOLATED)
+   hrdata_reg_25_/D             1.45           0.95 f        -0.50  (VIOLATED)
+   hrdata_reg_26_/D             1.45           0.95 f        -0.50  (VIOLATED)
+   hrdata_reg_27_/D             1.45           0.95 f        -0.50  (VIOLATED)
+   hrdata_reg_28_/D             1.45           0.95 f        -0.50  (VIOLATED)
+   hrdata_reg_29_/D             1.45           0.95 f        -0.50  (VIOLATED)
+   hrdata_reg_30_/D             1.45           0.95 f        -0.50  (VIOLATED)
+   hrdata_reg_31_/D             1.45           0.95 f        -0.50  (VIOLATED)
+   sram_a_reg_0_/D              1.45           0.95 f        -0.50  (VIOLATED)
+   sram_a_reg_1_/D              1.45           0.95 f        -0.50  (VIOLATED)
+   sram_a_reg_2_/D              1.45           0.95 f        -0.50  (VIOLATED)
+   sram_a_reg_3_/D              1.45           0.95 f        -0.50  (VIOLATED)
+   sram_a_reg_4_/D              1.45           0.95 f        -0.50  (VIOLATED)
+   sram_a_reg_5_/D              1.45           0.95 f        -0.50  (VIOLATED)
+   sram_a_reg_6_/D              1.45           0.95 f        -0.50  (VIOLATED)
+   sram_a_reg_7_/D              1.45           0.95 f        -0.50  (VIOLATED)
+   sram_a_reg_8_/D              1.45           0.95 f        -0.50  (VIOLATED)
+   sram_a_reg_9_/D              1.45           0.95 f        -0.50  (VIOLATED)
+   sram_a_reg_10_/D             1.45           0.95 f        -0.50  (VIOLATED)
+   sram_a_reg_11_/D             1.45           0.95 f        -0.50  (VIOLATED)
+   sram_wen_reg/D               1.45           1.10 f        -0.35  (VIOLATED)
+   hwdata_mask_reg_22_/D        1.44           1.24 f        -0.21  (VIOLATED)
+   hwdata_mask_reg_21_/D        1.44           1.24 f        -0.20  (VIOLATED)
+   hwdata_mask_reg_16_/D        1.44           1.26 f        -0.18  (VIOLATED)
+   hwdata_mask_reg_19_/D        1.44           1.26 f        -0.18  (VIOLATED)
+   hwdata_mask_reg_20_/D        1.44           1.26 f        -0.18  (VIOLATED)
+   hwdata_mask_reg_23_/D        1.44           1.26 f        -0.18  (VIOLATED)
+   hwdata_mask_reg_24_/D        1.44           1.26 f        -0.18  (VIOLATED)
+   hwdata_mask_reg_25_/D        1.44           1.26 f        -0.18  (VIOLATED)
+   hwdata_mask_reg_26_/D        1.44           1.26 f        -0.18  (VIOLATED)
+   hwdata_mask_reg_27_/D        1.44           1.26 f        -0.18  (VIOLATED)
+   hwdata_mask_reg_28_/D        1.44           1.26 f        -0.18  (VIOLATED)
+   hwdata_mask_reg_29_/D        1.44           1.26 f        -0.18  (VIOLATED)
+   hwdata_mask_reg_30_/D        1.44           1.26 f        -0.18  (VIOLATED)
+   hwdata_mask_reg_31_/D        1.44           1.26 f        -0.18  (VIOLATED)
+   sram_d_reg_0_/D              1.45           1.30 f        -0.15  (VIOLATED)
+   sram_d_reg_1_/D              1.45           1.30 f        -0.15  (VIOLATED)
+   sram_d_reg_2_/D              1.45           1.30 f        -0.15  (VIOLATED)
+   sram_d_reg_4_/D              1.45           1.30 f        -0.15  (VIOLATED)
+   sram_d_reg_5_/D              1.45           1.30 f        -0.15  (VIOLATED)
+   sram_d_reg_6_/D              1.45           1.30 f        -0.15  (VIOLATED)
+   sram_d_reg_7_/D              1.45           1.30 f        -0.15  (VIOLATED)
+   sram_d_reg_8_/D              1.45           1.30 f        -0.15  (VIOLATED)
+   sram_d_reg_9_/D              1.45           1.30 f        -0.15  (VIOLATED)
+   sram_d_reg_11_/D             1.45           1.30 f        -0.15  (VIOLATED)
+   sram_d_reg_12_/D             1.45           1.30 f        -0.15  (VIOLATED)
+   sram_d_reg_13_/D             1.45           1.30 f        -0.15  (VIOLATED)
+   sram_d_reg_14_/D             1.45           1.30 f        -0.15  (VIOLATED)
+   sram_d_reg_15_/D             1.45           1.30 f        -0.15  (VIOLATED)
+   sram_d_reg_16_/D             1.45           1.30 f        -0.15  (VIOLATED)
+   sram_d_reg_17_/D             1.45           1.30 f        -0.15  (VIOLATED)
+   sram_d_reg_19_/D             1.45           1.30 f        -0.15  (VIOLATED)
+   sram_d_reg_20_/D             1.45           1.30 f        -0.15  (VIOLATED)
+   sram_d_reg_21_/D             1.45           1.30 f        -0.15  (VIOLATED)
+   sram_d_reg_22_/D             1.45           1.30 f        -0.15  (VIOLATED)
+   sram_d_reg_23_/D             1.45           1.30 f        -0.15  (VIOLATED)
+   sram_d_reg_24_/D             1.45           1.30 f        -0.15  (VIOLATED)
+   sram_d_reg_26_/D             1.45           1.30 f        -0.15  (VIOLATED)
+   sram_d_reg_27_/D             1.45           1.30 f        -0.15  (VIOLATED)
+   sram_d_reg_28_/D             1.45           1.30 f        -0.15  (VIOLATED)
+   sram_d_reg_29_/D             1.45           1.30 f        -0.15  (VIOLATED)
+   sram_d_reg_30_/D             1.45           1.30 f        -0.15  (VIOLATED)
+   sram_d_reg_31_/D             1.45           1.30 f        -0.15  (VIOLATED)
+   sram_d_reg_3_/D              1.45           1.31 f        -0.14  (VIOLATED)
+   sram_d_reg_10_/D             1.45           1.31 f        -0.14  (VIOLATED)
+   sram_d_reg_18_/D             1.45           1.31 f        -0.14  (VIOLATED)
+   sram_d_reg_25_/D             1.45           1.31 f        -0.14  (VIOLATED)
+   hwdata_mask_reg_17_/D        1.44           1.38 f        -0.06  (VIOLATED)
+   hwdata_mask_reg_18_/D        1.44           1.38 f        -0.06  (VIOLATED)
+
+
+   max_area
+
+                             Required        Actual
+   Design                      Area           Area           Slack
+   -----------------------------------------------------------------
+   top                          0.00        6901.71       -6901.71  (VIOLATED)
+
+
+   max_leakage_power
+
+                             Required        Actual
+   Design                   Leakage Power  Leakage Power     Slack
+   -----------------------------------------------------------------
+   top                          0.00       257317.42      -257317.42
+                                                                    (VIOLATED)
+
+
+1

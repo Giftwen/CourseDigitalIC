@@ -1,0 +1,17 @@
+Command: /home/gift/workplace/CourseDigitalIC/homework/ch6-7/AHBSram/././build/simtop -l ./build/log/run.log
+Chronologic VCS simulator copyright 1991-2018
+Contains Synopsys proprietary information.
+Compiler version O-2018.09-SP2_Full64; Runtime version O-2018.09-SP2_Full64;  Nov 13 17:23 2022
+*Verdi* Loading libsscore_vcs201809.so
+FSDB Dumper for VCS, Release Verdi_O-2018.09-SP2, Linux x86_64/64bit, 02/21/2019
+(C) 1996 - 2019 by Synopsys, Inc.
+*Verdi* : Create FSDB file './build/simtop.fsdb'
+*Verdi* : Begin traversing the scopes, layer (0).
+*Verdi* : Enable +all dumping.
+*Verdi* : End of traversing.
+$finish called from file "/home/gift/workplace/CourseDigitalIC/homework/ch6-7/AHBSram/sim/tb_ahbsram.v", line 52.
+$finish at simulation time              2100000
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 2100000 ps
+CPU Time:      0.280 seconds;       Data structure size:   0.0Mb
+Sun Nov 13 17:23:16 2022

@@ -1,0 +1,12 @@
+*design* DebussyLib (btIdent Verdi_O-2018.09-SP2)
+Command arguments:
+    +define+verilog
+    -f ./sim/filelist_sim.f
+        /home/gift/workplace/CourseDigitalIC/homework/ch6-7/MatrixScan/src/sram.v
+        /home/gift/workplace/CourseDigitalIC/homework/ch6-7/MatrixScan/src/top.v
+        /home/gift/workplace/CourseDigitalIC/homework/ch6-7/MatrixScan/sim/tb_matrixsort.v
+
+Highest level modules:
+tb_matrixsort
+
+Total	0 error(s),   0 warning(s)

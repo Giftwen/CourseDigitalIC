@@ -1,0 +1,43 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay min
+        -max_paths 1
+Design : top
+Version: L-2016.03-SP1
+Date   : Sun Nov 13 17:29:34 2022
+****************************************
+
+Operating Conditions: ss_1v62_125c   Library: ss_1v62_125c
+Wire Load Model Mode: top
+
+  Startpoint: vld_in (input port clocked by clk)
+  Endpoint: r_en_reg (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.95       0.95
+  input external delay                     0.00       0.95 r
+  vld_in (in)                              0.00       0.95 r
+  U58/Y (NAND2BXLM)                        0.08       1.03 f
+  r_en_reg/D (DFFRQX1M)                    0.00       1.03 f
+  data arrival time                                   1.03
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.95       0.95
+  clock uncertainty                        0.47       1.42
+  r_en_reg/CK (DFFRQX1M)                   0.00       1.42 r
+  library hold time                        0.02       1.44
+  data required time                                  1.44
+  -----------------------------------------------------------
+  data required time                                  1.44
+  data arrival time                                  -1.03
+  -----------------------------------------------------------
+  slack (VIOLATED)                                   -0.42
+
+
+1

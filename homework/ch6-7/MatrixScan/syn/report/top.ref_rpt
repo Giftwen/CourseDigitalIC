@@ -1,0 +1,58 @@
+ 
+****************************************
+Report : reference
+Design : top
+Version: L-2016.03-SP1
+Date   : Sun Nov 13 17:29:34 2022
+****************************************
+
+Attributes:
+    b - black box (unknown)
+   bo - allows boundary optimization
+    d - dont_touch
+   mo - map_only
+    h - hierarchical
+    n - noncombinational
+    r - removable
+    s - synthetic operator
+    u - contains unmapped logic
+
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+ADDHX1M            ss_1v62_125c
+                                 28.537600       4    114.150398  r
+AND2X1M            ss_1v62_125c
+                                 10.976000       5     54.879999  
+CLKINVX1M          ss_1v62_125c
+                                  6.585600       7     46.099199  
+DFFRQX1M           ss_1v62_125c
+                                 46.099201       3    138.297604  n
+DFFSQX1M           ss_1v62_125c
+                                 46.099201       7    322.694408  n
+INVXLM             ss_1v62_125c
+                                  6.585600       6     39.513599  
+NAND2BXLM          ss_1v62_125c
+                                 10.976000       2     21.952000  
+NAND4X1M           ss_1v62_125c
+                                 13.171200       2     26.342400  
+NAND4XLM           ss_1v62_125c
+                                 13.171200       7     92.198399  
+NOR2BX1M           ss_1v62_125c
+                                 10.976000       1     10.976000  
+NOR2XLM            ss_1v62_125c
+                                  8.780800      62    544.409592  
+NOR4X1M            ss_1v62_125c
+                                 13.171200      11    144.883198  
+NOR4XLM            ss_1v62_125c
+                                 13.171200      16    210.739197  
+OAI32X1M           ss_1v62_125c
+                                 15.366400       6     92.198399  
+OR2X1M             ss_1v62_125c
+                                 10.976000     159   1745.183973  
+XOR2XLM            ss_1v62_125c
+                                 19.756800       1     19.756800  
+sram_ADDR_DEPTH6_DATA_WIDTH10_DATA_DEPTH64
+                              49712.499680       1  49712.499680  h, n
+-----------------------------------------------------------------------------
+Total 17 references                                 53336.774843
+1

@@ -1,0 +1,121 @@
+{
+    "stat": {
+        "ru_self_end": {
+            "ru_maxrss_kb": 111864,
+            "ru_utime_sec": 0.048820000000000002,
+            "ru_minflt": 9883,
+            "ru_stime_sec": 0.044873000000000003,
+            "ru_nivcsw": 5,
+            "ru_nvcsw": 44,
+            "ru_majflt": 0
+        },
+        "cpu_cycles_end": 2163123018061571,
+        "ru_childs_end": {
+            "ru_maxrss_kb": 103504,
+            "ru_utime_sec": 0.020971,
+            "ru_minflt": 4315,
+            "ru_stime_sec": 0.021968000000000001,
+            "ru_nivcsw": 4,
+            "ru_nvcsw": 28,
+            "ru_majflt": 0
+        },
+        "peak_mem_kb": 225932
+    },
+    "Modules": {
+        "...MASTER...": {
+            "start_perf": [
+                0.23029279708862305,
+                0.032783,
+                0.03635,
+                212184,
+                225932,
+                1668331395.1367569,
+                2163122946024369
+            ],
+            "child_modules": {
+                "tb_ahbsram": 1
+            },
+            "end_perf": [
+                0.23460698127746582,
+                0.032783,
+                0.038420000000000003,
+                214028,
+                225932,
+                2163122957659609,
+                0,
+                0
+            ],
+            "nQuads": 0,
+            "nMops": 0,
+            "nRouts": 5
+        },
+        "tb_ahbsram": {
+            "start_perf": [
+                0.23470687866210938,
+                0.032783,
+                0.038519999999999999,
+                214028,
+                225932,
+                1668331395.141171,
+                2163122957880841
+            ],
+            "child_modules": {},
+            "Compiled Times": 2,
+            "Compiled": "Yes",
+            "nMops": 1891,
+            "significant_routs": [
+                [
+                    55,
+                    "R_VCSgd_pzTEB_37",
+                    2953640,
+                    1704,
+                    200
+                ]
+            ],
+            "end_perf": [
+                0.25227189064025879,
+                0.048467000000000003,
+                0.040389000000000001,
+                218748,
+                225932,
+                2163123005147717,
+                17179869185,
+                0
+            ],
+            "nQuads": 799,
+            "nRouts": 109
+        }
+    },
+    "CompUnits": {
+        "pzTEB_d": {
+            "mod": "tb_ahbsram",
+            "out": "pzTEB_d.o",
+            "bytes": 35104,
+            "text": 16462,
+            "mode": 4,
+            "checksum": 0,
+            "archive": "archive.1/_356889_archive_1.a"
+        }
+    },
+    "reusePaths": {
+        "amcQw_d": {
+            "icPath": "csrc"
+        }
+    },
+    "ObjArchives": [
+        {
+            "archive": "archive.1/_356889_archive_1.a",
+            "objects": [
+                [
+                    "pzTEB_d.o",
+                    35104
+                ],
+                [
+                    "amcQwB.o",
+                    127076
+                ]
+            ],
+            "size": 162180
+        }
+    ]
+}

@@ -1,0 +1,73 @@
+Magic 271485
+Revision Verdi_O-2018.09-SP2
+
+; Window Layout <x> <y> <width> <height> <signalwidth> <valuewidth>
+viewPort 0 27 1906 484 100 65
+
+; File list:
+; openDirFile [-d delimiter] [-s time_offset] [-rf auto_bus_rule_file] path_name file_name
+openDirFile -d / "" "/home/gift/workplace/CourseDigitalIC/homework/ch6-7/Sqrt/build/simtop.fsdb"
+
+; file time scale:
+; fileTimeScale ### s|ms|us|ns|ps
+
+; signal spacing:
+signalSpacing 5
+
+; windowTimeUnit is used for zoom, cursor & marker
+; waveform viewport range
+zoom 0.000000 191900.000000
+cursor 0.000000
+marker 0.000000
+
+; user define markers
+; userMarker time_pos marker_name color linestyle
+; visible top row signal index
+top 0
+; marker line index
+markerPos 6
+
+; event list
+; addEvent event_name event_expression
+; curEvent event_name
+
+
+
+COMPLEX_EVENT_BEGIN
+
+
+COMPLEX_EVENT_END
+
+
+
+; toolbar current search type
+; curSTATUS search_type
+curSTATUS ByChange
+
+
+addGroup "G1"
+activeDirFile "" "/home/gift/workplace/CourseDigitalIC/homework/ch6-7/Sqrt/build/simtop.fsdb"
+addSignal -h 15 /tb_sqrt/clk
+addSignal -h 15 -holdScope rst_n
+addSignal -h 15 -holdScope vld_in
+addSignal -h 15 -holdScope vld_out
+addSignal -h 15 -holdScope x[31:0]
+addSignal -h 15 -holdScope y[15:0]
+addGroup "G2"
+
+; getSignalForm Scope Hierarchy Status
+; active file of getSignalForm
+activeDirFile "" "/home/gift/workplace/CourseDigitalIC/homework/ch6-7/Sqrt/build/simtop.fsdb"
+
+GETSIGNALFORM_SCOPE_HIERARCHY_BEGIN
+getSignalForm close
+
+"/tb_sqrt"
+
+SCOPE_LIST_BEGIN
+"/tb_sqrt"
+SCOPE_LIST_END
+
+GETSIGNALFORM_SCOPE_HIERARCHY_END
+
+
