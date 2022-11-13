@@ -19,15 +19,15 @@ Console = FALSE
 powerDumped = 0
 [hb]
 postSimFile = /home/gift/workplace/CourseDigitalIC/homework/ch4-5/StopWatch/build/simtop.fsdb
-syncTime = 0
-viewport = 0 26 1419 1163 0 0 326 1417
-activeNode = "tb_cla"
-activeScope = "tb_cla"
-activeFile = "/home/gift/workplace/CourseDigitalIC/homework/ch4-5/StopWatch/sim/tb_Stopwatch.v"
+syncTime = 8820024000
+viewport = 0 26 1411 1163 0 0 301 1417
+activeNode = "tb_cla.stop_watch.watch_u0"
+activeScope = "tb_cla.stop_watch.watch_u0"
+activeFile = "/home/gift/workplace/CourseDigitalIC/homework/ch4-5/StopWatch/src/watch.v"
 interactiveMode = False
 viewType = Source
 simulatorMode = False
-sourceBeginLine = 8
+sourceBeginLine = 103
 baMode = False
 srcLineNum = True
 AutoWrap = True
@@ -44,23 +44,24 @@ DnDtraceCrossHierOnly = True
 traceIncTopPort = False
 leadingZero = False
 signalPane = False
-Scope1 = "tb_cla"
-multipleSelection = 1 8 3 0 0
+Scope1 = "tb_cla.stop_watch.watch_u0"
+Scope2 = "tb_cla"
+multipleSelection = 2 105 1 0 0 105 5 0 0
 sdfCheckUndef = FALSE
 simFlow = FALSE
 [hb.design]
 importCmd = "-f" "./sim/filelist_sim.f" 
 invokeDir = /home/gift/workplace/CourseDigitalIC/homework/ch4-5/StopWatch
 [hb.sourceTab.1]
-scope = tb_cla
-File = /home/gift/workplace/CourseDigitalIC/homework/ch4-5/StopWatch/sim/tb_Stopwatch.v
-Line = 9
+scope = tb_cla.stop_watch.watch_u0
+File = /home/gift/workplace/CourseDigitalIC/homework/ch4-5/StopWatch/src/watch.v
+Line = 104
 [nMemoryManager]
 WaveformFile = /home/gift/workplace/CourseDigitalIC/homework/ch4-5/StopWatch/build/simtop.fsdb
 UserActionNum = 0
 nMemWindowNum = 0
 [wave.0]
-viewPort = 0 27 1419 805 100 65
+viewPort = 0 27 1411 868 100 65
 primaryWindow = TRUE
 SessionFile = /home/gift/workplace/CourseDigitalIC/homework/ch4-5/StopWatch/verdiLog/novas_autosave.ses.wave.0
 displayGrid = FALSE
