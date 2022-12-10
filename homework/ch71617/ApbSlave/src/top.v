@@ -20,7 +20,8 @@ reg  [31:0] timer1_value;
 reg  [31:0]  timer2status;
 reg  [31:0] timer2count;
 reg  [31:0] timer2_value;
-reg  [7:0] timer_irqr;
+reg   timer_irqr0;
+reg   timer_irqr1;
 reg direction;
 //timerxstatus[0]   ----->timer1's enable,
 //timerxstatus[1]   ----->timer1's int enable,
@@ -63,8 +64,8 @@ reg direction;
     
 /***********************************TIMER1***********************************************/
 
-assign timer_irq[0] = timer0status[1] ? (timer_irqr[0] ? (~timer0status[3]):timer0status[3] )   
-                                    : (timer_irqr[0] ? (timer0status[3]):~timer0status[3] );//取反
+assign timer_irq[0] = timer0status[1] ? (timer_irqr0 ? (~timer0status[3]):timer0status[3] )   
+                                    : (timer_irqr0 ? (timer0status[3]):~timer0status[3] );//取反
     always @(posedge pclk or negedge presetn) begin
         if(!presetn)begin
             timer0count <= 'b0;
@@ -84,10 +85,11 @@ assign timer_irq[0] = timer0status[1] ? (timer_irqr[0] ? (~timer0status[3]):time
 
     always @(posedge pclk or negedge presetn) begin
         if(!presetn)begin
-            timer0count <= 'b0;
+            timer0status <= 'b0;
             timer0_value <= 'b0;
+            timer_irqr0   <= 'b0;
         end else if(psel&&penable&&pwrite)begin
-            timer_irqr[0]   <= 'b0;
+            timer_irqr0   <= 'b0;
             if (paddr ==`Timer0Ctrl)begin
                 timer0status <= pwdata;
             end else if(paddr ==`Timer0Value)begin
@@ -99,21 +101,21 @@ assign timer_irq[0] = timer0status[1] ? (timer_irqr[0] ? (~timer0status[3]):time
         end else begin
             if (timer0status[2]&&timer0count ==timer0_value)begin
                 timer0status[0] <= 'b0;
-                timer_irqr[0]   <= 'b1;
+                timer_irqr0   <= 'b1;
             end else if(!timer0status[2]&&timer0count ==2**(timer0status[8:4]+5'd8))begin
                 timer0status[0] <= 'b1;
-                timer_irqr[0]   <= 'b1;
+                timer_irqr0   <= 'b1;
             end else begin
                 timer0status[0] <= timer0status[0];
-                timer_irqr[0]   <= 'b0;
+                timer_irqr0   <= 'b0;
             end
 
         end
     end
     
 /***********************************TIMER2***********************************************/
-assign timer_irq[1] = timer1status[1] ? (timer_irqr[1] ? (~timer1status[3]):timer1status[3] )   
-                                    : (timer_irqr[1] ? (timer1status[3]):~timer1status[3] );//取反
+assign timer_irq[1] = timer1status[1] ? (timer_irqr1 ? (~timer1status[3]):timer1status[3] )   
+                                    : (timer_irqr1 ? (timer1status[3]):~timer1status[3] );//取反
     always @(posedge pclk or negedge presetn) begin
         if(!presetn)begin
             timer1count <= 'b0;
@@ -137,10 +139,11 @@ assign timer_irq[1] = timer1status[1] ? (timer_irqr[1] ? (~timer1status[3]):time
 
     always @(posedge pclk or negedge presetn) begin
         if(!presetn)begin
-            timer1count <= 'b0;
+            timer1status <= 'b0;
             timer1_value <= 'b0;
+            timer_irqr1   <= 'b0;
         end else if(psel&&penable&&pwrite)begin
-            timer_irqr[1]   <= 'b0;
+            timer_irqr1   <= 'b0;
             if (paddr ==`Timer1Ctrl)begin
                 timer1status <= pwdata;
             end else if(paddr ==`Timer1Value)begin
@@ -152,13 +155,13 @@ assign timer_irq[1] = timer1status[1] ? (timer_irqr[1] ? (~timer1status[3]):time
         end else begin
             if (timer1status[2]&&timer1count ==timer1_value)begin
                 timer1status[0] <= 'b0;
-                timer_irqr[0]   <= 'b1;
+                timer_irqr1   <= 'b1;
             end else if(!timer1status[2]&&timer1count ==2**(timer1status[8:4]+5'd8))begin
                 timer1status[0] <= 'b1;
-                timer_irqr[1]   <= 'b1;
+                timer_irqr1   <= 'b1;
             end else begin
                 timer1status[0] <= timer1status[0];
-                timer_irqr[1]   <= 'b0;
+                timer_irqr1   <= 'b0;
             end
 
         end

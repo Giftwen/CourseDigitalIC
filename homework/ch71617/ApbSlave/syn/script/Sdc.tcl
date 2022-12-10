@@ -1,7 +1,7 @@
 
 #==================================Env Vars===================================
-set RST_NAME				rst
-set CLK_NAME				clk
+set RST_NAME				presetn
+set CLK_NAME				pclk
 
 set CLK_PERIOD_I			10
 set CLK_PERIOD            	[expr $CLK_PERIOD_I*0.95]

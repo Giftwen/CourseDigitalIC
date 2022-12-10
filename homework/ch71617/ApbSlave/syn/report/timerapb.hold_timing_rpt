@@ -1,0 +1,44 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay min
+        -max_paths 1
+Design : timerapb
+Version: L-2016.03-SP1
+Date   : Sat Dec 10 21:30:30 2022
+****************************************
+
+Operating Conditions: ss_1v62_125c   Library: ss_1v62_125c
+Wire Load Model Mode: top
+
+  Startpoint: pwdata[5] (input port clocked by pclk)
+  Endpoint: timer0_value_reg_5_
+            (rising edge-triggered flip-flop clocked by pclk)
+  Path Group: pclk
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock pclk (rise edge)                   0.00       0.00
+  clock network delay (ideal)              0.95       0.95
+  input external delay                     0.00       0.95 f
+  pwdata[5] (in)                           0.00       0.95 f
+  U258/Y (MX2X2M)                          0.21       1.16 f
+  timer0_value_reg_5_/D (DFFRQX1M)         0.00       1.16 f
+  data arrival time                                   1.16
+
+  clock pclk (rise edge)                   0.00       0.00
+  clock network delay (ideal)              0.95       0.95
+  clock uncertainty                        0.47       1.42
+  timer0_value_reg_5_/CK (DFFRQX1M)        0.00       1.42 r
+  library hold time                        0.02       1.45
+  data required time                                  1.45
+  -----------------------------------------------------------
+  data required time                                  1.45
+  data arrival time                                  -1.16
+  -----------------------------------------------------------
+  slack (VIOLATED)                                   -0.29
+
+
+1

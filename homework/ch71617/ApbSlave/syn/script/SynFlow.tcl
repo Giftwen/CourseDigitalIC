@@ -22,7 +22,7 @@ echo $FILE_LIST
 close $f
 
 #--------------------------Read Designs------------------------------
-set TOP_DESIGN top
+set TOP_DESIGN timerapb
 analyze -format verilog $FILE_LIST 
 elaborate $TOP_DESIGN
 

@@ -1,0 +1,76 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : timerapb
+Version: L-2016.03-SP1
+Date   : Sat Dec 10 21:30:30 2022
+****************************************
+
+Operating Conditions: ss_1v62_125c   Library: ss_1v62_125c
+Wire Load Model Mode: top
+
+  Startpoint: paddr[31] (input port clocked by pclk)
+  Endpoint: timer1count_reg_31_
+            (rising edge-triggered flip-flop clocked by pclk)
+  Path Group: pclk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock pclk (rise edge)                   0.00       0.00
+  clock network delay (ideal)              1.90       1.90
+  input external delay                     3.80       5.70 f
+  paddr[31] (in)                           0.00       5.70 f
+  U610/Y (INVX4M)                          0.05       5.75 r
+  U608/Y (NAND2X4M)                        0.07       5.81 f
+  C2034/Y (OR2X4M)                         0.17       5.98 f
+  C2035/Y (OR2X4M)                         0.17       6.14 f
+  C2036/Y (OR2X4M)                         0.17       6.31 f
+  C2037/Y (OR2X4M)                         0.17       6.48 f
+  C2038/Y (OR2X4M)                         0.17       6.64 f
+  C2039/Y (OR2X4M)                         0.18       6.82 f
+  C2040/Y (OR2X8M)                         0.18       6.99 f
+  C2041/Y (OR2X12M)                        0.16       7.16 f
+  C2042/Y (OR2X12M)                        0.16       7.32 f
+  C2043/Y (OR2X12M)                        0.16       7.48 f
+  C2044/Y (OR2X4M)                         0.16       7.64 f
+  C2045/Y (OR2X4M)                         0.17       7.81 f
+  U676/Y (OR3X4M)                          0.22       8.02 f
+  U641/Y (NOR3X8M)                         0.14       8.16 r
+  U607/Y (NAND2BX4M)                       0.09       8.25 f
+  U605/Y (NOR2X4M)                         0.11       8.35 r
+  U604/Y (NAND2X2M)                        0.07       8.42 f
+  U640/Y (INVXLM)                          0.07       8.49 r
+  U675/Y (AND2X1M)                         0.16       8.66 r
+  U678/Y (AND2X1M)                         0.18       8.84 r
+  U646/Y (NAND2BX2M)                       0.08       8.92 f
+  U638/Y (CLKINVX2M)                       0.07       8.99 r
+  U603/Y (NAND2X2M)                        0.09       9.08 f
+  U602/Y (OR2X2M)                          0.21       9.29 f
+  C2164/Y (OR2X2M)                         0.22       9.51 f
+  U633/Y (NOR2X4M)                         0.13       9.64 r
+  U629/Y (OR2X1M)                          0.16       9.80 r
+  C2456/Y (AND2X2M)                        0.17       9.96 r
+  C2477/Y (AND2X4M)                        0.18      10.15 r
+  U618/Y (OR3X4M)                          0.33      10.48 r
+  U662/Y (MX2XLM)                          0.18      10.66 r
+  timer1count_reg_31_/D (DFFRQX1M)         0.00      10.66 r
+  data arrival time                                  10.66
+
+  clock pclk (rise edge)                   9.50       9.50
+  clock network delay (ideal)              1.90      11.40
+  clock uncertainty                       -0.47      10.92
+  timer1count_reg_31_/CK (DFFRQX1M)        0.00      10.92 r
+  library setup time                      -0.25      10.67
+  data required time                                 10.67
+  -----------------------------------------------------------
+  data required time                                 10.67
+  data arrival time                                 -10.66
+  -----------------------------------------------------------
+  slack (MET)                                         0.01
+
+
+1

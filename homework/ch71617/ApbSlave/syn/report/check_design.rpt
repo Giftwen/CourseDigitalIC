@@ -1,0 +1,18 @@
+ 
+****************************************
+check_design summary:
+Version:     L-2016.03-SP1
+Date:        Sat Dec 10 21:30:30 2022
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Inputs/Outputs                                                      7
+    Unconnected ports (LINT-28)                                     6
+    Constant outputs (LINT-52)                                      1
+--------------------------------------------------------------------------------
+
+Information: Use the 'check_design' command for 
+	 more information about warnings. (LINT-98)
+
+1
