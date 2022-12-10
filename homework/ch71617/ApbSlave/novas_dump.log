@@ -258,8 +258,8 @@ argv[0]=././build/simtop
 argv[1]=-l
 argv[2]=./build/log/run.log
 259 profile - 100
-          CPU/Mem usage: 0.060 sys,  0.230 user,  185.19M mem
-260 Sat Dec 10 21:18:27 2022
+          CPU/Mem usage: 0.040 sys,  0.200 user,  185.08M mem
+260 Sat Dec 10 21:31:39 2022
 261 pliAppInit
 262 FSDB_GATE is set.
 263 FSDB_RTL is set.
@@ -284,35 +284,35 @@ argv[2]=./build/log/run.log
 282 *Verdi* : Enable +all dumping.
 283 *Verdi* : End of traversing.
 284 pliAppHDL_DumpVarComplete traverse var: profile - 
-          CPU/Mem usage: 0.070 sys,  0.240 user,  280.18M mem
-                   incr: 0.000 sys,  0.000 user,  7.59M mem
-                   accu: 0.000 sys,  0.000 user,  7.59M mem
-              accu incr: 0.000 sys,  0.000 user,  7.59M mem
+          CPU/Mem usage: 0.080 sys,  0.200 user,  280.18M mem
+                   incr: 0.030 sys,  0.000 user,  7.56M mem
+                   accu: 0.030 sys,  0.000 user,  7.56M mem
+              accu incr: 0.030 sys,  0.000 user,  7.56M mem
 
-          Count usage: 40 var,  38 idcode,  29 callback
-                 incr: 40 var,  38 idcode,  29 callback
-                 accu: 40 var,  38 idcode,  29 callback
-            accu incr: 40 var,  38 idcode,  29 callback
-285 Sat Dec 10 21:18:27 2022
+          Count usage: 41 var,  39 idcode,  30 callback
+                 incr: 41 var,  39 idcode,  30 callback
+                 accu: 41 var,  39 idcode,  30 callback
+            accu incr: 41 var,  39 idcode,  30 callback
+285 Sat Dec 10 21:31:39 2022
 286 pliAppHDL_DumpVarComplete: profile - 
-          CPU/Mem usage: 0.070 sys,  0.240 user,  281.23M mem
+          CPU/Mem usage: 0.080 sys,  0.200 user,  281.23M mem
                    incr: 0.000 sys,  0.000 user,  1.05M mem
-                   accu: 0.000 sys,  0.000 user,  8.64M mem
+                   accu: 0.030 sys,  0.000 user,  8.61M mem
               accu incr: 0.000 sys,  0.000 user,  1.05M mem
 
-          Count usage: 40 var,  38 idcode,  29 callback
+          Count usage: 41 var,  39 idcode,  30 callback
                  incr: 0 var,  0 idcode,  0 callback
-                 accu: 40 var,  38 idcode,  29 callback
+                 accu: 41 var,  39 idcode,  30 callback
             accu incr: 0 var,  0 idcode,  0 callback
-287 Sat Dec 10 21:18:27 2022
+287 Sat Dec 10 21:31:39 2022
 288 End of simulation at 2843000
-289 Sat Dec 10 21:18:27 2022
+289 Sat Dec 10 21:31:39 2022
 290 Begin FSDB profile info:
-291 FSDB Writer : bc1(4987) bcn(3704) mtf/stf(0/0)
-FSDB Writer elapsed time : flush(0.003191) io wait(0.000000) theadpool wait(0.000000) target functin(0.000000)
+291 FSDB Writer : bc1(5003) bcn(3691) mtf/stf(0/0)
+FSDB Writer elapsed time : flush(0.003086) io wait(0.000000) theadpool wait(0.000000) target functin(0.000000)
 FSDB Writer cpu time : MT Compression : 0
 292 End FSDB profile info
 293 Parallel profile    -  Flush:3 Expand:0 ProduceWait:0 ConsumerWait:0 BlockUsed:0
-294                        ProduceTime:0.373777770 ConsumerTime:0.000000000 Buffer:64MB
+294                        ProduceTime:0.299928803 ConsumerTime:0.000000000 Buffer:64MB
 295 SimExit
 296 Sim process exit
