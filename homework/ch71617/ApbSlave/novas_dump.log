@@ -258,8 +258,8 @@ argv[0]=././build/simtop
 argv[1]=-l
 argv[2]=./build/log/run.log
 259 profile - 100
-          CPU/Mem usage: 0.010 sys,  0.180 user,  185.07M mem
-260 Sat Dec 10 19:31:14 2022
+          CPU/Mem usage: 0.060 sys,  0.230 user,  185.19M mem
+260 Sat Dec 10 21:18:27 2022
 261 pliAppInit
 262 FSDB_GATE is set.
 263 FSDB_RTL is set.
@@ -269,14 +269,14 @@ argv[2]=./build/log/run.log
 267 LIBSSCORE=found /usr/Synopsys/verdi/verdi/Verdi_O-2018.09-SP2/share/PLI/lib/LINUXAMD64/libsscore_vcs201809.so through $NOVAS_HOME setting.
 268 FSDB Dumper for VCS, Release Verdi_O-2018.09-SP2, Linux x86_64/64bit, 02/21/2019
 269 (C) 1996 - 2019 by Synopsys, Inc.
-270 sps_call_fsdbDumpfile_main at 0 : /home/gift/workplace/CourseDigitalIC/homework/ch71617/ApbSlave/sim/tb_apbtimer.v(88)
+270 sps_call_fsdbDumpfile_main at 0 : /home/gift/workplace/CourseDigitalIC/homework/ch71617/ApbSlave/sim/tb_apbtimer.v(107)
 271 argv[0]: (./build/simtop.fsdb)
 272 *Verdi* FSDB WARNING: The FSDB file already exists. Overwriting the FSDB file may crash the programs that are using this file.
 273 *Verdi* : Create FSDB file './build/simtop.fsdb'
 274 compile option from '/home/gift/workplace/CourseDigitalIC/homework/ch71617/ApbSlave/build/simtop.daidir/vcs_rebuild'.
 275   "vcs '+v2k' '-full64' '-debug_acc+all' '-debug_region+cell+encrypt' '-LDFLAGS' '-Wl,--no-as-needed' '-timescale=1ns/1ps' '-o' './build/simtop' '-l' './build/log/report.log' '-P' '/usr/Synopsys/verdi/verdi/Verdi_O-2018.09-SP2/share/PLI/VCS/LINUXAMD64/novas.tab' '/usr/Synopsys/verdi/verdi/Verdi_O-2018.09-SP2/share/PLI/VCS/LINUXAMD64/pli.a' '/home/gift/workplace/CourseDigitalIC/homework/ch71617/ApbSlave/src/top.v' '/home/gift/workplace/CourseDigitalIC/homework/ch71617/ApbSlave/sim/tb_apbtimer.v' 2>&1"
 276 FSDB_VCS_ENABLE_FAST_VC is enable
-277 sps_call_fsdbDumpvars_vd_main at 0 : /home/gift/workplace/CourseDigitalIC/homework/ch71617/ApbSlave/sim/tb_apbtimer.v(89)
+277 sps_call_fsdbDumpvars_vd_main at 0 : /home/gift/workplace/CourseDigitalIC/homework/ch71617/ApbSlave/sim/tb_apbtimer.v(108)
 278 argv[0]: (+all)
 279 [spi_vcs_vd_ppi_create_root]: no upf option
 280 FSDB dumper cannot dump UPF related power signal ($power_tree): no ppiPowerNetwork.
@@ -284,35 +284,35 @@ argv[2]=./build/log/run.log
 282 *Verdi* : Enable +all dumping.
 283 *Verdi* : End of traversing.
 284 pliAppHDL_DumpVarComplete traverse var: profile - 
-          CPU/Mem usage: 0.030 sys,  0.190 user,  280.17M mem
-                   incr: 0.000 sys,  0.000 user,  7.56M mem
-                   accu: 0.000 sys,  0.000 user,  7.56M mem
-              accu incr: 0.000 sys,  0.000 user,  7.56M mem
+          CPU/Mem usage: 0.070 sys,  0.240 user,  280.18M mem
+                   incr: 0.000 sys,  0.000 user,  7.59M mem
+                   accu: 0.000 sys,  0.000 user,  7.59M mem
+              accu incr: 0.000 sys,  0.000 user,  7.59M mem
 
-          Count usage: 34 var,  32 idcode,  23 callback
-                 incr: 34 var,  32 idcode,  23 callback
-                 accu: 34 var,  32 idcode,  23 callback
-            accu incr: 34 var,  32 idcode,  23 callback
-285 Sat Dec 10 19:31:14 2022
+          Count usage: 40 var,  38 idcode,  29 callback
+                 incr: 40 var,  38 idcode,  29 callback
+                 accu: 40 var,  38 idcode,  29 callback
+            accu incr: 40 var,  38 idcode,  29 callback
+285 Sat Dec 10 21:18:27 2022
 286 pliAppHDL_DumpVarComplete: profile - 
-          CPU/Mem usage: 0.030 sys,  0.190 user,  281.22M mem
+          CPU/Mem usage: 0.070 sys,  0.240 user,  281.23M mem
                    incr: 0.000 sys,  0.000 user,  1.05M mem
-                   accu: 0.000 sys,  0.000 user,  8.61M mem
+                   accu: 0.000 sys,  0.000 user,  8.64M mem
               accu incr: 0.000 sys,  0.000 user,  1.05M mem
 
-          Count usage: 34 var,  32 idcode,  23 callback
+          Count usage: 40 var,  38 idcode,  29 callback
                  incr: 0 var,  0 idcode,  0 callback
-                 accu: 34 var,  32 idcode,  23 callback
+                 accu: 40 var,  38 idcode,  29 callback
             accu incr: 0 var,  0 idcode,  0 callback
-287 Sat Dec 10 19:31:14 2022
-288 End of simulation at 117000
-289 Sat Dec 10 19:31:14 2022
+287 Sat Dec 10 21:18:27 2022
+288 End of simulation at 2843000
+289 Sat Dec 10 21:18:27 2022
 290 Begin FSDB profile info:
-291 FSDB Writer : bc1(217) bcn(168) mtf/stf(0/0)
-FSDB Writer elapsed time : flush(0.003328) io wait(0.000000) theadpool wait(0.000000) target functin(0.000000)
+291 FSDB Writer : bc1(4987) bcn(3704) mtf/stf(0/0)
+FSDB Writer elapsed time : flush(0.003191) io wait(0.000000) theadpool wait(0.000000) target functin(0.000000)
 FSDB Writer cpu time : MT Compression : 0
 292 End FSDB profile info
 293 Parallel profile    -  Flush:3 Expand:0 ProduceWait:0 ConsumerWait:0 BlockUsed:0
-294                        ProduceTime:0.240503958 ConsumerTime:0.000000000 Buffer:64MB
+294                        ProduceTime:0.373777770 ConsumerTime:0.000000000 Buffer:64MB
 295 SimExit
 296 Sim process exit

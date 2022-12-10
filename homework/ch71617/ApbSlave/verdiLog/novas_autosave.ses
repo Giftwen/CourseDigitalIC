@@ -19,7 +19,7 @@ Console = FALSE
 powerDumped = 0
 [hb]
 postSimFile = /home/gift/workplace/CourseDigitalIC/homework/ch71617/ApbSlave/build/simtop.fsdb
-syncTime = 0
+syncTime = 25000
 viewport = 0 26 1716 1163 0 0 459 1714
 activeNode = "tb_apb"
 activeScope = "tb_apb"

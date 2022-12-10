@@ -372,10 +372,13 @@ saveWaveformStat = TRUE
 savePropStat = FALSE
 savePropDtl = TRUE
 [QtDialog]
-restoreSigDlg = 581,425,551,438
+QwInfoMsgDlg = 482,538,750,250
 openFileDlg = 556,403,602,483
+anaSearchVal = 663,586,388,117
 saveSigDlg = 581,451,551,386
+QwWarnMsgDlg = 548,536,600,250
 qWaveSignalDialog = 457,405,800,479
+restoreSigDlg = 581,425,551,438
 QwUserAskDlg = 696,579,324,134
 [Relationship]
 hideRecursiceNode = FALSE
@@ -653,10 +656,10 @@ DefaultLogTimeUnit = "1.000000ns"
 [VIA.oneSearch.preference.vgifColumnSettingRC.setting0]
 parRuleSets = ""
 [VIA.oneSearch.preference.vgifColumnSettingRC.setting0.column0]
-name = Severity
-width = 60
-visualIndex = 1
-isHidden = TRUE
+name = Message
+width = 2000
+visualIndex = 4
+isHidden = FALSE
 isUserChangeColumnVisible = FALSE
 [VIA.oneSearch.preference.vgifColumnSettingRC.setting0.column1]
 name = Time
@@ -671,16 +674,16 @@ visualIndex = 2
 isHidden = TRUE
 isUserChangeColumnVisible = FALSE
 [VIA.oneSearch.preference.vgifColumnSettingRC.setting0.column3]
+name = Severity
+width = 60
+visualIndex = 1
+isHidden = TRUE
+isUserChangeColumnVisible = FALSE
+[VIA.oneSearch.preference.vgifColumnSettingRC.setting0.column4]
 name = Type
 width = 60
 visualIndex = 3
 isHidden = TRUE
-isUserChangeColumnVisible = FALSE
-[VIA.oneSearch.preference.vgifColumnSettingRC.setting0.column4]
-name = Message
-width = 2000
-visualIndex = 4
-isHidden = FALSE
 isUserChangeColumnVisible = FALSE
 [Vi]
 ViFont = "Clean 14"

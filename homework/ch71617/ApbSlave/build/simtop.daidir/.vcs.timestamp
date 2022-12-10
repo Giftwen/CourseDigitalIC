@@ -121,8 +121,8 @@ CHIPLAB_HOME=/home/gift/workplace/chiplab
 AM_HOME=/home/gift/workplace/ysyx-workbench/abstract-machine
 0
 5
-1670671850 /home/gift/workplace/CourseDigitalIC/homework/ch71617/ApbSlave/sim/tb_apbtimer.v
-1670671786 /home/gift/workplace/CourseDigitalIC/homework/ch71617/ApbSlave/src/top.v
+1670678298 /home/gift/workplace/CourseDigitalIC/homework/ch71617/ApbSlave/sim/tb_apbtimer.v
+1670678232 /home/gift/workplace/CourseDigitalIC/homework/ch71617/ApbSlave/src/top.v
 1550753332 /usr/Synopsys/verdi/verdi/Verdi_O-2018.09-SP2/share/PLI/VCS/LINUX64/verdi.tab
 1550753332 /usr/Synopsys/verdi/verdi/Verdi_O-2018.09-SP2/share/PLI/VCS/LINUXAMD64/novas.tab
 1551421246 /usr/Synopsys/vcs2018/vcs/O-2018.09-SP2/linux64/lib/vcsdp_lite.tab
@@ -132,5 +132,5 @@ AM_HOME=/home/gift/workplace/ysyx-workbench/abstract-machine
 1551421768 /usr/Synopsys/vcs2018/vcs/O-2018.09-SP2/linux64/lib/libsnpsmalloc.so
 1551421789 /usr/Synopsys/vcs2018/vcs/O-2018.09-SP2/linux64/lib/libvfs.so
 1550752033 /usr/Synopsys/verdi/verdi/Verdi_O-2018.09-SP2/share/PLI/VCS/LINUXAMD64/pli.a
-1670671873 ./build/simtop.daidir
+1670678306 ./build/simtop.daidir
 -1 partitionlib

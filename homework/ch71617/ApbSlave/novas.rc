@@ -372,10 +372,13 @@ saveWaveformStat = TRUE
 savePropStat = FALSE
 savePropDtl = TRUE
 [QtDialog]
-restoreSigDlg = 581,425,551,438
+QwInfoMsgDlg = 482,538,750,250
 openFileDlg = 556,403,602,483
+anaSearchVal = 663,586,388,117
 saveSigDlg = 581,451,551,386
+QwWarnMsgDlg = 548,536,600,250
 qWaveSignalDialog = 457,405,800,479
+restoreSigDlg = 581,425,551,438
 QwUserAskDlg = 696,579,324,134
 [Relationship]
 hideRecursiceNode = FALSE
@@ -659,27 +662,27 @@ visualIndex = 1
 isHidden = TRUE
 isUserChangeColumnVisible = FALSE
 [VIA.oneSearch.preference.vgifColumnSettingRC.setting0.column1]
-name = Code
-width = 60
-visualIndex = 2
-isHidden = TRUE
-isUserChangeColumnVisible = FALSE
-[VIA.oneSearch.preference.vgifColumnSettingRC.setting0.column2]
-name = Type
-width = 60
-visualIndex = 3
-isHidden = TRUE
-isUserChangeColumnVisible = FALSE
-[VIA.oneSearch.preference.vgifColumnSettingRC.setting0.column3]
 name = Message
 width = 2000
 visualIndex = 4
 isHidden = FALSE
 isUserChangeColumnVisible = FALSE
-[VIA.oneSearch.preference.vgifColumnSettingRC.setting0.column4]
+[VIA.oneSearch.preference.vgifColumnSettingRC.setting0.column2]
 name = Time
 width = 60
 visualIndex = 0
+isHidden = TRUE
+isUserChangeColumnVisible = FALSE
+[VIA.oneSearch.preference.vgifColumnSettingRC.setting0.column3]
+name = Code
+width = 60
+visualIndex = 2
+isHidden = TRUE
+isUserChangeColumnVisible = FALSE
+[VIA.oneSearch.preference.vgifColumnSettingRC.setting0.column4]
+name = Type
+width = 60
+visualIndex = 3
 isHidden = TRUE
 isUserChangeColumnVisible = FALSE
 [Vi]
@@ -972,8 +975,8 @@ curveWindow_Drag&Drop_Mode = TRUE
 hspiceIncOpenMode = TRUE
 pcSelectMode = TRUE
 hierarchyDelimiter = /
-RecentFile1 = "\"/home/gift/workplace/CourseDigitalIC/homework/ch71617/ApbSlave/build/simtop.fsdb\""
-RecentFile2 = "\"/home/gift/workplace/CourseDigitalIC/homework/ch71617/ApbSlave/sim/signal.rc\""
+RecentFile1 = "\"/home/gift/workplace/CourseDigitalIC/homework/ch71617/ApbSlave/sim/signal.rc\""
+RecentFile2 = "\"/home/gift/workplace/CourseDigitalIC/homework/ch71617/ApbSlave/build/simtop.fsdb\""
 open_file_time_range = FALSE
 value_window_aligment = Right
 signal_window_alignment = Auto

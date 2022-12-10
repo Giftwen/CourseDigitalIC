@@ -1,7 +1,7 @@
 /*
  * @Author: WenJiaBao-2022E8020282071
  * @Date: 2022-12-06 22:28:39
- * @LastEditTime: 2022-12-10 19:30:50
+ * @LastEditTime: 2022-12-10 21:18:18
  * @Description: 
  * 
  * Copyright (c) 2022 by WenJiaBao wenjiabao0919@163.com, All Rights Reserved. 
@@ -57,13 +57,32 @@
     pwdata_m = 32'b11000_0111;
     paddr_m = 32'h2;
     apbvaild= 1;
-#6
+
+#8
+    rst_n = 1;
+    pwrite_m = 1;
+    pwdata_m = 32'd35;
+    paddr_m = 32'h6;
+    apbvaild= 1;
+#8
+    rst_n = 1;
+    pwrite_m = 1;
+    pwdata_m = 32'b00000_0011;
+    paddr_m = 32'h5;
+    apbvaild= 1;
+#8
     rst_n = 1;
     pwrite_m = 0;
     pwdata_m = 32'd200;
-    paddr_m = 32'h3;
+    paddr_m = 32'h2;
     apbvaild= 1;
-#100
+#8
+    rst_n = 1;
+    pwrite_m = 0;
+    pwdata_m = 32'd200;
+    paddr_m = 32'h0;
+    apbvaild= 1;
+#2800
     $finish;
  end
  
