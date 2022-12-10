@@ -1,0 +1,25 @@
+ 
+****************************************
+check_design summary:
+Version:     L-2016.03-SP1
+Date:        Tue Dec  6 22:35:02 2022
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Inputs/Outputs                                                  12675
+    Unconnected ports (LINT-28)                                  8706
+    Feedthrough (LINT-29)                                        3969
+
+Cells                                                           12484
+    Connected to power or ground (LINT-32)                       4418
+    Nets connected to multiple pins on same cell (LINT-33)       8066
+
+Nets                                                              191
+    Unloaded nets (LINT-2)                                        191
+--------------------------------------------------------------------------------
+
+Information: Use the 'check_design' command for 
+	 more information about warnings. (LINT-98)
+
+1

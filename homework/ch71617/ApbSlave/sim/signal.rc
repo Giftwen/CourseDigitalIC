@@ -1,0 +1,91 @@
+Magic 271485
+Revision Verdi_O-2018.09-SP2
+
+; Window Layout <x> <y> <width> <height> <signalwidth> <valuewidth>
+viewPort 0 27 1716 485 148 65
+
+; File list:
+; openDirFile [-d delimiter] [-s time_offset] [-rf auto_bus_rule_file] path_name file_name
+openDirFile -d / "" "/home/gift/workplace/CourseDigitalIC/homework/ch71617/ApbSlave/build/simtop.fsdb"
+
+; file time scale:
+; fileTimeScale ### s|ms|us|ns|ps
+
+; signal spacing:
+signalSpacing 5
+
+; windowTimeUnit is used for zoom, cursor & marker
+; waveform viewport range
+zoom 0.000000 102746.690461
+cursor 0.000000
+marker 0.000000
+
+; user define markers
+; userMarker time_pos marker_name color linestyle
+; visible top row signal index
+top 1
+; marker line index
+markerPos 7
+
+; event list
+; addEvent event_name event_expression
+; curEvent event_name
+
+
+
+COMPLEX_EVENT_BEGIN
+
+
+COMPLEX_EVENT_END
+
+
+
+; toolbar current search type
+; curSTATUS search_type
+curSTATUS ByChange
+
+
+addGroup "G1"
+activeDirFile "" "/home/gift/workplace/CourseDigitalIC/homework/ch71617/ApbSlave/build/simtop.fsdb"
+addSignal -h 15 /tb_apb/apbresp
+addSignal -h 15 -holdScope apbvaild
+addSignal -h 15 -holdScope clk
+addSignal -h 15 -holdScope rst_n
+addSignal -h 15 /tb_apb/apbtimer_u0/timer0count[31:0]
+addSignal -h 15 -holdScope timer0status[8:0]
+addSignal -h 15 -holdScope timer0_value[31:0]
+addSignal -h 15 /tb_apb/currentstate[1:0]
+addSignal -h 15 -holdScope nextstate[1:0]
+addSignal -h 15 -holdScope paddr[31:0]
+addSignal -h 15 -holdScope paddr_m[31:0]
+addSignal -h 15 -holdScope penable
+addSignal -h 15 -holdScope prdata[31:0]
+addSignal -h 15 -holdScope prdata_m[31:0]
+addSignal -h 15 -holdScope pready
+addSignal -h 15 -holdScope pready_m
+addSignal -h 15 -holdScope psel
+addSignal -h 15 -holdScope pwdata[31:0]
+addSignal -h 15 -holdScope pwdata_m[31:0]
+addSignal -h 15 -holdScope pwrite
+addSignal -h 15 -holdScope pwrite_m
+addSignal -h 15 -holdScope timer_irq[7:0]
+addGroup "G2"
+
+; getSignalForm Scope Hierarchy Status
+; active file of getSignalForm
+activeDirFile "" "/home/gift/workplace/CourseDigitalIC/homework/ch71617/ApbSlave/build/simtop.fsdb"
+
+GETSIGNALFORM_SCOPE_HIERARCHY_BEGIN
+getSignalForm close
+
+"/tb_apb"
+"/tb_apb/apbtimer_u0"
+
+SCOPE_LIST_BEGIN
+"/tb_apb"
+"/tb_apb/apbtimer_u0"
+SCOPE_LIST_END
+
+GETSIGNALFORM_SCOPE_HIERARCHY_END
+
+

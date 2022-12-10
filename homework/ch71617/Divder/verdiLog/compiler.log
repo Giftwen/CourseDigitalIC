@@ -1,0 +1,11 @@
+*design* DebussyLib (btIdent Verdi_O-2018.09-SP2)
+Command arguments:
+    +define+verilog
+    -f ./sim/filelist_sim.f
+        /home/gift/workplace/CourseDigitalIC/homework/ch71617/Divder/src/top.v
+        /home/gift/workplace/CourseDigitalIC/homework/ch71617/Divder/sim/tb_div.v
+
+Highest level modules:
+tb_div
+
+Total	0 error(s),   0 warning(s)

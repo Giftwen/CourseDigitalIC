@@ -1,0 +1,53 @@
+
+Warning-[LINX_KRNL] Unsupported Linux kernel
+  Linux kernel '5.11.0-49-generic' is not supported.
+  Supported versions are 2.4* or 2.6*.
+
+Command: vcs +v2k -full64 -debug_acc+all -debug_region+cell+encrypt -LDFLAGS -Wl,--no-as-needed \
+-timescale=1ns/1ps -o ./build/simtop -l ./build/log/report.log -P /usr/Synopsys/verdi/verdi/Verdi_O-2018.09-SP2/share/PLI/VCS/LINUXAMD64/novas.tab \
+/usr/Synopsys/verdi/verdi/Verdi_O-2018.09-SP2/share/PLI/VCS/LINUXAMD64/pli.a /home/gift/workplace/CourseDigitalIC/homework/ch71617/Sort/src/onehotdec.v \
+/home/gift/workplace/CourseDigitalIC/homework/ch71617/Sort/src/decode16_5.v /home/gift/workplace/CourseDigitalIC/homework/ch71617/Sort/src/sum16.v \
+/home/gift/workplace/CourseDigitalIC/homework/ch71617/Sort/src/top.v /home/gift/workplace/CourseDigitalIC/homework/ch71617/Sort/sim/tb_sort.v \
+
+                         Chronologic VCS (TM)
+       Version O-2018.09-SP2_Full64 -- Tue Dec  6 23:04:18 2022
+               Copyright (c) 1991-2018 by Synopsys Inc.
+                         ALL RIGHTS RESERVED
+
+This program is proprietary and confidential information of Synopsys Inc.
+and may be used and disclosed only as authorized in a license agreement
+controlling such use and disclosure.
+
+Parsing design file '/home/gift/workplace/CourseDigitalIC/homework/ch71617/Sort/src/onehotdec.v'
+Parsing design file '/home/gift/workplace/CourseDigitalIC/homework/ch71617/Sort/src/decode16_5.v'
+Parsing design file '/home/gift/workplace/CourseDigitalIC/homework/ch71617/Sort/src/sum16.v'
+Parsing design file '/home/gift/workplace/CourseDigitalIC/homework/ch71617/Sort/src/top.v'
+Parsing design file '/home/gift/workplace/CourseDigitalIC/homework/ch71617/Sort/sim/tb_sort.v'
+Top Level Modules:
+       tb_sort
+TimeScale is 1 ns / 1 ps
+Starting vcs inline pass...
+2 modules and 0 UDP read.
+recompiling module tb_sort
+	However, due to incremental compilation, only 1 module needs to be compiled. 
+make[1]: Entering directory '/home/gift/workplace/CourseDigitalIC/homework/ch71617/Sort/csrc' \
+
+rm -f _csrc*.so pre_vcsobj_*.so share_vcsobj_*.so
+ld -shared  -Bsymbolic  -o .//../build/simtop.daidir//_csrc0.so objs/amcQw_d.o 
+rm -f _csrc0.so
+if [ -x .././build/simtop ]; then chmod -x .././build/simtop; fi
+g++  -o .././build/simtop -no-pie  -Wl,--no-as-needed    -Wl,-rpath-link=./ -Wl,-rpath='$ORIGIN'/simtop.daidir/ \
+-Wl,-rpath=./simtop.daidir/ -Wl,-rpath='$ORIGIN'/simtop.daidir//scsim.db.dir  -L/usr/lib/x86_64-linux-gnu \
+-L/lib/x86_64-linux-gnu -Wl,--no-as-needed -Wl,--no-as-needed -rdynamic  -Wl,-rpath=/usr/Synopsys/vcs2018/vcs/O-2018.09-SP2/linux64/lib \
+-L/usr/Synopsys/vcs2018/vcs/O-2018.09-SP2/linux64/lib    _62430_archive_1.so _prev_archive_1.so \
+_csrc0.so  SIM_l.o  _csrc0.so     rmapats_mop.o rmapats.o rmar.o rmar_nd.o  rmar_llvm_0_1.o \
+rmar_llvm_0_0.o          -lzerosoft_rt_stubs -lvirsim -lerrorinf -lsnpsmalloc -lvfs \
+/usr/Synopsys/verdi/verdi/Verdi_O-2018.09-SP2/share/PLI/VCS/LINUXAMD64/pli.a    -lvcsnew \
+-lsimprofile -luclinative /usr/Synopsys/vcs2018/vcs/O-2018.09-SP2/linux64/lib/vcs_tls.o \
+-Wl,-whole-archive -lvcsucli -Wl,-no-whole-archive       _vcs_pli_stub_.o   /usr/Synopsys/vcs2018/vcs/O-2018.09-SP2/linux64/lib/vcs_save_restore_new.o \
+/usr/Synopsys/verdi/verdi/Verdi_O-2018.09-SP2/share/PLI/VCS/LINUX64/pli.a -ldl -lm \
+-lc -lpthread -ldl 
+.././build/simtop up to date
+make[1]: Leaving directory '/home/gift/workplace/CourseDigitalIC/homework/ch71617/Sort/csrc' \
+
+CPU time: .350 seconds to compile + .335 seconds to elab + .296 seconds to link

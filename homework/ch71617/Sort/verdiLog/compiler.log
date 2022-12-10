@@ -1,0 +1,14 @@
+*design* DebussyLib (btIdent Verdi_O-2018.09-SP2)
+Command arguments:
+    +define+verilog
+    -f ./sim/filelist_sim.f
+        /home/gift/workplace/CourseDigitalIC/homework/ch71617/Sort/src/onehotdec.v
+        /home/gift/workplace/CourseDigitalIC/homework/ch71617/Sort/src/decode16_5.v
+        /home/gift/workplace/CourseDigitalIC/homework/ch71617/Sort/src/sum16.v
+        /home/gift/workplace/CourseDigitalIC/homework/ch71617/Sort/src/top.v
+        /home/gift/workplace/CourseDigitalIC/homework/ch71617/Sort/sim/tb_sort.v
+
+Highest level modules:
+tb_sort
+
+Total	0 error(s),   0 warning(s)

@@ -1,0 +1,191 @@
+ 
+****************************************
+Report : constraint
+        -all_violators
+Design : top
+Version: L-2016.03-SP1
+Date   : Tue Dec  6 23:07:16 2022
+****************************************
+
+
+   min_delay/hold ('clk' group)
+
+                             Required        Actual
+   Endpoint                 Path Delay     Path Delay        Slack
+   -----------------------------------------------------------------
+   regfile_reg_0__0_/D          1.45           1.15 f        -0.30  (VIOLATED)
+   regfile_reg_1__6_/D          1.45           1.15 f        -0.30  (VIOLATED)
+   regfile_reg_1__7_/D          1.45           1.15 f        -0.30  (VIOLATED)
+   regfile_reg_2__0_/D          1.45           1.15 f        -0.30  (VIOLATED)
+   regfile_reg_2__1_/D          1.45           1.15 f        -0.30  (VIOLATED)
+   regfile_reg_2__2_/D          1.45           1.15 f        -0.30  (VIOLATED)
+   regfile_reg_2__4_/D          1.45           1.15 f        -0.30  (VIOLATED)
+   regfile_reg_2__5_/D          1.45           1.15 f        -0.30  (VIOLATED)
+   regfile_reg_2__6_/D          1.45           1.15 f        -0.30  (VIOLATED)
+   regfile_reg_2__7_/D          1.45           1.15 f        -0.30  (VIOLATED)
+   regfile_reg_3__0_/D          1.45           1.15 f        -0.30  (VIOLATED)
+   regfile_reg_3__1_/D          1.45           1.15 f        -0.30  (VIOLATED)
+   regfile_reg_3__2_/D          1.45           1.15 f        -0.30  (VIOLATED)
+   regfile_reg_3__3_/D          1.45           1.15 f        -0.30  (VIOLATED)
+   regfile_reg_3__4_/D          1.45           1.15 f        -0.30  (VIOLATED)
+   regfile_reg_3__5_/D          1.45           1.15 f        -0.30  (VIOLATED)
+   regfile_reg_3__6_/D          1.45           1.15 f        -0.30  (VIOLATED)
+   regfile_reg_3__7_/D          1.45           1.15 f        -0.30  (VIOLATED)
+   regfile_reg_4__0_/D          1.45           1.15 f        -0.30  (VIOLATED)
+   regfile_reg_4__1_/D          1.45           1.15 f        -0.30  (VIOLATED)
+   regfile_reg_4__3_/D          1.45           1.15 f        -0.30  (VIOLATED)
+   regfile_reg_4__4_/D          1.45           1.15 f        -0.30  (VIOLATED)
+   regfile_reg_4__5_/D          1.45           1.15 f        -0.30  (VIOLATED)
+   regfile_reg_4__6_/D          1.45           1.15 f        -0.30  (VIOLATED)
+   regfile_reg_4__7_/D          1.45           1.15 f        -0.30  (VIOLATED)
+   regfile_reg_5__0_/D          1.45           1.15 f        -0.30  (VIOLATED)
+   regfile_reg_5__1_/D          1.45           1.15 f        -0.30  (VIOLATED)
+   regfile_reg_5__2_/D          1.45           1.15 f        -0.30  (VIOLATED)
+   regfile_reg_5__3_/D          1.45           1.15 f        -0.30  (VIOLATED)
+   regfile_reg_5__4_/D          1.45           1.15 f        -0.30  (VIOLATED)
+   regfile_reg_5__5_/D          1.45           1.15 f        -0.30  (VIOLATED)
+   regfile_reg_5__6_/D          1.45           1.15 f        -0.30  (VIOLATED)
+   regfile_reg_5__7_/D          1.45           1.15 f        -0.30  (VIOLATED)
+   regfile_reg_6__0_/D          1.45           1.15 f        -0.30  (VIOLATED)
+   regfile_reg_6__2_/D          1.45           1.15 f        -0.30  (VIOLATED)
+   regfile_reg_6__3_/D          1.45           1.15 f        -0.30  (VIOLATED)
+   regfile_reg_6__4_/D          1.45           1.15 f        -0.30  (VIOLATED)
+   regfile_reg_6__5_/D          1.45           1.15 f        -0.30  (VIOLATED)
+   regfile_reg_6__6_/D          1.45           1.15 f        -0.30  (VIOLATED)
+   regfile_reg_6__7_/D          1.45           1.15 f        -0.30  (VIOLATED)
+   regfile_reg_7__0_/D          1.45           1.15 f        -0.30  (VIOLATED)
+   regfile_reg_7__1_/D          1.45           1.15 f        -0.30  (VIOLATED)
+   regfile_reg_7__2_/D          1.45           1.15 f        -0.30  (VIOLATED)
+   regfile_reg_7__3_/D          1.45           1.15 f        -0.30  (VIOLATED)
+   regfile_reg_7__4_/D          1.45           1.15 f        -0.30  (VIOLATED)
+   regfile_reg_7__5_/D          1.45           1.15 f        -0.30  (VIOLATED)
+   regfile_reg_7__6_/D          1.45           1.15 f        -0.30  (VIOLATED)
+   regfile_reg_7__7_/D          1.45           1.15 f        -0.30  (VIOLATED)
+   regfile_reg_8__1_/D          1.45           1.15 f        -0.30  (VIOLATED)
+   regfile_reg_8__2_/D          1.45           1.15 f        -0.30  (VIOLATED)
+   regfile_reg_8__3_/D          1.45           1.15 f        -0.30  (VIOLATED)
+   regfile_reg_8__4_/D          1.45           1.15 f        -0.30  (VIOLATED)
+   regfile_reg_8__5_/D          1.45           1.15 f        -0.30  (VIOLATED)
+   regfile_reg_8__6_/D          1.45           1.15 f        -0.30  (VIOLATED)
+   regfile_reg_8__7_/D          1.45           1.15 f        -0.30  (VIOLATED)
+   regfile_reg_9__0_/D          1.45           1.15 f        -0.30  (VIOLATED)
+   regfile_reg_9__1_/D          1.45           1.15 f        -0.30  (VIOLATED)
+   regfile_reg_9__2_/D          1.45           1.15 f        -0.30  (VIOLATED)
+   regfile_reg_9__3_/D          1.45           1.15 f        -0.30  (VIOLATED)
+   regfile_reg_9__4_/D          1.45           1.15 f        -0.30  (VIOLATED)
+   regfile_reg_9__5_/D          1.45           1.15 f        -0.30  (VIOLATED)
+   regfile_reg_9__6_/D          1.45           1.15 f        -0.30  (VIOLATED)
+   regfile_reg_9__7_/D          1.45           1.15 f        -0.30  (VIOLATED)
+   regfile_reg_10__0_/D         1.45           1.15 f        -0.30  (VIOLATED)
+   regfile_reg_10__1_/D         1.45           1.15 f        -0.30  (VIOLATED)
+   regfile_reg_10__2_/D         1.45           1.15 f        -0.30  (VIOLATED)
+   regfile_reg_10__3_/D         1.45           1.15 f        -0.30  (VIOLATED)
+   regfile_reg_10__4_/D         1.45           1.15 f        -0.30  (VIOLATED)
+   regfile_reg_10__5_/D         1.45           1.15 f        -0.30  (VIOLATED)
+   regfile_reg_10__6_/D         1.45           1.15 f        -0.30  (VIOLATED)
+   regfile_reg_10__7_/D         1.45           1.15 f        -0.30  (VIOLATED)
+   regfile_reg_11__0_/D         1.45           1.15 f        -0.30  (VIOLATED)
+   regfile_reg_11__1_/D         1.45           1.15 f        -0.30  (VIOLATED)
+   regfile_reg_11__2_/D         1.45           1.15 f        -0.30  (VIOLATED)
+   regfile_reg_11__4_/D         1.45           1.15 f        -0.30  (VIOLATED)
+   regfile_reg_11__5_/D         1.45           1.15 f        -0.30  (VIOLATED)
+   regfile_reg_11__6_/D         1.45           1.15 f        -0.30  (VIOLATED)
+   regfile_reg_11__7_/D         1.45           1.15 f        -0.30  (VIOLATED)
+   regfile_reg_12__0_/D         1.45           1.15 f        -0.30  (VIOLATED)
+   regfile_reg_12__1_/D         1.45           1.15 f        -0.30  (VIOLATED)
+   regfile_reg_12__2_/D         1.45           1.15 f        -0.30  (VIOLATED)
+   regfile_reg_12__3_/D         1.45           1.15 f        -0.30  (VIOLATED)
+   regfile_reg_12__4_/D         1.45           1.15 f        -0.30  (VIOLATED)
+   regfile_reg_12__5_/D         1.45           1.15 f        -0.30  (VIOLATED)
+   regfile_reg_12__6_/D         1.45           1.15 f        -0.30  (VIOLATED)
+   regfile_reg_12__7_/D         1.45           1.15 f        -0.30  (VIOLATED)
+   regfile_reg_13__0_/D         1.45           1.15 f        -0.30  (VIOLATED)
+   regfile_reg_13__1_/D         1.45           1.15 f        -0.30  (VIOLATED)
+   regfile_reg_13__2_/D         1.45           1.15 f        -0.30  (VIOLATED)
+   regfile_reg_13__3_/D         1.45           1.15 f        -0.30  (VIOLATED)
+   regfile_reg_13__5_/D         1.45           1.15 f        -0.30  (VIOLATED)
+   regfile_reg_13__6_/D         1.45           1.15 f        -0.30  (VIOLATED)
+   regfile_reg_13__7_/D         1.45           1.15 f        -0.30  (VIOLATED)
+   regfile_reg_14__0_/D         1.45           1.15 f        -0.30  (VIOLATED)
+   regfile_reg_14__1_/D         1.45           1.15 f        -0.30  (VIOLATED)
+   regfile_reg_14__2_/D         1.45           1.15 f        -0.30  (VIOLATED)
+   regfile_reg_14__3_/D         1.45           1.15 f        -0.30  (VIOLATED)
+   regfile_reg_14__4_/D         1.45           1.15 f        -0.30  (VIOLATED)
+   regfile_reg_14__5_/D         1.45           1.15 f        -0.30  (VIOLATED)
+   regfile_reg_14__6_/D         1.45           1.15 f        -0.30  (VIOLATED)
+   regfile_reg_14__7_/D         1.45           1.15 f        -0.30  (VIOLATED)
+   regfile_reg_15__0_/D         1.45           1.15 f        -0.30  (VIOLATED)
+   regfile_reg_15__1_/D         1.45           1.15 f        -0.30  (VIOLATED)
+   regfile_reg_15__2_/D         1.45           1.15 f        -0.30  (VIOLATED)
+   regfile_reg_15__3_/D         1.45           1.15 f        -0.30  (VIOLATED)
+   regfile_reg_15__4_/D         1.45           1.15 f        -0.30  (VIOLATED)
+   regfile_reg_15__6_/D         1.45           1.15 f        -0.30  (VIOLATED)
+   regfile_reg_15__7_/D         1.45           1.15 f        -0.30  (VIOLATED)
+   vaild_r1_reg/D               1.45           1.15 f        -0.30  (VIOLATED)
+   regfile_reg_0__1_/D          1.45           1.15 f        -0.30  (VIOLATED)
+   regfile_reg_0__2_/D          1.45           1.15 f        -0.30  (VIOLATED)
+   regfile_reg_0__3_/D          1.45           1.15 f        -0.30  (VIOLATED)
+   regfile_reg_0__4_/D          1.45           1.15 f        -0.30  (VIOLATED)
+   regfile_reg_0__5_/D          1.45           1.15 f        -0.30  (VIOLATED)
+   regfile_reg_0__6_/D          1.45           1.15 f        -0.30  (VIOLATED)
+   regfile_reg_0__7_/D          1.45           1.15 f        -0.30  (VIOLATED)
+   regfile_reg_1__1_/D          1.45           1.15 f        -0.30  (VIOLATED)
+   regfile_reg_1__2_/D          1.45           1.15 f        -0.30  (VIOLATED)
+   regfile_reg_1__3_/D          1.45           1.15 f        -0.30  (VIOLATED)
+   regfile_reg_1__4_/D          1.45           1.15 f        -0.30  (VIOLATED)
+   v_r1_reg_12_/D               1.45           1.15 f        -0.30  (VIOLATED)
+   v_r1_reg_13_/D               1.45           1.15 f        -0.30  (VIOLATED)
+   v_r1_reg_14_/D               1.45           1.15 f        -0.30  (VIOLATED)
+   v_r1_reg_15_/D               1.45           1.15 f        -0.30  (VIOLATED)
+   regfile_reg_1__0_/D          1.45           1.15 f        -0.29  (VIOLATED)
+   regfile_reg_1__5_/D          1.45           1.15 f        -0.29  (VIOLATED)
+   regfile_reg_2__3_/D          1.45           1.15 f        -0.29  (VIOLATED)
+   regfile_reg_4__2_/D          1.45           1.15 f        -0.29  (VIOLATED)
+   regfile_reg_6__1_/D          1.45           1.15 f        -0.29  (VIOLATED)
+   regfile_reg_8__0_/D          1.45           1.15 f        -0.29  (VIOLATED)
+   regfile_reg_11__3_/D         1.45           1.15 f        -0.29  (VIOLATED)
+   regfile_reg_13__4_/D         1.45           1.15 f        -0.29  (VIOLATED)
+   regfile_reg_15__5_/D         1.45           1.15 f        -0.29  (VIOLATED)
+   v_r1_reg_8_/D                1.35           1.08 r        -0.27  (VIOLATED)
+   v_r1_reg_11_/D               1.35           1.08 r        -0.27  (VIOLATED)
+   v_r1_reg_2_/D                1.37           1.12 r        -0.26  (VIOLATED)
+   v_r1_reg_4_/D                1.37           1.12 r        -0.26  (VIOLATED)
+   v_r1_reg_5_/D                1.37           1.12 r        -0.26  (VIOLATED)
+   v_r1_reg_7_/D                1.37           1.12 r        -0.26  (VIOLATED)
+   v_r1_reg_3_/D                1.34           1.09 r        -0.25  (VIOLATED)
+   v_r1_reg_9_/D                1.34           1.09 r        -0.25  (VIOLATED)
+   v_r1_reg_10_/D               1.34           1.09 r        -0.25  (VIOLATED)
+   v_r1_reg_0_/D                1.37           1.15 r        -0.22  (VIOLATED)
+   v_r1_reg_1_/D                1.37           1.15 r        -0.22  (VIOLATED)
+   v_r1_reg_6_/D                1.37           1.15 r        -0.22  (VIOLATED)
+
+
+   max_area
+
+                             Required        Actual
+   Design                      Area           Area           Slack
+   -----------------------------------------------------------------
+   top                          0.00       63063.71       -63063.71 (VIOLATED)
+
+
+   max_leakage_power
+
+                             Required        Actual
+   Design                   Leakage Power  Leakage Power     Slack
+   -----------------------------------------------------------------
+   top                          0.00       2553845.00     -2553845.00
+                                                                    (VIOLATED)
+
+
+   multiport_net
+
+                             Required        Actual
+   Net                          Cost           Cost          Violation
+   -----------------------------------------------------------------
+   onehotdecz_15__onehotdec_u/onehot[15]
+                                0.00           7.00          -7.00  (VIOLATED)
+   onehotdecz_14__onehotdec_u/dec[2]
+                                0.00           1.00          -1.00  (VIOLATED)
+
+
+1

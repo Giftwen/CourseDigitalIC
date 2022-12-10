@@ -1,0 +1,84 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : top
+Version: L-2016.03-SP1
+Date   : Tue Dec  6 22:35:09 2022
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: ss_1v62_125c   Library: ss_1v62_125c
+Wire Load Model Mode: top
+
+  Startpoint: div_remainder_r_reg_0__91_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: div_remainder_r_reg_1__128_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             1.90       1.90
+  div_remainder_r_reg_0__91_/CK (DFFTRX1M)                0.00 #     1.90 r
+  div_remainder_r_reg_0__91_/Q (DFFTRX1M)                 0.57       2.47 f
+  DP_OP_664_308_2961/I1[91] (top_DP_OP_664_308_2961_1)
+                                                          0.00       2.47 f
+  DP_OP_664_308_2961/U1616/Y (NOR2X1M)                    0.21       2.68 r
+  DP_OP_664_308_2961/U1613/Y (OAI21XLM)                   0.14       2.82 f
+  DP_OP_664_308_2961/U1611/Y (AOI21XLM)                   0.28       3.10 r
+  DP_OP_664_308_2961/U1545/Y (OAI21XLM)                   0.15       3.25 f
+  DP_OP_664_308_2961/U1543/Y (AOI21XLM)                   0.19       3.44 r
+  DP_OP_664_308_2961/U1541/Y (OAI21X1M)                   0.87       4.31 f
+  DP_OP_664_308_2961/U1413/Y (AOI21XLM)                   0.36       4.67 r
+  DP_OP_664_308_2961/U1396/Y (XOR2XLM)                    0.18       4.85 r
+  DP_OP_664_308_2961/U924/Y (MX2XLM)                      0.26       5.11 r
+  DP_OP_664_308_2961/U217/Y (NAND2XLM)                    0.18       5.29 f
+  DP_OP_664_308_2961/U195/Y (OAI21XLM)                    0.28       5.57 r
+  DP_OP_664_308_2961/U155/Y (AOI21XLM)                    0.19       5.76 f
+  DP_OP_664_308_2961/U139/Y (OAI21XLM)                    0.28       6.04 r
+  DP_OP_664_308_2961/U123/Y (AOI21XLM)                    0.20       6.24 f
+  DP_OP_664_308_2961/U111/Y (OAI21XLM)                    0.22       6.46 r
+  DP_OP_664_308_2961/U109/Y (AOI21XLM)                    0.13       6.59 f
+  DP_OP_664_308_2961/U103/Y (OAI21XLM)                    0.31       6.90 r
+  DP_OP_664_308_2961/U95/Y (AOI21XLM)                     0.23       7.14 f
+  DP_OP_664_308_2961/U89/Y (OAI21XLM)                     0.31       7.45 r
+  DP_OP_664_308_2961/U2001/Y (AOI21XLM)                   0.25       7.70 f
+  DP_OP_664_308_2961/U75/Y (OAI21X1M)                     0.23       7.93 r
+  DP_OP_664_308_2961/U67/Y (AOI21X1M)                     0.20       8.13 f
+  DP_OP_664_308_2961/U61/Y (OAI21X1M)                     0.22       8.35 r
+  DP_OP_664_308_2961/U53/Y (AOI21X1M)                     0.20       8.55 f
+  DP_OP_664_308_2961/U47/Y (OAI21X1M)                     0.22       8.77 r
+  DP_OP_664_308_2961/U39/Y (AOI21X1M)                     0.20       8.97 f
+  DP_OP_664_308_2961/U33/Y (OAI21X1M)                     0.22       9.19 r
+  DP_OP_664_308_2961/U25/Y (AOI21X1M)                     0.20       9.39 f
+  DP_OP_664_308_2961/U19/Y (OAI21X1M)                     0.22       9.61 r
+  DP_OP_664_308_2961/U11/Y (AOI21X1M)                     0.20       9.81 f
+  DP_OP_664_308_2961/U5/Y (OAI21X1M)                      0.20      10.00 r
+  DP_OP_664_308_2961/U3/CO (ADDFX2M)                      0.34      10.35 r
+  DP_OP_664_308_2961/U1/Y (XOR2XLM)                       0.08      10.43 f
+  DP_OP_664_308_2961/O1[128] (top_DP_OP_664_308_2961_1)
+                                                          0.00      10.43 f
+  U25278/Y (AO22XLM)                                      0.34      10.77 f
+  div_remainder_r_reg_1__128_/D (DFFQX1M)                 0.00      10.77 f
+  data arrival time                                                 10.77
+
+  clock clk (rise edge)                                   9.50       9.50
+  clock network delay (ideal)                             1.90      11.40
+  clock uncertainty                                      -0.47      10.92
+  div_remainder_r_reg_1__128_/CK (DFFQX1M)                0.00      10.92 r
+  library setup time                                     -0.16      10.77
+  data required time                                                10.77
+  --------------------------------------------------------------------------
+  data required time                                                10.77
+  data arrival time                                                -10.77
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+1

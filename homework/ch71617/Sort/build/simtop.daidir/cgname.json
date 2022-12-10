@@ -1,0 +1,20 @@
+{
+    "onehotdec": [
+        "onehotdec",
+        "q8WEx",
+        "module",
+        1
+    ],
+    "tb_sort": [
+        "tb_sort",
+        "eLTqV",
+        "module",
+        2
+    ],
+    "...MASTER...": [
+        "SIM",
+        "amcQw",
+        "module",
+        3
+    ]
+}

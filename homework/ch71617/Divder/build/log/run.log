@@ -1,0 +1,18 @@
+Command: /home/gift/workplace/CourseDigitalIC/homework/ch71617/Divder/././build/simtop -l ./build/log/run.log
+Chronologic VCS simulator copyright 1991-2018
+Contains Synopsys proprietary information.
+Compiler version O-2018.09-SP2_Full64; Runtime version O-2018.09-SP2_Full64;  Dec  6 22:18 2022
+*Verdi* Loading libsscore_vcs201809.so
+FSDB Dumper for VCS, Release Verdi_O-2018.09-SP2, Linux x86_64/64bit, 02/21/2019
+(C) 1996 - 2019 by Synopsys, Inc.
+*Verdi* FSDB WARNING: The FSDB file already exists. Overwriting the FSDB file may crash the programs that are using this file.
+*Verdi* : Create FSDB file './build/simtop.fsdb'
+*Verdi* : Begin traversing the scopes, layer (0).
+*Verdi* : Enable +all dumping.
+*Verdi* : End of traversing.
+$finish called from file "/home/gift/workplace/CourseDigitalIC/homework/ch71617/Divder/sim/tb_div.v", line 67.
+$finish at simulation time               523000
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 523000 ps
+CPU Time:      0.300 seconds;       Data structure size:   0.0Mb
+Tue Dec  6 22:18:44 2022
