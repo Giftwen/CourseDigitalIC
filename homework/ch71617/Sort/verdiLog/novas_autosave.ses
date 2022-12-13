@@ -20,7 +20,7 @@ powerDumped = 0
 [hb]
 postSimFile = /home/gift/workplace/CourseDigitalIC/homework/ch71617/Sort/build/simtop.fsdb
 syncTime = 15000
-viewport = 0 26 1716 1163 0 0 459 1731
+viewport = 0 26 1514 1163 0 0 459 1512
 activeNode = "tb_sort"
 activeScope = "tb_sort"
 activeFile = "/home/gift/workplace/CourseDigitalIC/homework/ch71617/Sort/sim/tb_sort.v"
@@ -59,7 +59,7 @@ WaveformFile = /home/gift/workplace/CourseDigitalIC/homework/ch71617/Sort/build/
 UserActionNum = 0
 nMemWindowNum = 0
 [wave.0]
-viewPort = 0 27 1716 485 100 142
+viewPort = 0 27 1514 485 100 142
 primaryWindow = TRUE
 SessionFile = /home/gift/workplace/CourseDigitalIC/homework/ch71617/Sort/verdiLog/novas_autosave.ses.wave.0
 displayGrid = FALSE

@@ -19,8 +19,8 @@ Console = FALSE
 powerDumped = 0
 [hb]
 postSimFile = /home/gift/workplace/CourseDigitalIC/homework/ch71617/ApbSlave/build/simtop.fsdb
-syncTime = 25000
-viewport = 0 26 1716 1163 0 0 459 1714
+syncTime = 219000
+viewport = 0 26 1514 1163 0 0 459 1171
 activeNode = "tb_apb"
 activeScope = "tb_apb"
 activeFile = "/home/gift/workplace/CourseDigitalIC/homework/ch71617/ApbSlave/sim/tb_apbtimer.v"
@@ -60,7 +60,7 @@ WaveformFile = /home/gift/workplace/CourseDigitalIC/homework/ch71617/ApbSlave/bu
 UserActionNum = 0
 nMemWindowNum = 0
 [wave.0]
-viewPort = 0 27 1716 485 148 65
+viewPort = 0 27 1514 485 148 65
 primaryWindow = TRUE
 SessionFile = /home/gift/workplace/CourseDigitalIC/homework/ch71617/ApbSlave/verdiLog/novas_autosave.ses.wave.0
 displayGrid = FALSE

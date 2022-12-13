@@ -26,7 +26,7 @@ reg direction;
 //timerxstatus[0]   ----->timer1's enable,
 //timerxstatus[1]   ----->timer1's int enable,
 //timerxstatus[2]   ----->timer1's function 0display free; 1 display custom,
-                        //in this design free means the counter begin from 0 to the max value and overflowed back to zero
+                        //in this design free means the counter begin from 0 to the max value and overflowed back to zero for loop
                         //customer means the counter begin from 0 to customer threshold and back to 0 immediatly
 //timerxstatus[3]   ----->timer1's int polarity, 0 equl posedge vaild and 1 is either
 //timerxstatus[4~8] ----->timer1's width ;width equal timerxstatus[4-8] plus eight

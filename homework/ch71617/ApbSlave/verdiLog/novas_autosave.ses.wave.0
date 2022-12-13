@@ -2,7 +2,7 @@ Magic 271485
 Revision Verdi_O-2018.09-SP2
 
 ; Window Layout <x> <y> <width> <height> <signalwidth> <valuewidth>
-viewPort 0 27 1716 485 148 65
+viewPort 0 27 1514 485 148 65
 
 ; File list:
 ; openDirFile [-d delimiter] [-s time_offset] [-rf auto_bus_rule_file] path_name file_name
@@ -16,16 +16,16 @@ signalSpacing 5
 
 ; windowTimeUnit is used for zoom, cursor & marker
 ; waveform viewport range
-zoom 0.000000 2871430.000000
-cursor 25000.000000
+zoom 0.000000 177687.500000
+cursor 219000.000000
 marker 0.000000
 
 ; user define markers
 ; userMarker time_pos marker_name color linestyle
 ; visible top row signal index
-top 4
+top 10
 ; marker line index
-markerPos 9
+markerPos 5
 
 ; digital to analog list
 ; allDtoA sig_name vv0 vv1 vvz vvx org_signal_name org_notation
@@ -60,6 +60,7 @@ addSignal -h 15 /tb_apb/apbresp
 addSignal -h 15 -holdScope apbvaild
 addSignal -h 15 -holdScope clk
 addSignal -h 15 -holdScope rst_n
+addSignal -h 15 -UNSIGNED -BIN -holdScope timer_irq[7:0]
 addSignal -h 15 -UNSIGNED -UDEC /tb_apb/apbtimer_u0/timer0count[31:0]
 addSignal -w analog -ds pwc -c ID_RED5 -ls solid -lw 1 -h 98 /tb_apb/apbtimer_u0/DtoA_timer0count[31:0]
 addSignal -h 15 -UNSIGNED -UDEC /tb_apb/apbtimer_u0/timer1count[31:0]
@@ -81,7 +82,6 @@ addSignal -h 15 -UNSIGNED -BIN -holdScope pwdata[31:0]
 addSignal -h 15 -UNSIGNED -BIN -holdScope pwdata_m[31:0]
 addSignal -h 15 -holdScope pwrite
 addSignal -h 15 -holdScope pwrite_m
-addSignal -h 15 -UNSIGNED -BIN -holdScope timer_irq[7:0]
 addGroup "G2"
 
 ; getSignalForm Scope Hierarchy Status
